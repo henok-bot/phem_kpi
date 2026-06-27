@@ -56,6 +56,8 @@ INDICATORS    <- meta$indicators          # named vector: label -> code
 GROUPS        <- meta$groups
 CATALOG       <- meta$catalog
 EPHI_GREEN    <- "#006600"
+N_REGIONS_TOTAL <- 14L      # regions / city administrations (2021 reference)
+N_WOREDAS_REF   <- 1082L    # reference woredas (reference_geo_names.csv)
 
 # friendly period dropdown choices: label shown, period code stored
 PERIOD_CHOICES <- setNames(PERIOD_LEVELS, unname(PERIOD_LABELS[PERIOD_LEVELS]))

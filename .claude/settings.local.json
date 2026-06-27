@@ -11,7 +11,9 @@
       "Bash(git config *)",
       "Bash(echo \"user.name : $\\(git config --global user.name || echo '\\(not set\\)'\\)\")",
       "Bash(echo \"user.email: $\\(git config --global user.email || echo '\\(not set\\)'\\)\")",
-      "Bash(ssh -o StrictHostKeyChecking=accept-new -o ConnectTimeout=8 -T git@github.com)"
+      "Bash(ssh -o StrictHostKeyChecking=accept-new -o ConnectTimeout=8 -T git@github.com)",
+      "Bash(Rscript -e 'r<-readr::read_csv\\(\"reference_geo_names.csv\",show_col_types=FALSE\\); cat\\(\"reference woredas:\", nrow\\(r\\), \" regions:\", dplyr::n_distinct\\(r$region\\), \"\\\\n\"\\)')",
+      "Bash(quarto render *)"
     ]
   }
 }

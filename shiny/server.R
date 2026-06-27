@@ -18,37 +18,66 @@ server <- function(input, output, session) {
   }
 
   # ── reactive data slices (the single source the outputs read from) ─────────
+  # req() pauses these until the sidebar inputs exist. Before the user logs in
+  # (shinymanager), the inputs are NULL; without req() a filter(period == NULL)
+  # would error on the first flush.
   reg_slice <- reactive({
+    req(input$sel_period, input$sel_regions)
     region |> dplyr::filter(period == input$sel_period,
                             region %in% input$sel_regions)
   })
   nat_slice <- reactive({
+    req(input$sel_period)
     national |> dplyr::filter(period == input$sel_period)
   })
   wide_slice <- reactive({
+    req(input$sel_period, input$sel_regions)
     wide |> dplyr::filter(period == input$sel_period,
                           region %in% input$sel_regions)
   })
 
-  # ── Overview: value boxes ──────────────────────────────────────────────────
+  # ── Overview: value boxes (reporting-first) ────────────────────────────────
   output$value_boxes <- renderUI({
-    s <- kpi_value_boxes(reg_slice(), wide_slice())
+    req(input$sel_period)
+    pf_val <- trend_dq |> dplyr::filter(period == input$sel_period) |>
+      dplyr::pull(pct_filled)
+    s <- kpi_value_boxes(reg_slice(), wide_slice(), pf_val)
     bslib::layout_columns(
       col_widths = c(3, 3, 3, 3), fill = FALSE,
-      bslib::value_box("Regions reporting", s$n_reg,
+      bslib::value_box("Regions reporting",
+                       paste0(s$n_reg, " of ", N_REGIONS_TOTAL),
                        showcase = shiny::icon("hospital"), theme = "primary"),
       bslib::value_box("Woredas reporting", format(s$n_wor, big.mark = ","),
                        showcase = shiny::icon("location-dot"), theme = "info"),
-      bslib::value_box("Indicators ≥ 80% target", paste0(s$pct_met, "%"),
-                       showcase = shiny::icon("circle-check"),
-                       theme = if (isTRUE(s$pct_met >= 50)) "success" else "warning"),
-      bslib::value_box("Composite (mean of proportions)", paste0(s$composite, "%"),
-                       showcase = shiny::icon("gauge"),
-                       theme = if (isTRUE(s$composite >= 80)) "success" else "secondary"))
+      bslib::value_box("Woreda coverage", paste0(s$coverage, "%"),
+                       showcase = shiny::icon("map-pin"), theme = cov_col(s$coverage)),
+      bslib::value_box("KPI cells filled", paste0(s$entries_filled, "%"),
+                       showcase = shiny::icon("list-check"),
+                       theme = cov_col(s$entries_filled)))
   })
 
-  output$p_nat_bar     <- plotly::renderPlotly(plot_national_bar(nat_slice()))
-  output$p_reg_targets <- plotly::renderPlotly(plot_region_targets(reg_slice()))
+  # per-region reporting + performance, read side by side (cautious interpretation).
+  # Dire Dawa reports per facility and Harari as one aggregate row — noted under
+  # the table rather than carried as a column.
+  reg_summary <- reactive({
+    perf <- reg_slice() |> dplyr::filter(value_type == "proportion") |>
+      dplyr::group_by(region) |>
+      dplyr::summarise(`indicators (of 21)` = sum(!is.na(value_pct_capped)),
+                       `mean performance %` = round(mean(value_pct_capped, na.rm = TRUE)),
+                       .groups = "drop")
+    units <- wide_slice() |> dplyr::group_by(region) |>
+      dplyr::summarise(`units reported` = dplyr::n_distinct(woreda), .groups = "drop")
+    units |>
+      dplyr::left_join(perf, by = "region") |>
+      dplyr::select(region, `units reported`, `indicators (of 21)`, `mean performance %`) |>
+      dplyr::arrange(dplyr::desc(`units reported`))
+  })
+  output$t_reg_summary <- DT::renderDT(
+    DT::datatable(reg_summary(), rownames = FALSE,
+                  options = list(dom = "t", pageLength = 20, scrollX = TRUE)))
+
+  output$p_nat_bar      <- plotly::renderPlotly(plot_national_bar(nat_slice()))
+  output$p_corefunction <- plotly::renderPlotly(plot_corefunction_bar(nat_slice()))
 
   # ── Trends ──────────────────────────────────────────────────────────────────
   output$p_trend_nat <- plotly::renderPlotly(
@@ -71,10 +100,13 @@ server <- function(input, output, session) {
 
   # ── Map (two-step: base once, recolour via proxy) ──────────────────────────
   output$map <- leaflet::renderLeaflet(build_base_map(geo1))
-  output$map_title <- renderText(
+  output$map_title <- renderText({
+    req(input$sel_indicator, input$sel_period)
     paste0("Woreda map — ", ind_label(input$sel_indicator), " — ",
-           unname(PERIOD_LABELS[input$sel_period])))
+           unname(PERIOD_LABELS[input$sel_period]))
+  })
   observe({
+    req(input$sel_period, input$sel_indicator)
     proxy <- leaflet::leafletProxy("map")
     update_kpi_choropleth(proxy, geo3, wpcode, input$sel_period,
                           input$sel_indicator, title = ind_label(input$sel_indicator))
@@ -82,6 +114,7 @@ server <- function(input, output, session) {
 
   # ── Explorer ────────────────────────────────────────────────────────────────
   expl_code <- reactive({
+    req(input$sel_indicator)
     if (identical(input$sel_indicator, "__COMPOSITE__")) "RPT_TIMELY"
     else input$sel_indicator
   })
@@ -90,6 +123,7 @@ server <- function(input, output, session) {
   output$p_indicator <- plotly::renderPlotly(
     plot_indicator_by_region(reg_slice(), expl_code()))
   output$t_bestworst <- DT::renderDT({
+    req(input$sel_period)
     d <- wpcode |>
       dplyr::filter(period == input$sel_period, indicator == expl_code(),
                     denom_sum >= 3) |>

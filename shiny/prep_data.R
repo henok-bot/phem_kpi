@@ -53,6 +53,13 @@ bad <- bind_rows(national, region) |>
   filter(value_type == "proportion", !is.na(value_pct), value_pct > 100.0001)
 if (nrow(bad) > 0) stop("Guardrail tripped: ", nrow(bad), " proportion(s) > 100%.")
 
+# reporting level per region (woreda / facility) from the master — lets the app
+# label regions that did not report at woreda level (Dire Dawa = facility).
+region_level <- read_csv(op("master_woreda.csv"),
+                         col_select = c(region, report_level),
+                         show_col_types = FALSE) |>
+  distinct(region, report_level)
+
 # --- small metadata bundle the UI uses to build its menus -------------------
 meta <- list(
   period_levels = PERIOD_LEVELS,
@@ -62,7 +69,8 @@ meta <- list(
   # indicator code -> label (proportions + rates), in catalog order
   indicators    = setNames(catalog$code, catalog$label),
   groups        = sort(unique(catalog$group)),
-  catalog       = catalog
+  catalog       = catalog,
+  region_level  = region_level
 )
 
 message("Writing shiny/data/*.rds ...")

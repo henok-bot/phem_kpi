@@ -37,6 +37,7 @@ trend_nat  <- read_csv(tb("trend_national_by_period.csv"), show_col_types = FALS
 trend_comp <- read_csv(tb("trend_region_composite.csv"),  show_col_types = FALSE)
 trend_dq   <- read_csv(tb("trend_data_quality.csv"),      show_col_types = FALSE)
 trend_cf   <- read_csv(tb("trend_corefunction.csv"),      show_col_types = FALSE)
+cov        <- read_csv(tb("geographic_coverage.csv"),     show_col_types = FALSE)
 
 # Reusable woreda geometry from the GIS shapefile (1,082 woredas keyed by
 # adm3_pcode). It joins directly to kpi_woreda_pcode.csv. See assets/README.
@@ -61,32 +62,83 @@ EPHI_GREEN <- "#006600"
 # performance palette: red (poor) -> green (good), per house style
 perf_pal <- function(domain = c(0, 100))
   colorNumeric("RdYlGn", domain = domain, na.color = "#e6e6e6")
+RYG <- list(c(0, "#d73027"), c(0.5, "#fee08b"), c(1, "#1a9850"))
 
 # focus-period slices
 nat_fp <- national |> filter(period == FP)
 reg_fp <- region   |> filter(period == FP)
 wide_fp <- wide    |> filter(period == FP)
+
+# reporting level per region (woreda / facility), from the master. Used to label
+# regions that did NOT report at woreda level so coverage is not over-claimed.
+region_level <- read_csv(op("master_woreda.csv"),
+                         col_select = c(region, period, report_level),
+                         show_col_types = FALSE) |>
+  filter(period == FP) |> distinct(region, report_level)
 ```
 
 ```{r headline-numbers}
+N_REGIONS_TOTAL <- 14L     # regions / city administrations in the 2021 reference
+N_WOREDAS_REF   <- 1082L   # reference woredas in reference_geo_names.csv
+
 n_reg <- n_distinct(reg_fp$region)
 n_wor <- wide_fp |> distinct(region, woreda) |> nrow()
+coverage_nat <- round(100 * n_wor / N_WOREDAS_REF)
 
-nat_prop <- prop_only(nat_fp)
-n_met    <- sum(nat_prop$value_pct_capped >= 80, na.rm = TRUE)
-n_prop   <- sum(!is.na(nat_prop$value_pct_capped))
-pct_met  <- if (n_prop > 0) round(100 * n_met / n_prop) else NA_real_
-composite <- round(mean(nat_prop$value_pct_capped, na.rm = TRUE))
+entries_filled <- trend_dq |> filter(period == FP) |> pull(pct_filled)
+entries_filled <- if (length(entries_filled)) round(entries_filled) else NA_real_
+
+nat_prop  <- prop_only(nat_fp)
+
+cov_col <- function(x) if (isTRUE(x >= 66)) "success" else
+                       if (isTRUE(x >= 33)) "warning" else "danger"
+
+# Per-region reporting + performance, so a high % is always read next to how
+# much was actually reported (cautious interpretation).
+reg_perf <- reg_fp |>
+  prop_only() |>
+  group_by(region) |>
+  summarise(`indicators (of 21)`  = sum(!is.na(value_pct_capped)),
+            `mean performance %`   = round(mean(value_pct_capped, na.rm = TRUE)),
+            .groups = "drop")
+reg_units <- wide_fp |> group_by(region) |>
+  summarise(`units reported` = n_distinct(woreda), .groups = "drop")
+reg_summary <- reg_units |>
+  left_join(region_level, by = "region") |>
+  left_join(cov |> select(region, `% woreda coverage` = coverage_pct), by = "region") |>
+  left_join(reg_perf, by = "region") |>
+  # label the reporting level so woreda coverage is not over-claimed:
+  #   facility  -> Dire Dawa reports per health facility (PHCU/hospital)
+  #   aggregate -> a single region-level row (Harari)
+  # woreda coverage only applies to woreda-level regions; Dire Dawa (facility)
+  # and Harari (single aggregate row) are blanked (see note under the table).
+  mutate(.is_woreda = report_level != "facility" & `units reported` > 1,
+         `% woreda coverage` = ifelse(.is_woreda, `% woreda coverage`, NA_real_)) |>
+  select(region, `units reported`, `% woreda coverage`,
+         `indicators (of 21)`, `mean performance %`) |>
+  arrange(desc(`units reported`))
+
+# National mean by PHEM core function (current period) for the reporting page.
+cf_fp <- nat_prop |>
+  group_by(group) |>
+  summarise(v = round(mean(value_pct_capped, na.rm = TRUE)),
+            n = sum(!is.na(value_pct_capped)), .groups = "drop") |>
+  arrange(v)
 ```
 
 # Overview
 
-## Row {height="22%"}
+## {.toolbar}
+
+**Reporting period: `r FP_LABEL`.** Performance figures reflect woredas that reported.
+
+## Row {height="20%"}
 
 ```{r}
 #| content: valuebox
 #| title: "Regions reporting"
-list(icon = "buildings", color = "primary", value = n_reg)
+list(icon = "buildings", color = "primary",
+     value = paste0(n_reg, " of ", N_REGIONS_TOTAL))
 ```
 
 ```{r}
@@ -97,38 +149,68 @@ list(icon = "geo-alt", color = "info", value = format(n_wor, big.mark = ","))
 
 ```{r}
 #| content: valuebox
-#| title: "National indicators ≥ 80% target"
-list(icon = "check2-circle",
-     color = if (isTRUE(pct_met >= 50)) "success" else "warning",
-     value = paste0(pct_met, "%"))
+#| title: "Woreda coverage (of 2021 reference)"
+list(icon = "pin-map", color = cov_col(coverage_nat),
+     value = paste0(coverage_nat, "%"))
 ```
 
 ```{r}
 #| content: valuebox
-#| title: "National composite (mean of proportions)"
-list(icon = "speedometer2",
-     color = if (isTRUE(composite >= 80)) "success" else "secondary",
-     value = paste0(composite, "%"))
+#| title: "KPI cells filled (data completeness)"
+list(icon = "ui-checks", color = cov_col(entries_filled),
+     value = paste0(entries_filled, "%"))
 ```
 
 ## Row
 
-### Column {width="60%"}
+::: {.callout-note collapse="true" title="Disclaimer/Precaution"}
+All KPI percentages are computed **among woredas that reported** (summed
+numerator ÷ summed denominator), so they describe performance among reporters,
+not across all woredas. Read every performance figure next to the reporting
+columns: a high percentage built on a handful of reporting woredas (e.g. Oromia
+this period) is not comparable to one built on most of a region. Coverage is
+measured against the 2021 reference list, which undercounts today's woredas, so
+it is an upper bound. Three regions did not report at all this period.
+:::
+
+## Row
+
+### Column {width="48%"}
 
 ```{r}
-#| title: "National KPI performance — current period"
+#| title: "Regional reporting & performance — read together"
+DT::datatable(reg_summary, rownames = FALSE,
+              options = list(dom = "t", pageLength = 20, scrollX = TRUE)) |>
+  DT::formatStyle("units reported",
+                  background = DT::styleColorBar(range(reg_summary$`units reported`),
+                                                 "#cfe8cf"),
+                  backgroundSize = "98% 70%", backgroundRepeat = "no-repeat",
+                  backgroundPosition = "center")
+```
+
+::: {.callout-tip collapse="true" title="Column definitions"}
+- **units reported** — distinct reporting units for the region (woredas in most regions).
+- **% woreda coverage** — reporting woredas ÷ that region's 2021 reference woredas (an upper bound; woreda-level only).
+- **indicators (of 21)** — how many of the 21 proportion KPIs produced a usable value this period. The rest were either left blank or had no events to measure (a zero denominator, e.g. no outbreaks), so they are N/A.
+- **mean performance %** — simple average of the region's usable KPI percentages (each = Σ numerator ÷ Σ denominator among reporting woredas, capped at 100). A summary only — always read it with the reporting columns to its left.
+- **NB:** Dire Dawa reports per health facility (PHCU/hospital) and Harari as a single regional row, so their *units reported* are not woredas and woreda coverage is not shown for them.
+:::
+
+### Column {width="52%"}
+
+```{r}
+#| title: "National KPI performance — among woredas that reported"
 d <- nat_prop |>
   mutate(label = str_trunc(label, 52)) |>
   arrange(value_pct_capped)
 d$label <- factor(d$label, levels = d$label)
 plot_ly(d, x = ~value_pct_capped, y = ~label, type = "bar",
         orientation = "h",
-        marker = list(color = ~value_pct_capped,
-                      colorscale = list(c(0, "#d73027"), c(0.5, "#fee08b"),
-                                        c(1, "#1a9850")),
+        marker = list(color = ~value_pct_capped, colorscale = RYG,
                       cmin = 0, cmax = 100),
         hovertemplate = "%{y}<br>%{x:.0f}%<extra></extra>") |>
-  layout(xaxis = list(title = "% (capped at 100)", range = c(0, 105)),
+  layout(xaxis = list(title = "% (capped at 100; dashed line = 80% target)",
+                      range = c(0, 105)),
          yaxis = list(title = ""),
          shapes = list(list(type = "line", x0 = 80, x1 = 80,
                             y0 = -0.5, y1 = nrow(d) - 0.5,
@@ -136,30 +218,30 @@ plot_ly(d, x = ~value_pct_capped, y = ~label, type = "bar",
          margin = list(l = 320))
 ```
 
-### Column {width="40%"}
+## Row {height="30%"}
 
 ```{r}
-#| title: "% of indicators meeting target, by region"
-rt <- reg_fp |>
-  prop_only() |>
-  group_by(region) |>
-  summarise(pct_met = round(100 * mean(value_pct_capped >= 80, na.rm = TRUE)),
-            .groups = "drop") |>
-  arrange(pct_met)
-rt$region <- factor(rt$region, levels = rt$region)
-plot_ly(rt, x = ~pct_met, y = ~region, type = "bar", orientation = "h",
-        marker = list(color = EPHI_GREEN),
-        hovertemplate = "%{y}<br>%{x}% of indicators ≥ 80%<extra></extra>") |>
-  layout(xaxis = list(title = "% of indicators ≥ 80%", range = c(0, 100)),
+#| title: "Performance by PHEM core function — national (mean of indicators)"
+cf_fp$group <- factor(cf_fp$group, levels = cf_fp$group)
+plot_ly(cf_fp, x = ~v, y = ~group, type = "bar", orientation = "h",
+        marker = list(color = ~v, colorscale = RYG, cmin = 0, cmax = 100),
+        text = ~paste0(n, " indicators"),
+        hovertemplate = "%{y}<br>%{x:.0f}% (mean of %{text})<extra></extra>") |>
+  layout(xaxis = list(title = "mean % of indicators (capped at 100)",
+                      range = c(0, 105)),
          yaxis = list(title = ""))
 ```
 
 # Regional
 
+## {.toolbar}
+
+**Period: `r FP_LABEL`.**
+
 ## Row
 
 ```{r}
-#| title: "Region × indicator performance (%, current period)"
+#| title: "Region × indicator performance (%)"
 mat <- reg_fp |>
   prop_only() |>
   mutate(label = str_trunc(label, 46)) |>
@@ -194,7 +276,7 @@ plot_ly(x = colnames(M), y = labs, z = M, type = "heatmap",
 ### Column
 
 ```{r}
-#| title: "Regional composite score (current period)"
+#| title: "Regional composite score"
 comp <- trend_comp |>
   filter(period == FP) |>
   arrange(composite)
@@ -213,46 +295,55 @@ plot_ly(comp, x = ~composite, y = ~region, type = "bar", orientation = "h",
 ### Column
 
 ```{r}
-#| title: "Region table (current period)"
+#| title: "Region table"
 reg_tab <- reg_fp |>
   prop_only() |>
   group_by(region) |>
   summarise(
-    indicators_reported = sum(!is.na(value_pct_capped)),
-    `mean %`            = round(mean(value_pct_capped, na.rm = TRUE)),
-    `% at target`       = round(100 * mean(value_pct_capped >= 80, na.rm = TRUE)),
+    `indicators (of 21)` = sum(!is.na(value_pct_capped)),
+    `mean performance %` = round(mean(value_pct_capped, na.rm = TRUE)),
     .groups = "drop") |>
-  arrange(desc(`mean %`))
+  arrange(desc(`mean performance %`))
 datatable(reg_tab, rownames = FALSE, options = list(dom = "t", pageLength = 20))
 ```
 
 # Trends
 
+## {.toolbar}
+
+**Periods: `r paste(unname(PERIOD_LABELS[PERIOD_LEVELS]), collapse = "  ·  ")`.**
+
 ::: {.callout-note title="Comparing periods of different length"}
-`r FP_LABEL` (weeks 28–52) spans **two quarters**, while the earlier periods are
-single quarters. Proportion KPIs are ratios, so they remain comparable across
+`r FP_LABEL` (weeks 28–52) spans **two quarters**, while
+`r paste(unname(PERIOD_LABELS[head(PERIOD_LEVELS, -1)]), collapse = " and ")`
+are single quarters. Proportion KPIs are ratios, so they remain comparable across
 periods. Only raw counts scale with period length.
 :::
 
 ## Row
 
-### Column {width="60%"}
+### Column {width="58%"}
 
 ```{r}
-#| title: "National KPI trajectory across periods"
-tn <- trend_nat |>
-  mutate(period_lab = pf(period), label = str_trunc(label, 40))
-plot_ly(tn, x = ~period_lab, y = ~value_pct, color = ~label,
-        type = "scatter", mode = "lines+markers",
-        hovertemplate = "%{fullData.name}<br>%{x}: %{y:.0f}%<extra></extra>") |>
-  layout(xaxis = list(title = ""),
-         yaxis = list(title = "%", range = c(0, 105)),
-         shapes = list(list(type = "line", x0 = -0.2, x1 = 2.2, y0 = 80, y1 = 80,
-                            line = list(color = "grey40", dash = "dash"))),
-         legend = list(font = list(size = 9)))
+#| title: "National KPI trajectory — indicator × period (read each row left→right)"
+# A heatmap instead of 21 overlapping lines: each row is one indicator, columns
+# are the periods, colour is the value. Trajectory = how a row's colour shifts.
+tn  <- trend_nat |> mutate(label = str_trunc(label, 44), period_lab = pf(period))
+ord <- tn |> group_by(label) |>
+  summarise(m = mean(value_pct, na.rm = TRUE), .groups = "drop") |>
+  arrange(m) |> pull(label)
+W <- tn |> select(label, period_lab, value_pct) |>
+  pivot_wider(names_from = period_lab, values_from = value_pct)
+W <- W[match(ord, W$label), ]
+labs <- W$label; Z <- as.matrix(W[, -1])
+plot_ly(x = colnames(Z), y = labs, z = Z, type = "heatmap",
+        colorscale = RYG, zmin = 0, zmax = 100,
+        hovertemplate = "%{y}<br>%{x}: %{z:.0f}%<extra></extra>") |>
+  layout(xaxis = list(title = ""), yaxis = list(title = "", automargin = TRUE),
+         margin = list(l = 290))
 ```
 
-### Column {width="40%"}
+### Column {width="42%"}
 
 ```{r}
 #| title: "PHEM core functions over time"
@@ -261,26 +352,51 @@ plot_ly(cf, x = ~period_lab, y = ~value, color = ~group,
         type = "scatter", mode = "lines+markers",
         hovertemplate = "%{fullData.name}<br>%{x}: %{y:.0f}%<extra></extra>") |>
   layout(xaxis = list(title = ""),
-         yaxis = list(title = "mean %", range = c(0, 105)))
+         yaxis = list(title = "mean %", range = c(0, 105)),
+         legend = list(font = list(size = 10)))
 ```
 
-## Row {height="38%"}
+## Row {height="42%"}
 
 ```{r}
-#| title: "Regional composite trend (newest period highlighted)"
-tc <- trend_comp |> mutate(period_lab = pf(period))
-plot_ly(tc, x = ~period_lab, y = ~composite, color = ~region,
-        type = "scatter", mode = "lines+markers",
-        hovertemplate = "%{fullData.name}<br>%{x}: %{y:.0f}%<extra></extra>") |>
-  layout(xaxis = list(title = ""), yaxis = list(title = "composite %",
-                                                range = c(0, 100)))
+#| title: "Regional composite — change from earliest to latest period reported"
+# A dumbbell: grey dot = earliest period, coloured dot = latest (green if it rose,
+# red if it fell). Regions that reported only once show a single dot.
+po <- setNames(seq_along(PERIOD_LEVELS), PERIOD_LEVELS)
+dc <- trend_comp |>
+  mutate(o = po[period]) |>
+  group_by(region) |>
+  summarise(first = composite[which.min(o)], last = composite[which.max(o)],
+            .groups = "drop") |>
+  mutate(dir = ifelse(last >= first, "improved", "declined")) |>
+  arrange(last)
+dc$region <- factor(dc$region, levels = dc$region)
+plot_ly(dc) |>
+  add_segments(x = ~first, xend = ~last, y = ~region, yend = ~region,
+               line = list(color = "grey75", width = 3),
+               showlegend = FALSE, hoverinfo = "skip") |>
+  add_markers(x = ~first, y = ~region, name = "earliest",
+              marker = list(color = "grey55", size = 9),
+              hovertemplate = "earliest: %{x:.0f}%<extra></extra>") |>
+  add_markers(x = ~last, y = ~region, name = "latest",
+              marker = list(color = ~ifelse(dir == "improved", "#1a9850", "#d73027"),
+                            size = 12),
+              hovertemplate = "latest: %{x:.0f}%<extra></extra>") |>
+  layout(xaxis = list(title = "composite % (earliest → latest period reported)",
+                      range = c(0, 100)),
+         yaxis = list(title = ""),
+         legend = list(orientation = "h", y = -0.18))
 ```
 
 # Map
 
+## {.toolbar}
+
+**Period: `r FP_LABEL`.**
+
 ## Row
 
-::: {.card title="Woreda performance map (current period)"}
+::: {.card title="Woreda performance map"}
 
 ```{r}
 # Build a leaflet choropleth for a chosen indicator (or composite) over the
@@ -348,6 +464,10 @@ make_map("RESP_2448", "Response 24–48h")
 
 # Data quality
 
+## {.toolbar}
+
+**Metrics table covers all periods; the completeness chart is for `r FP_LABEL`.**
+
 ## Row {height="35%"}
 
 ```{r}
@@ -356,7 +476,7 @@ dq <- trend_dq |>
   mutate(period = unname(PERIOD_LABELS[period])) |>
   rename(`regions` = regions_reporting, `woreda units` = woreda_units,
          `mapped woredas` = mapped_woredas, `records` = records,
-         `% entries filled` = pct_filled,
+         `% cells filled` = pct_filled,
          `num > denom (errors)` = impossible_num_gt_denom,
          `raw > 100% (pre-cap)` = over_100_raw)
 datatable(dq, rownames = FALSE, options = list(dom = "t"))
@@ -365,7 +485,7 @@ datatable(dq, rownames = FALSE, options = list(dom = "t"))
 ## Row
 
 ```{r}
-#| title: "Reporting completeness — % of woredas reporting each indicator (current period)"
+#| title: "Reporting completeness — % of woredas reporting each indicator"
 rc <- nat_fp |>
   mutate(label = str_trunc(label, 52)) |>
   arrange(pct_reported)
@@ -382,10 +502,14 @@ plot_ly(rc, x = ~pct_reported, y = ~label, type = "bar", orientation = "h",
 
 # Data
 
+## {.toolbar}
+
+**Period: `r FP_LABEL`.**
+
 ## Row
 
 ```{r}
-#| title: "Woreda × indicator values (current period) — search and export"
+#| title: "Woreda × indicator values — search and export"
 dt <- wide_fp |>
   select(region, zone, woreda, population_best,
          RPT_TIMELY, RPT_COMPLETE, NOTIFY_24H, RESP_2448, LAB_7D,

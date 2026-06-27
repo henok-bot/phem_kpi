@@ -97,16 +97,52 @@ plot_trend_national <- function(trend_nat, labels = NULL) {
                    legend = list(font = list(size = 9)))
 }
 
-# Regional composite trend across periods
+# Regional composite change, earliest -> latest period (dumbbell). Clearer than
+# 11 overlapping lines: grey dot = earliest, coloured dot = latest (green up / red down).
 plot_trend_composite <- function(trend_comp) {
-  d <- trend_comp
-  d$period_lab <- factor(d$period, levels = PERIOD_LEVELS,
-                         labels = unname(PERIOD_LABELS[PERIOD_LEVELS]))
-  plotly::plot_ly(d, x = ~period_lab, y = ~composite, color = ~region,
-                  type = "scatter", mode = "lines+markers",
-                  hovertemplate = "%{fullData.name}<br>%{x}: %{y:.0f}%<extra></extra>") |>
-    plotly::layout(xaxis = list(title = ""),
-                   yaxis = list(title = "composite %", range = c(0, 100)))
+  po <- stats::setNames(seq_along(PERIOD_LEVELS), PERIOD_LEVELS)
+  dc <- trend_comp |>
+    dplyr::mutate(o = po[period]) |>
+    dplyr::group_by(region) |>
+    dplyr::summarise(first = composite[which.min(o)], last = composite[which.max(o)],
+                     .groups = "drop") |>
+    dplyr::mutate(dir = ifelse(last >= first, "improved", "declined")) |>
+    dplyr::arrange(last)
+  dc$region <- factor(dc$region, levels = dc$region)
+  plotly::plot_ly(dc) |>
+    plotly::add_segments(x = ~first, xend = ~last, y = ~region, yend = ~region,
+                         line = list(color = "grey75", width = 3),
+                         showlegend = FALSE, hoverinfo = "skip") |>
+    plotly::add_markers(x = ~first, y = ~region, name = "earliest",
+                        marker = list(color = "grey55", size = 9),
+                        hovertemplate = "earliest: %{x:.0f}%<extra></extra>") |>
+    plotly::add_markers(x = ~last, y = ~region, name = "latest",
+                        marker = list(color = ~ifelse(dir == "improved", "#1a9850", "#d73027"),
+                                      size = 12),
+                        hovertemplate = "latest: %{x:.0f}%<extra></extra>") |>
+    plotly::layout(xaxis = list(title = "composite % (earliest → latest period reported)",
+                                range = c(0, 100)),
+                   yaxis = list(title = ""),
+                   legend = list(orientation = "h", y = -0.18))
+}
+
+# National mean performance by PHEM core function for the selected period.
+plot_corefunction_bar <- function(nat_slice) {
+  d <- nat_slice |>
+    dplyr::filter(value_type == "proportion") |>
+    dplyr::group_by(group) |>
+    dplyr::summarise(v = round(mean(value_pct_capped, na.rm = TRUE)),
+                     n = sum(!is.na(value_pct_capped)), .groups = "drop") |>
+    dplyr::arrange(v)
+  if (!nrow(d)) return(plotly::plotly_empty())
+  d$group <- factor(d$group, levels = d$group)
+  plotly::plot_ly(d, x = ~v, y = ~group, type = "bar", orientation = "h",
+                  marker = list(color = ~v, colorscale = RYG_SCALE, cmin = 0, cmax = 100),
+                  text = ~paste0(n, " indicators"),
+                  hovertemplate = "%{y}<br>%{x:.0f}% (mean of %{text})<extra></extra>") |>
+    plotly::layout(xaxis = list(title = "mean % of indicators (capped at 100)",
+                                range = c(0, 105)),
+                   yaxis = list(title = ""))
 }
 
 # One indicator, value by region (bar), for the selected period.
