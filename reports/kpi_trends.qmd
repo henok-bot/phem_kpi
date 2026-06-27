@@ -1,0 +1,228 @@
+---
+title: "PHEM KPI — Cross-Period Trends"
+subtitle: "Comparing 2025 Wk 3–15, Wk 16–27, and Wk 28–52"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    embed-resources: true
+    fig-width: 10
+    fig-height: 7
+  docx:
+    toc: true
+    number-sections: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+library(dplyr); library(readr); library(tidyr); library(stringr); library(knitr)
+root <- normalizePath(file.path(getwd(), ".."))
+op  <- function(...) file.path(root, "output", ...)
+tb  <- function(...) file.path(root, "exports", "tables", ...)
+fig <- function(...) file.path(root, "exports", "figures", ...)
+source(file.path(root, "scripts", "catalog.R"))    # PERIOD_LEVELS / LABELS
+
+national <- read_csv(op("kpi_national.csv"), show_col_types = FALSE)
+master   <- read_csv(op("master_woreda.csv"), show_col_types = FALSE)
+dq       <- read_csv(tb("trend_data_quality.csv"), show_col_types = FALSE)
+part     <- read_csv(tb("trend_participation_by_period.csv"), show_col_types = FALSE)
+comp_w   <- read_csv(tb("trend_region_composite_wide.csv"), show_col_types = FALSE)
+
+periods <- intersect(PERIOD_LEVELS, unique(master$period))
+plabs   <- ifelse(periods %in% names(PERIOD_LABELS), PERIOD_LABELS[periods], periods)
+np <- length(periods)
+```
+
+## What this report compares
+
+This companion to the single-period KPI report puts the **`r np` reporting
+periods now in the database side by side** so we can see how reporting and
+performance moved over 2025:
+
+`r paste0("- **", plabs, "** (", periods, ")", collapse = "\n")`
+
+The standing single-period report (`kpi_report.qmd`) still covers the newest
+period on its own and is unchanged. This report adds the comparison.
+
+> **One caveat governs every comparison here.** **Wk 28–52 spans two quarters**
+> (weeks 28–52), while **Wk 3–15 and Wk 16–27 are each a single quarter.** The
+> KPIs are **proportions** — ratios of a numerator to a denominator — so they are
+> **directly comparable across periods regardless of length.** Only *raw counts*
+> (woredas, cases, events) scale with period length, and those panels say so.
+
+## Headline findings
+
+```{r}
+dqx <- dq |> arrange(match(period, periods))
+ow  <- comp_w  # region composite wide
+```
+
+1. **The reporting base narrowed over the year.** Mapped woredas reporting fell
+   from **`r dqx$mapped_woredas[1]`** in `r plabs[1]` to
+   **`r dqx$mapped_woredas[np]`** in `r plabs[np]`. The number of regions
+   reporting fell from **`r dqx$regions_reporting[1]`** to
+   **`r dqx$regions_reporting[np]`**.
+2. **Two regions reported only in the first period.** Tigray and Central
+   Ethiopia submitted in Wk 3–15 and did not appear in either later period.
+3. **Oromia and Harari coverage fell sharply.** Oromia reported
+   **326 → 322 → 8** woredas across the three periods, and Harari reported
+   **9 → 9 → 1**. Their later-period scores rest on a small number of units and
+   should not be read as regional performance.
+4. **Completeness of the returns that were submitted improved.** The share of
+   indicator entries filled rose from **`r dqx$pct_filled[1]`%** to
+   **`r dqx$pct_filled[np]`%**. ("Indicator entries filled" is the share of all
+   woreda × indicator slots that contained a value; a blank slot is treated as
+   *not reported*.) Fewer woredas reported in the later periods, and those that
+   did left fewer indicators blank.
+5. **Data-entry errors recur in every period.** The count of rows where a
+   numerator exceeds its denominator is
+   `r paste0(dqx$impossible_num_gt_denom, " (", plabs, ")", collapse = ", ")`.
+   These are excluded from every percentage by the pipeline (see the note on the
+   100% guardrail below), and they indicate the data-collection template still
+   needs the validation built into the recommended fill-in sheet.
+
+## A. Data quality and reporting over time
+
+### Who reported, and how widely
+
+```{r}
+#| fig-cap: "Mapped woredas reporting per region and period. '—' = the region did not report that period."
+include_graphics(fig("T01_participation_matrix.png"))
+```
+
+The matrix shows the reporting base contracting. The Oromia row falls from a
+high woreda count in the first two periods to a single low value in Wk 28–52,
+and Tigray and Central Ethiopia have no entry after Wk 3–15.
+
+```{r}
+#| fig-cap: "Woreda reporting coverage per region across periods (log scale)."
+include_graphics(fig("T02_coverage_trend.png"))
+```
+
+### Data-quality scorecard
+
+```{r}
+dqx |>
+  transmute(Period = ifelse(period %in% names(PERIOD_LABELS), PERIOD_LABELS[period], period),
+            `Regions` = regions_reporting,
+            `Woreda units` = woreda_units,
+            `Mapped woredas` = mapped_woredas,
+            `Records` = records,
+            `% cells filled` = pct_filled,
+            `num>denom errors` = impossible_num_gt_denom,
+            `raw >100%` = over_100_raw) |>
+  kable()
+```
+
+```{r}
+#| fig-cap: "Four data-quality dimensions by period."
+include_graphics(fig("T03_data_quality_scorecard.png"))
+```
+
+The two error columns (`num > denom` and `raw > 100%`) coincide in this data.
+Both count the same data-entry mistake, a numerator larger than its denominator,
+which arises from a typo or a leaked total row.
+
+::: {.callout-note}
+## The 100% guardrail
+
+An earlier version of the single-period report produced regional figures above
+100% (for example a timeliness value of 122%). The cause was rows that carried a
+numerator without a valid denominator, or a leaked total row whose numerator
+exceeded its denominator. The pipeline now applies two rules before computing any
+percentage. A woreda contributes to a ratio only when it has both a numerator and
+a denominator greater than zero, and for a proportion the numerator must not
+exceed the denominator. Rows failing either rule are excluded and logged. The
+trends script additionally asserts that no proportion rollup exceeds 100% and
+stops the run if one does. Across all three periods the maximum proportion is
+exactly 100%.
+:::
+
+### Which indicators are chronically left blank
+
+```{r}
+#| fig-cap: "National reporting completeness per indicator across periods (share of reporting woredas that filled the indicator)."
+include_graphics(fig("T04_reporting_completeness_trend.png"))
+```
+
+Timeliness and completeness are filled in almost every woreda in every period.
+The preparedness and case-based-reporting indicators are left blank most often.
+These indicators are the priorities for follow-up with the regions.
+
+## B. Major KPI outputs over time
+
+### National performance, indicator by indicator
+
+```{r}
+#| fig-cap: "National value for each proportion KPI across the three periods. Dashed line = 80% target; the newest period is drawn in red."
+include_graphics(fig("T05_national_kpi_trajectory.png"))
+```
+
+```{r}
+nat_tab <- national |>
+  filter(value_type == "proportion") |>
+  mutate(period = factor(period, levels = periods)) |>
+  select(label, period, value_pct) |>
+  mutate(value_pct = round(value_pct)) |>
+  pivot_wider(names_from = period, values_from = value_pct) |>
+  rename(Indicator = label)
+# friendly column names
+names(nat_tab)[-1] <- PERIOD_LABELS[names(nat_tab)[-1]] |> coalesce(names(nat_tab)[-1])
+kable(nat_tab, caption = "National KPI value (%) by period.")
+```
+
+### PHEM core functions
+
+```{r}
+#| fig-cap: "Mean performance within each PHEM core function, by period (newest in red)."
+include_graphics(fig("T06_corefunction_by_period.png"))
+```
+
+### Composite score by region
+
+```{r}
+#| fig-cap: "Composite KPI score (mean of a region's proportion indicators) over time."
+include_graphics(fig("T07_region_composite_trend.png"))
+```
+
+```{r}
+ct <- comp_w
+names(ct)[-1] <- PERIOD_LABELS[names(ct)[-1]] |> coalesce(names(ct)[-1])
+kable(ct, caption = "Region composite score by period. Read alongside coverage — a high score on very few woredas is not representative (e.g. Oromia, Harari in the last period).")
+```
+
+## How to add the next quarter (reproducible workflow)
+
+The pipeline is designed to extend to additional periods. Adding the next
+quarter requires three steps:
+
+1. **Drop the workbooks** into a new folder `raw/<period>/`, e.g.
+   `raw/2025-Wk53-65/` (one folder per period; keep the shared
+   `All GIS names.xlsx`, `reference_geo_names.csv` and
+   `Population by GIS woreda best.xlsx` in the project root).
+2. **Add one config block** in `scripts/catalog.R`: copy a `cfg_<period>`
+   tribble (file / sheet / header_row / region), `bind_rows` it into
+   `REGION_CONFIG`, and append the new label to `PERIOD_LEVELS` /
+   `PERIOD_LABELS`.
+3. **Rerun** `Rscript scripts/run_all.R`.
+
+What happens automatically:
+
+- the **master** gains the new period (every output carries a `period` column);
+- `FOCUS_PERIOD` advances to the newest quarter, so **`kpi_report.qmd` becomes
+  the new quarter's standing report** while `run_all.R` archives the previous
+  render under its period in `reports/archive/`;
+- **this trends report discovers the new period from the data** and extends every
+  figure and table — no edits needed here.
+
+See `pipeline_documentation.qmd` for the full developer walkthrough.
+
+---
+
+*Generated from `output/` and `exports/`. Numbers update whenever the pipeline
+is rerun. Percentages are `100 × Σ numerator / Σ denominator` over complete
+(numerator + valid denominator) pairs.*

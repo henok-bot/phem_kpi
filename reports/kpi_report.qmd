@@ -1,0 +1,316 @@
+---
+title: "PHEM Woreda-Level KPI Report"
+subtitle: "Regional performance, Week 28–52, 2025"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    embed-resources: true
+    fig-width: 10
+    fig-height: 7
+  docx:
+    toc: true
+    number-sections: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+library(dplyr); library(readr); library(tidyr); library(stringr); library(knitr)
+# Quarto renders with the working directory set to the .qmd folder (reports/)
+root <- normalizePath(file.path(getwd(), ".."))
+op  <- function(...) file.path(root, "output", ...)
+fig <- function(...) file.path(root, "exports", "figures", ...)
+
+source(file.path(root, "scripts", "catalog.R"))   # FOCUS_PERIOD
+catalog  <- read_csv(op("indicator_catalog.csv"), show_col_types = FALSE)
+region   <- read_csv(op("kpi_region.csv"),   show_col_types = FALSE)
+national <- read_csv(op("kpi_national.csv"), show_col_types = FALSE)
+master   <- read_csv(op("master_woreda.csv"), show_col_types = FALSE)
+
+# This is the SINGLE-PERIOD report: pin everything to the focus (newest) period.
+# The master/rollups now hold several periods; the cross-period comparison is in
+# kpi_trends.qmd. (FOCUS_PERIOD auto-tracks the newest quarter — catalog.R.)
+region   <- filter(region,   period == FOCUS_PERIOD)
+national <- filter(national, period == FOCUS_PERIOD)
+master   <- filter(master,   period == FOCUS_PERIOD)
+prop <- function(df) filter(df, value_type == "proportion")
+pct  <- function(x) ifelse(is.na(x), "–", sprintf("%.0f%%", x))
+```
+
+## Summary
+
+```{r}
+n_reg <- n_distinct(master$region)
+n_wor <- n_distinct(master$woreda[!is.na(master$woreda)])
+n_ind <- nrow(catalog)
+```
+
+This report covers **`r n_reg` reporting regions / city administrations**,
+**`r n_wor` woredas**, and **`r n_ind` PHEM key performance indicators** for
+the agreed reporting window **Week 28–52, 2025**. All percentages are computed
+as `100 × (summed numerator) / (summed denominator)` across woredas, so regional
+and national figures reflect totals rather than averages of woreda percentages.
+
+Regions reporting (`r n_reg` of 14): `r paste(sort(unique(master$region)), collapse = ", ")`.
+**Three regions did not report** this KPI system: **Tigray, Central Ethiopia,
+and South West Ethiopia.** They appear grey on the maps.
+
+> **Reading the numbers.** Blank source cells are kept as *not reported* (shown
+> as **NR**, grey), distinct from a genuine **0**. Most indicators were reported
+> by only ~68% of woredas (timeliness and completeness by ~99%), so a low score
+> can mean weak performance *or* thin reporting. Every table and figure carries
+> the reporting rate — read performance and reporting together.
+
+## National performance
+
+```{r}
+prop(national) |>
+  arrange(match(indicator, catalog$code)) |>
+  transmute(`PHEM core function` = group, Indicator = label,
+            `Numerator` = num_sum, `Denominator` = denom_sum,
+            `National %` = round(value_pct, 1)) |>
+  kable()
+```
+
+```{r}
+rates <- national |> filter(value_type == "rate") |>
+  transmute(Indicator = label, Numerator = num_sum, Denominator = denom_sum,
+            Value = signif(value_pct, 3))
+```
+National attack rate and case-fatality rate (event-level, not woreda
+proportions): see the table below. Attack rate is cases ÷ population at risk;
+CFR is deaths ÷ cases.
+
+```{r}
+kable(rates)
+```
+
+## Performance by region
+
+The heatmap shows every region against every proportion indicator. Red marks
+weak performance, green strong. Values are capped at 100% for colour only.
+
+```{r}
+knitr::include_graphics(fig("01_heatmap_region_indicator.png"))
+```
+
+The far-right **National** column summarises all regions together.
+
+### By PHEM core function
+
+```{r}
+knitr::include_graphics(fig("02_corefunction_by_region.png"))
+```
+
+### Composite scorecard and targets
+
+Composite score = mean of a region's proportion-indicator values. `% met` =
+share of indicators reaching the 80% benchmark. `Mean reporting` =
+average reporting completeness, for context.
+
+```{r}
+sc <- read_csv(file.path(root,"exports","tables","corefunction_scorecard.csv"),
+               show_col_types = FALSE)
+mt <- read_csv(file.path(root,"exports","tables","region_targets_met.csv"),
+               show_col_types = FALSE) |> select(region, pct_met)
+sc |> left_join(mt, by = "region") |>
+  arrange(desc(composite_score)) |>
+  mutate(across(where(is.numeric), ~round(.x, 1))) |> kable()
+```
+
+```{r}
+knitr::include_graphics(fig("06_targets_met_by_region.png"))
+```
+
+### Region × indicator table (%)
+
+```{r}
+prop(region) |>
+  mutate(label = factor(label, levels = catalog$label[order(catalog$order)])) |>
+  select(region, label, value_pct_capped) |>
+  pivot_wider(names_from = region, values_from = value_pct_capped) |>
+  arrange(label) |>
+  mutate(across(where(is.numeric), ~round(.x))) |>
+  rename(Indicator = label) |>
+  kable()
+```
+
+## Per-indicator region ranking
+
+```{r}
+knitr::include_graphics(fig("03_per_indicator_ranking.png"))
+```
+
+## Reporting completeness — feedback for regions
+
+These figures are meant for **regional feedback**: they show *how complete* each
+region's submission was, separately from how it performed. A region can score
+well yet still need to improve its reporting, and vice versa.
+
+### Report-card by region
+
+Two things make a submission complete: **how many woredas reported** (woreda
+coverage) and **how many indicators each reporting woreda filled in** (indicator
+completeness). The gap to 100% is the room to improve.
+
+```{r}
+knitr::include_graphics(fig("08_reporting_report_card.png"))
+```
+
+The two gaps call for different action. For example **Oromia** reported very few
+woredas (push coverage), while **Amhara** covered most woredas but left most
+indicators blank (push indicator completeness).
+
+### Woreda coverage
+
+Share of each region's woredas that reported at all. The denominator is the 2021
+reference woreda list, which undercounts today's woredas — so these are an
+**upper bound**; true coverage is at most this.
+
+```{r}
+knitr::include_graphics(fig("07_geographic_coverage.png"))
+```
+
+### Which indicators are most often left blank
+
+```{r}
+knitr::include_graphics(fig("01b_reporting_completeness.png"))
+```
+
+Nationally, the indicators with the lowest reporting are where a region's effort
+will most improve data quality:
+
+```{r}
+knitr::include_graphics(fig("09_most_incomplete_indicators.png"))
+```
+
+## Best and worst woredas
+
+Top and bottom woredas for selected indicators (woredas with a denominator ≥ 3,
+to avoid 1-of-1 noise). Full list in `exports/tables/best_worst_woredas.csv`.
+
+```{r}
+bw <- read_csv(file.path(root,"exports","tables","best_worst_woredas.csv"),
+               show_col_types = FALSE)
+bw |> filter(indicator %in% c("RPT_TIMELY","LAB_7D","RESP_2448","EPRP_PLAN")) |>
+  transmute(Indicator = label, End = end, Woreda = woreda, Region = region,
+            `%` = round(value_pct), Num = num_sum, Den = denom_sum) |>
+  kable()
+```
+
+## Maps
+
+Region-level choropleths (2021 admin boundaries dissolved to the reporting
+regions).
+
+```{r}
+knitr::include_graphics(fig("04_region_choropleths.png"))
+```
+
+### Woreda-level
+
+Woreda data is joined to the 2021 shapefile on `ADM3_PCODE` via the cleaning
+key (`All GIS names.xlsx`) and the authoritative `reference_geo_names.csv`;
+**~98% of reporting units map to a P-code** (Addis Ababa summarised to
+sub-city; most unmatched are Dire Dawa facilities). Grey woredas reported no
+woreda-level data.
+
+```{r}
+knitr::include_graphics(fig("05_woreda_choropleths.png"))
+```
+
+## Data quality & next steps
+
+```{r}
+cov <- master |> group_by(Region = region) |>
+  summarise(Woredas = n_distinct(woreda),
+            Indicators = n_distinct(indicator),
+            `Has population` = any(!is.na(population)), .groups = "drop")
+kable(cov)
+```
+
+### Data issues identified
+
+These are the concrete problems found while harmonising the 11 workbooks. They
+shape how the numbers should be read and motivate the standard template below.
+
+```{r}
+impossible <- master |>
+  filter(value_type == "proportion", !is.na(numerator), !is.na(denominator),
+         denominator > 0, numerator > denominator)
+```
+
+**A. Format / structure (no two workbooks alike)**
+
+- Different sheet names, column orders and a title row above the header
+  (Dire Dawa); the indicator block is otherwise the same template.
+- **Afar**'s data sheet is mislabeled "Gambella KPI Q3 Report" (data is Afar's).
+- **Oromia** reordered the geography columns (District / Zone / Region swapped).
+- **Amhara** added a `Population` column and used "Column1" instead of "S.N".
+- Proportions arrived on mixed scales (0–1 in South Ethiopia, 0–100 elsewhere).
+  We **recompute** every percentage from numerator ÷ denominator for comparability.
+
+**B. Reporting level not uniform**
+
+- **Dire Dawa** reported per **health facility (PHCU / hospital)**, not woreda,
+  with the facility name placed in the *region* column. Captured as facilities
+  (`report_level = facility`); its percentages are facility-weighted.
+- **Addis Ababa** reported **sub-cities as numbers** (1–15); summarised to the
+  11 sub-cities, which are the mapping unit there.
+- **Amhara** mixed a few **hospitals** (e.g. "Injibara General Hospital") into
+  the woreda list.
+- **Harari** submitted a single aggregated row.
+
+**C. Value / data-entry errors**
+
+- **Numerator without a denominator** — e.g. an Amhara woreda with numerator
+  4,521 and a blank denominator; Somali EPRP with numerator 45, denominator 0.
+- **Numerator greater than denominator** (impossible for a proportion) — e.g. a
+  leaked "total" row in South Ethiopia reading 15 epidemics detected out of 3.
+- **Leaked total / summary rows** with no woreda name.
+- **Fractional counts** (averages entered instead of counts) in Amhara.
+- *Handling:* aggregates use **complete, valid pairs only** (numerator and a
+  valid >0 denominator, numerator ≤ denominator). **`r nrow(impossible)` impossible
+  rows were excluded**; all proportion indicators are now ≤ 100%.
+
+**D. Completeness**
+
+- **Three regions did not report**: Tigray, Central Ethiopia, South West Ethiopia.
+- **Oromia** reported only ~8 woredas (~2% of the region).
+- Most indicators were filled by only ~68% of woredas; **Amhara** filled in only
+  timeliness and completeness, leaving most indicators blank.
+- Blank cells are kept as **not reported (NR)**, distinct from a true **0**.
+
+**E. Period**
+
+- Filenames cite different dates (Amhara Jan 2026, Somali Feb 2026, Harari 2018
+  EC); all are treated as **Week 28–52, 2025**, with the raw date kept in
+  `report_date_raw` and `period` carried as a column.
+
+**F. Geography / spatial join**
+
+- Woreda names never match the shapefile directly. Resolved via the cleaning key
+  + reference table to **`ADM3_PCODE`** (97% of records). Dire Dawa's facilities
+  and two Gambella woredas remain partly unmatched (`crosswalk_unmatched.csv`).
+- The 2021 shapefile **undercounts today's woredas**, so coverage % is an upper
+  bound and no expected woreda count is published.
+
+### Recommended data-collection template
+
+To fix these at the source, a standard fill-in template is provided in
+`template/`:
+
+- **Pre-filled** Region / Zone / Woreda / `ADM3_PCODE` from the reference list —
+  so names already match the shapefile and need no future crosswalk.
+- A **Population** column.
+- One **Numerator** and **Denominator** column per indicator, with a **live %**
+  formula; an *Indicators* guide sheet (definitions + target) and *Instructions*.
+- One row per woreda (blank = not reported; `0` only for a true zero), so
+  coverage and completeness are visible.
+
+Files: `template/KPI_template_MASTER.xlsx`, one per region in
+`template/by_region/`, and CSV equivalents in `template/csv/`.

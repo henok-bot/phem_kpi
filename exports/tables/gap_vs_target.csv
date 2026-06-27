@@ -1,0 +1,223 @@
+region,indicator,label,value_pct,target,gap,status,pct_reported
+Addis Ababa,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),0,80,-80,below target,100
+Afar,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,80,NA,NA,100
+Amhara,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,80,NA,NA,0
+Benishangul Gumuz,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),100,80,20,meets target,100
+Dire Dawa,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,80,NA,NA,100
+Gambella,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),0,80,-80,below target,100
+Harari,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,80,NA,NA,100
+Oromia,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,80,NA,NA,100
+Sidama,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,80,NA,NA,100
+Somali,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,80,NA,NA,100
+South Ethiopia,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),5.882352941176471,80,-74.1,below target,100
+Addis Ababa,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,80,NA,NA,100
+Afar,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,80,NA,NA,100
+Amhara,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,80,NA,NA,0
+Benishangul Gumuz,EBS_DETECT,Outbreaks detected through event-based surveillance,100,80,20,meets target,100
+Dire Dawa,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,80,NA,NA,100
+Gambella,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,80,NA,NA,100
+Harari,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,80,NA,NA,100
+Oromia,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,80,NA,NA,100
+Sidama,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,80,NA,NA,100
+Somali,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,80,NA,NA,100
+South Ethiopia,EBS_DETECT,Outbreaks detected through event-based surveillance,20,80,-60,below target,100
+Addis Ababa,DETECT_7D,Outbreaks detected within 7 days,NA,80,NA,NA,100
+Afar,DETECT_7D,Outbreaks detected within 7 days,NA,80,NA,NA,100
+Amhara,DETECT_7D,Outbreaks detected within 7 days,NA,80,NA,NA,0
+Benishangul Gumuz,DETECT_7D,Outbreaks detected within 7 days,100,80,20,meets target,100
+Dire Dawa,DETECT_7D,Outbreaks detected within 7 days,100,80,20,meets target,100
+Gambella,DETECT_7D,Outbreaks detected within 7 days,NA,80,NA,NA,100
+Harari,DETECT_7D,Outbreaks detected within 7 days,NA,80,NA,NA,100
+Oromia,DETECT_7D,Outbreaks detected within 7 days,87.5,80,7.5,meets target,100
+Sidama,DETECT_7D,Outbreaks detected within 7 days,100,80,20,meets target,100
+Somali,DETECT_7D,Outbreaks detected within 7 days,NA,80,NA,NA,100
+South Ethiopia,DETECT_7D,Outbreaks detected within 7 days,80,80,0,meets target,100
+Addis Ababa,RPT_TIMELY,Surveillance reports submitted on time (timeliness),100,80,20,meets target,100
+Afar,RPT_TIMELY,Surveillance reports submitted on time (timeliness),85,80,5,meets target,100
+Amhara,RPT_TIMELY,Surveillance reports submitted on time (timeliness),91.3585236074628,80,11.4,meets target,100
+Benishangul Gumuz,RPT_TIMELY,Surveillance reports submitted on time (timeliness),93.21739130434784,80,13.2,meets target,100
+Dire Dawa,RPT_TIMELY,Surveillance reports submitted on time (timeliness),100,80,20,meets target,100
+Gambella,RPT_TIMELY,Surveillance reports submitted on time (timeliness),83.71428571428571,80,3.7,meets target,100
+Harari,RPT_TIMELY,Surveillance reports submitted on time (timeliness),100,80,20,meets target,100
+Oromia,RPT_TIMELY,Surveillance reports submitted on time (timeliness),97.77777777777776,80,17.8,meets target,100
+Sidama,RPT_TIMELY,Surveillance reports submitted on time (timeliness),98.07692307692308,80,18.1,meets target,100
+Somali,RPT_TIMELY,Surveillance reports submitted on time (timeliness),69.8019801980198,80,-10.2,below target,100
+South Ethiopia,RPT_TIMELY,Surveillance reports submitted on time (timeliness),99.67948717948718,80,19.7,meets target,100
+Addis Ababa,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,80,20,meets target,100
+Afar,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,80,20,meets target,100
+Amhara,RPT_COMPLETE,Surveillance reports submitted completely (completeness),91.3585236074628,80,11.4,meets target,100
+Benishangul Gumuz,RPT_COMPLETE,Surveillance reports submitted completely (completeness),93.21739130434784,80,13.2,meets target,100
+Dire Dawa,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,80,20,meets target,100
+Gambella,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,80,20,meets target,100
+Harari,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,80,20,meets target,100
+Sidama,RPT_COMPLETE,Surveillance reports submitted completely (completeness),99.2914979757085,80,19.3,meets target,100
+Somali,RPT_COMPLETE,Surveillance reports submitted completely (completeness),59.583333333333336,80,-20.4,below target,100
+South Ethiopia,RPT_COMPLETE,Surveillance reports submitted completely (completeness),99.9198717948718,80,19.9,meets target,100
+Addis Ababa,CB_ELIM,Case-based reporting: elimination/eradication diseases,100,80,20,meets target,100
+Afar,CB_ELIM,Case-based reporting: elimination/eradication diseases,75.67567567567568,80,-4.3,below target,100
+Amhara,CB_ELIM,Case-based reporting: elimination/eradication diseases,NA,80,NA,NA,0
+Benishangul Gumuz,CB_ELIM,Case-based reporting: elimination/eradication diseases,54.285714285714285,80,-25.7,below target,100
+Dire Dawa,CB_ELIM,Case-based reporting: elimination/eradication diseases,96.44549763033176,80,16.4,meets target,100
+Gambella,CB_ELIM,Case-based reporting: elimination/eradication diseases,NA,80,NA,NA,100
+Harari,CB_ELIM,Case-based reporting: elimination/eradication diseases,88.46153846153847,80,8.5,meets target,100
+Oromia,CB_ELIM,Case-based reporting: elimination/eradication diseases,44.35146443514645,80,-35.6,below target,100
+Sidama,CB_ELIM,Case-based reporting: elimination/eradication diseases,100,80,20,meets target,100
+Somali,CB_ELIM,Case-based reporting: elimination/eradication diseases,NA,80,NA,NA,100
+South Ethiopia,CB_ELIM,Case-based reporting: elimination/eradication diseases,100,80,20,meets target,100
+Addis Ababa,CB_EVENTS,Case-based reporting: selected events/conditions,100,80,20,meets target,100
+Afar,CB_EVENTS,Case-based reporting: selected events/conditions,75.67567567567568,80,-4.3,below target,100
+Amhara,CB_EVENTS,Case-based reporting: selected events/conditions,NA,80,NA,NA,0
+Benishangul Gumuz,CB_EVENTS,Case-based reporting: selected events/conditions,71.06598984771574,80,-8.9,below target,100
+Dire Dawa,CB_EVENTS,Case-based reporting: selected events/conditions,100,80,20,meets target,100
+Gambella,CB_EVENTS,Case-based reporting: selected events/conditions,NA,80,NA,NA,100
+Harari,CB_EVENTS,Case-based reporting: selected events/conditions,6.341463414634147,80,-73.7,below target,100
+Oromia,CB_EVENTS,Case-based reporting: selected events/conditions,8.474576271186441,80,-71.5,below target,100
+Sidama,CB_EVENTS,Case-based reporting: selected events/conditions,62.295081967213115,80,-17.7,below target,100
+Somali,CB_EVENTS,Case-based reporting: selected events/conditions,100,80,20,meets target,100
+South Ethiopia,CB_EVENTS,Case-based reporting: selected events/conditions,56.507936507936506,80,-23.5,below target,100
+Addis Ababa,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,80,NA,NA,100
+Afar,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,80,NA,NA,100
+Amhara,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,80,NA,NA,0
+Benishangul Gumuz,NOTIFY_24H,Suspected outbreaks notified within 24 hours,100,80,20,meets target,100
+Dire Dawa,NOTIFY_24H,Suspected outbreaks notified within 24 hours,100,80,20,meets target,100
+Gambella,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,80,NA,NA,100
+Harari,NOTIFY_24H,Suspected outbreaks notified within 24 hours,0,80,-80,below target,100
+Oromia,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,80,NA,NA,0
+Sidama,NOTIFY_24H,Suspected outbreaks notified within 24 hours,100,80,20,meets target,100
+Somali,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,80,NA,NA,100
+South Ethiopia,NOTIFY_24H,Suspected outbreaks notified within 24 hours,3.0303030303030303,80,-77,below target,100
+Addis Ababa,NOTIFY_30M,Immediately reportable events notified within 30 minutes,0,80,-80,below target,100
+Afar,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,80,NA,NA,100
+Amhara,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,80,NA,NA,0
+Benishangul Gumuz,NOTIFY_30M,Immediately reportable events notified within 30 minutes,100,80,20,meets target,100
+Dire Dawa,NOTIFY_30M,Immediately reportable events notified within 30 minutes,100,80,20,meets target,100
+Gambella,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,80,NA,NA,100
+Harari,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,80,NA,NA,100
+Oromia,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,80,NA,NA,0
+Sidama,NOTIFY_30M,Immediately reportable events notified within 30 minutes,75,80,-5,below target,100
+Somali,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,80,NA,NA,100
+South Ethiopia,NOTIFY_30M,Immediately reportable events notified within 30 minutes,27.272727272727273,80,-52.7,below target,100
+Addis Ababa,LINEGRAPH,Current line graph available for priority diseases,100,80,20,meets target,100
+Afar,LINEGRAPH,Current line graph available for priority diseases,45,80,-35,below target,100
+Amhara,LINEGRAPH,Current line graph available for priority diseases,NA,80,NA,NA,0
+Benishangul Gumuz,LINEGRAPH,Current line graph available for priority diseases,0,80,-80,below target,100
+Dire Dawa,LINEGRAPH,Current line graph available for priority diseases,NA,80,NA,NA,0
+Gambella,LINEGRAPH,Current line graph available for priority diseases,0,80,-80,below target,100
+Harari,LINEGRAPH,Current line graph available for priority diseases,100,80,20,meets target,100
+Oromia,LINEGRAPH,Current line graph available for priority diseases,NA,80,NA,NA,100
+Sidama,LINEGRAPH,Current line graph available for priority diseases,39.473684210526315,80,-40.5,below target,100
+Somali,LINEGRAPH,Current line graph available for priority diseases,50.84745762711864,80,-29.2,below target,100
+South Ethiopia,LINEGRAPH,Current line graph available for priority diseases,37.5,80,-42.5,below target,100
+Addis Ababa,OBR_ANALYZED,Outbreak reports with analyzed case-based data,0,80,-80,below target,100
+Afar,OBR_ANALYZED,Outbreak reports with analyzed case-based data,0,80,-80,below target,100
+Amhara,OBR_ANALYZED,Outbreak reports with analyzed case-based data,NA,80,NA,NA,0
+Benishangul Gumuz,OBR_ANALYZED,Outbreak reports with analyzed case-based data,17.391304347826086,80,-62.6,below target,100
+Dire Dawa,OBR_ANALYZED,Outbreak reports with analyzed case-based data,NA,80,NA,NA,100
+Gambella,OBR_ANALYZED,Outbreak reports with analyzed case-based data,0,80,-80,below target,100
+Harari,OBR_ANALYZED,Outbreak reports with analyzed case-based data,0,80,-80,below target,100
+Oromia,OBR_ANALYZED,Outbreak reports with analyzed case-based data,NA,80,NA,NA,100
+Sidama,OBR_ANALYZED,Outbreak reports with analyzed case-based data,10.526315789473683,80,-69.5,below target,100
+Somali,OBR_ANALYZED,Outbreak reports with analyzed case-based data,0,80,-80,below target,100
+South Ethiopia,OBR_ANALYZED,Outbreak reports with analyzed case-based data,10.416666666666666,80,-69.6,below target,100
+Addis Ababa,LAB_7D,Outbreaks with laboratory results within 7 days,97.22222222222224,80,17.2,meets target,100
+Afar,LAB_7D,Outbreaks with laboratory results within 7 days,NA,80,NA,NA,100
+Amhara,LAB_7D,Outbreaks with laboratory results within 7 days,NA,80,NA,NA,0
+Benishangul Gumuz,LAB_7D,Outbreaks with laboratory results within 7 days,100,80,20,meets target,100
+Dire Dawa,LAB_7D,Outbreaks with laboratory results within 7 days,NA,80,NA,NA,0
+Gambella,LAB_7D,Outbreaks with laboratory results within 7 days,NA,80,NA,NA,100
+Harari,LAB_7D,Outbreaks with laboratory results within 7 days,NA,80,NA,NA,100
+Oromia,LAB_7D,Outbreaks with laboratory results within 7 days,NA,80,NA,NA,0
+Sidama,LAB_7D,Outbreaks with laboratory results within 7 days,100,80,20,meets target,100
+Somali,LAB_7D,Outbreaks with laboratory results within 7 days,NA,80,NA,NA,100
+South Ethiopia,LAB_7D,Outbreaks with laboratory results within 7 days,0,80,-80,below target,100
+Addis Ababa,RESP_2448,Confirmed outbreaks with response within 24-48 hours,2.7777777777777777,80,-77.2,below target,100
+Afar,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,80,NA,NA,100
+Amhara,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,80,NA,NA,0
+Benishangul Gumuz,RESP_2448,Confirmed outbreaks with response within 24-48 hours,100,80,20,meets target,100
+Dire Dawa,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,80,NA,NA,100
+Gambella,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,80,NA,NA,100
+Harari,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,80,NA,NA,100
+Oromia,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,80,NA,NA,0
+Sidama,RESP_2448,Confirmed outbreaks with response within 24-48 hours,50,80,-30,below target,100
+Somali,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,80,NA,NA,100
+South Ethiopia,RESP_2448,Confirmed outbreaks with response within 24-48 hours,100,80,20,meets target,100
+Benishangul Gumuz,EPI_DETECT_REG,Epidemics detected at regional level from district data,0,80,-80,below target,100
+Dire Dawa,EPI_DETECT_REG,Epidemics detected at regional level from district data,100,80,20,meets target,100
+Oromia,EPI_DETECT_REG,Epidemics detected at regional level from district data,NA,80,NA,NA,100
+South Ethiopia,EPI_DETECT_REG,Epidemics detected at regional level from district data,66.66666666666667,80,-13.3,below target,100
+Addis Ababa,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,100,80,20,meets target,100
+Afar,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,100,80,20,meets target,100
+Amhara,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,NA,80,NA,NA,100
+Benishangul Gumuz,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,69.56521739130434,80,-10.4,below target,100
+Dire Dawa,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,100,80,20,meets target,100
+Gambella,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,64.28571428571429,80,-15.7,below target,100
+Harari,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,100,80,20,meets target,100
+Sidama,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,100,80,20,meets target,100
+Somali,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,NA,80,NA,NA,100
+South Ethiopia,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,100,80,20,meets target,100
+Addis Ababa,RISK_MAP,Districts conducting risk & resource mapping,100,80,20,meets target,100
+Afar,RISK_MAP,Districts conducting risk & resource mapping,0,80,-80,below target,100
+Amhara,RISK_MAP,Districts conducting risk & resource mapping,NA,80,NA,NA,0
+Benishangul Gumuz,RISK_MAP,Districts conducting risk & resource mapping,69.56521739130434,80,-10.4,below target,100
+Dire Dawa,RISK_MAP,Districts conducting risk & resource mapping,100,80,20,meets target,100
+Gambella,RISK_MAP,Districts conducting risk & resource mapping,64.28571428571429,80,-15.7,below target,100
+Harari,RISK_MAP,Districts conducting risk & resource mapping,100,80,20,meets target,100
+Oromia,RISK_MAP,Districts conducting risk & resource mapping,NA,80,NA,NA,100
+Sidama,RISK_MAP,Districts conducting risk & resource mapping,100,80,20,meets target,100
+Somali,RISK_MAP,Districts conducting risk & resource mapping,NA,80,NA,NA,100
+South Ethiopia,RISK_MAP,Districts conducting risk & resource mapping,21.875,80,-58.1,below target,100
+Addis Ababa,EPR_FUNDS,Districts with EPR funds / budget line,15.254237288135592,80,-64.7,below target,100
+Afar,EPR_FUNDS,Districts with EPR funds / budget line,0,80,-80,below target,100
+Amhara,EPR_FUNDS,Districts with EPR funds / budget line,NA,80,NA,NA,0
+Benishangul Gumuz,EPR_FUNDS,Districts with EPR funds / budget line,0,80,-80,below target,100
+Dire Dawa,EPR_FUNDS,Districts with EPR funds / budget line,5.555555555555555,80,-74.4,below target,100
+Gambella,EPR_FUNDS,Districts with EPR funds / budget line,0,80,-80,below target,100
+Harari,EPR_FUNDS,Districts with EPR funds / budget line,0,80,-80,below target,100
+Oromia,EPR_FUNDS,Districts with EPR funds / budget line,NA,80,NA,NA,100
+Sidama,EPR_FUNDS,Districts with EPR funds / budget line,23.68421052631579,80,-56.3,below target,100
+Somali,EPR_FUNDS,Districts with EPR funds / budget line,NA,80,NA,NA,100
+South Ethiopia,EPR_FUNDS,Districts with EPR funds / budget line,0,80,-80,below target,100
+Addis Ababa,CONTINGENCY,Districts with contingency stocks (3-6 months),15.254237288135592,80,-64.7,below target,100
+Afar,CONTINGENCY,Districts with contingency stocks (3-6 months),0,80,-80,below target,100
+Amhara,CONTINGENCY,Districts with contingency stocks (3-6 months),NA,80,NA,NA,0
+Benishangul Gumuz,CONTINGENCY,Districts with contingency stocks (3-6 months),0,80,-80,below target,100
+Dire Dawa,CONTINGENCY,Districts with contingency stocks (3-6 months),100,80,20,meets target,100
+Gambella,CONTINGENCY,Districts with contingency stocks (3-6 months),0,80,-80,below target,100
+Harari,CONTINGENCY,Districts with contingency stocks (3-6 months),0,80,-80,below target,100
+Oromia,CONTINGENCY,Districts with contingency stocks (3-6 months),NA,80,NA,NA,100
+Sidama,CONTINGENCY,Districts with contingency stocks (3-6 months),34.21052631578947,80,-45.8,below target,100
+Somali,CONTINGENCY,Districts with contingency stocks (3-6 months),NA,80,NA,NA,100
+South Ethiopia,CONTINGENCY,Districts with contingency stocks (3-6 months),15.625,80,-64.4,below target,100
+Addis Ababa,PHEM_OFFICER,Health facilities with PHEM officer,100,80,20,meets target,100
+Afar,PHEM_OFFICER,Health facilities with PHEM officer,0,80,-80,below target,100
+Amhara,PHEM_OFFICER,Health facilities with PHEM officer,NA,80,NA,NA,0
+Benishangul Gumuz,PHEM_OFFICER,Health facilities with PHEM officer,0,80,-80,below target,100
+Dire Dawa,PHEM_OFFICER,Health facilities with PHEM officer,0,80,-80,below target,100
+Gambella,PHEM_OFFICER,Health facilities with PHEM officer,0,80,-80,below target,100
+Harari,PHEM_OFFICER,Health facilities with PHEM officer,0,80,-80,below target,100
+Oromia,PHEM_OFFICER,Health facilities with PHEM officer,0,80,-80,below target,100
+Sidama,PHEM_OFFICER,Health facilities with PHEM officer,0,80,-80,below target,100
+Somali,PHEM_OFFICER,Health facilities with PHEM officer,50,80,-30,below target,100
+South Ethiopia,PHEM_OFFICER,Health facilities with PHEM officer,0,80,-80,below target,100
+Addis Ababa,DHIS2_RPT,Districts reporting weekly via DHIS2,11.270296084049663,80,-68.7,below target,100
+Afar,DHIS2_RPT,Districts reporting weekly via DHIS2,7.723577235772358,80,-72.3,below target,100
+Amhara,DHIS2_RPT,Districts reporting weekly via DHIS2,NA,80,NA,NA,0
+Benishangul Gumuz,DHIS2_RPT,Districts reporting weekly via DHIS2,73.91304347826087,80,-6.1,below target,100
+Dire Dawa,DHIS2_RPT,Districts reporting weekly via DHIS2,100,80,20,meets target,100
+Gambella,DHIS2_RPT,Districts reporting weekly via DHIS2,5.921052631578948,80,-74.1,below target,100
+Harari,DHIS2_RPT,Districts reporting weekly via DHIS2,60,80,-20,below target,100
+Oromia,DHIS2_RPT,Districts reporting weekly via DHIS2,NA,80,NA,NA,100
+Sidama,DHIS2_RPT,Districts reporting weekly via DHIS2,23.75,80,-56.2,below target,100
+Somali,DHIS2_RPT,Districts reporting weekly via DHIS2,31.35593220338983,80,-48.6,below target,100
+South Ethiopia,DHIS2_RPT,Districts reporting weekly via DHIS2,100,80,20,meets target,100
+Addis Ababa,COORD_PLATFORM,Districts with functional coordination platform / RRT,11.0792741165234,80,-68.9,below target,100
+Afar,COORD_PLATFORM,Districts with functional coordination platform / RRT,0,80,-80,below target,100
+Amhara,COORD_PLATFORM,Districts with functional coordination platform / RRT,NA,80,NA,NA,0
+Benishangul Gumuz,COORD_PLATFORM,Districts with functional coordination platform / RRT,78.26086956521739,80,-1.7,below target,100
+Dire Dawa,COORD_PLATFORM,Districts with functional coordination platform / RRT,100,80,20,meets target,100
+Gambella,COORD_PLATFORM,Districts with functional coordination platform / RRT,5.921052631578948,80,-74.1,below target,100
+Harari,COORD_PLATFORM,Districts with functional coordination platform / RRT,60,80,-20,below target,100
+Oromia,COORD_PLATFORM,Districts with functional coordination platform / RRT,NA,80,NA,NA,100
+Sidama,COORD_PLATFORM,Districts with functional coordination platform / RRT,12.5,80,-67.5,below target,100
+Somali,COORD_PLATFORM,Districts with functional coordination platform / RRT,0,80,-80,below target,100
+South Ethiopia,COORD_PLATFORM,Districts with functional coordination platform / RRT,33.333333333333336,80,-46.7,below target,100

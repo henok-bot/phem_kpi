@@ -1,0 +1,12 @@
+region,Analysis,Identifying,Laboratory,Preparedness,Reporting,Response,composite_score,mean_reporting
+Amhara,NA,NA,NA,NA,91.4,NA,91.4,15
+Dire Dawa,100,100,NA,72.2,99.4,NA,86.8,90
+Benishangul Gumuz,5.8,100,100,41.6,85.3,100,62.9,100
+Sidama,25,100,100,42,89.1,50,62.7,100
+Addis Ababa,50,0,97.2,50.4,80,2.8,56.1,100
+Harari,50,NA,NA,45.7,59,NA,51.1,100
+Oromia,NA,87.5,NA,0,50.2,NA,47.6,79
+South Ethiopia,38.2,35.3,0,38.7,64.4,100,46.6,100
+Somali,25.4,NA,NA,27.1,76.5,NA,45.2,100
+Afar,22.5,NA,NA,15.4,84.1,NA,37.6,100
+Gambella,0,0,NA,20.1,91.9,NA,27,100

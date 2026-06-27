@@ -1,0 +1,1356 @@
+region,zone,woreda,adm3_pcode,adm3_en,adm1_en,adm2_en,score,method,needs_review
+Addis Ababa,Addis Ketema,1,ET140108,Addis Ketema,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Addis Ketema,10,ET140108,Addis Ketema,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Addis Ketema,11,ET140108,Addis Ketema,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Addis Ketema,12,ET140108,Addis Ketema,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Addis Ketema,13,ET140108,Addis Ketema,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Addis Ketema,14,ET140108,Addis Ketema,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Addis Ketema,3,ET140108,Addis Ketema,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Addis Ketema,4,ET140108,Addis Ketema,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Addis Ketema,5,ET140108,Addis Ketema,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Addis Ketema,6,ET140108,Addis Ketema,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Addis Ketema,8,ET140108,Addis Ketema,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Addis Ketema,9,ET140108,Addis Ketema,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Addis ketema,12,ET140108,Addis Ketema,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Akaki Kality,1,ET140101,Akaki Kality,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Akaki Kality,10,ET140101,Akaki Kality,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Akaki Kality,12,ET140101,Akaki Kality,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Akaki Kality,13,ET140101,Akaki Kality,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Akaki Kality,2,ET140101,Akaki Kality,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Akaki Kality,3,ET140101,Akaki Kality,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Akaki Kality,4,ET140101,Akaki Kality,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Akaki Kality,5,ET140101,Akaki Kality,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Akaki Kality,6,ET140101,Akaki Kality,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Akaki Kality,7,ET140101,Akaki Kality,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Akaki Kality,8,ET140101,Akaki Kality,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Akaki Kality,9,ET140101,Akaki Kality,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Arada,1,ET140109,Arada,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Arada,2,ET140109,Arada,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Arada,4,ET140109,Arada,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Arada,5,ET140109,Arada,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Arada,6,ET140109,Arada,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Arada,7,ET140109,Arada,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Arada,8,ET140109,Arada,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Arada,9,ET140109,Arada,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Bole,1,ET140104,Bole,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Bole,11,ET140104,Bole,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Bole,12,ET140104,Bole,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Bole,13,ET140104,Bole,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Bole,14,ET140104,Bole,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Bole,2,ET140104,Bole,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Bole,3,ET140104,Bole,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Bole,4,ET140104,Bole,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Bole,5,ET140104,Bole,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Bole,6,ET140104,Bole,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Bole,7,ET140104,Bole,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Gulele,1,ET140110,Gulele,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Gulele,10,ET140110,Gulele,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Gulele,11,ET140110,Gulele,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Gulele,2,ET140110,Gulele,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Gulele,3,ET140110,Gulele,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Gulele,4,ET140110,Gulele,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Gulele,5,ET140110,Gulele,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Gulele,6,ET140110,Gulele,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Gulele,7,ET140110,Gulele,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Gulele,8,ET140110,Gulele,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Gulele,9,ET140110,Gulele,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Gulelle,11,ET140110,Gulele,Addis Ababa,Region 14,0.857,addis_subcity,FALSE
+Addis Ababa,Kirkos,1,ET140106,Kirkos,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Kirkos,10,ET140106,Kirkos,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Kirkos,11,ET140106,Kirkos,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Kirkos,2,ET140106,Kirkos,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Kirkos,3,ET140106,Kirkos,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Kirkos,4,ET140106,Kirkos,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Kirkos,5,ET140106,Kirkos,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Kirkos,6,ET140106,Kirkos,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Kirkos,7,ET140106,Kirkos,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Kirkos,8,ET140106,Kirkos,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Kirkos,9,ET140106,Kirkos,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Kirkose,11,ET140106,Kirkos,Addis Ababa,Region 14,0.857,addis_subcity,FALSE
+Addis Ababa,Kolfe Keraniyo,10,ET140103,Kolfe Keraniyo,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Kolife keranyo,1,ET140103,Kolfe Keraniyo,Addis Ababa,Region 14,0.857,addis_subcity,FALSE
+Addis Ababa,Kolife keranyo,10,ET140103,Kolfe Keraniyo,Addis Ababa,Region 14,0.857,addis_subcity,FALSE
+Addis Ababa,Kolife keranyo,2,ET140103,Kolfe Keraniyo,Addis Ababa,Region 14,0.857,addis_subcity,FALSE
+Addis Ababa,Kolife keranyo,3,ET140103,Kolfe Keraniyo,Addis Ababa,Region 14,0.857,addis_subcity,FALSE
+Addis Ababa,Kolife keranyo,4,ET140103,Kolfe Keraniyo,Addis Ababa,Region 14,0.857,addis_subcity,FALSE
+Addis Ababa,Kolife keranyo,5,ET140103,Kolfe Keraniyo,Addis Ababa,Region 14,0.857,addis_subcity,FALSE
+Addis Ababa,Kolife keranyo,6,ET140103,Kolfe Keraniyo,Addis Ababa,Region 14,0.857,addis_subcity,FALSE
+Addis Ababa,Kolife keranyo,7,ET140103,Kolfe Keraniyo,Addis Ababa,Region 14,0.857,addis_subcity,FALSE
+Addis Ababa,Kolife keranyo,8,ET140103,Kolfe Keraniyo,Addis Ababa,Region 14,0.857,addis_subcity,FALSE
+Addis Ababa,Kolife keranyo,9,ET140103,Kolfe Keraniyo,Addis Ababa,Region 14,0.857,addis_subcity,FALSE
+Addis Ababa,Lemi kura,10,ET140111,Lemi Kura,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lemi kura,13,ET140111,Lemi Kura,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lemi kura,14,ET140111,Lemi Kura,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lemi kura,2,ET140111,Lemi Kura,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lemi kura,3,ET140111,Lemi Kura,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lemi kura,4,ET140111,Lemi Kura,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lemi kura,5,ET140111,Lemi Kura,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lemi kura,6,ET140111,Lemi Kura,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lemi kura,8,ET140111,Lemi Kura,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lemi kura,9,ET140111,Lemi Kura,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lideta,1,ET140105,Lideta,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lideta,10,ET140105,Lideta,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lideta,2,ET140105,Lideta,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lideta,3,ET140105,Lideta,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lideta,4,ET140105,Lideta,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lideta,5,ET140105,Lideta,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lideta,6,ET140105,Lideta,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lideta,7,ET140105,Lideta,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lideta,8,ET140105,Lideta,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Lideta,9,ET140105,Lideta,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,Nefas Silk Lafto,13,ET140102,Nifas Silk Lafto,Addis Ababa,Region 14,0.938,addis_subcity,FALSE
+Addis Ababa,Nefas silk,1,ET140102,Nifas Silk Lafto,Addis Ababa,Region 14,0.562,addis_subcity,FALSE
+Addis Ababa,Nefas silk,10,ET140102,Nifas Silk Lafto,Addis Ababa,Region 14,0.562,addis_subcity,FALSE
+Addis Ababa,Nefas silk,11,ET140102,Nifas Silk Lafto,Addis Ababa,Region 14,0.562,addis_subcity,FALSE
+Addis Ababa,Nefas silk,12,ET140102,Nifas Silk Lafto,Addis Ababa,Region 14,0.562,addis_subcity,FALSE
+Addis Ababa,Nefas silk,13,ET140102,Nifas Silk Lafto,Addis Ababa,Region 14,0.562,addis_subcity,FALSE
+Addis Ababa,Nefas silk,14,ET140102,Nifas Silk Lafto,Addis Ababa,Region 14,0.562,addis_subcity,FALSE
+Addis Ababa,Nefas silk,15,ET140102,Nifas Silk Lafto,Addis Ababa,Region 14,0.562,addis_subcity,FALSE
+Addis Ababa,Nefas silk,2,ET140102,Nifas Silk Lafto,Addis Ababa,Region 14,0.562,addis_subcity,FALSE
+Addis Ababa,Nefas silk,5,ET140102,Nifas Silk Lafto,Addis Ababa,Region 14,0.562,addis_subcity,FALSE
+Addis Ababa,Nefas silk,6,ET140102,Nifas Silk Lafto,Addis Ababa,Region 14,0.562,addis_subcity,FALSE
+Addis Ababa,Nefas silk,7,ET140102,Nifas Silk Lafto,Addis Ababa,Region 14,0.562,addis_subcity,FALSE
+Addis Ababa,Nefas silk,8,ET140102,Nifas Silk Lafto,Addis Ababa,Region 14,0.562,addis_subcity,FALSE
+Addis Ababa,Nefas silk,9,ET140102,Nifas Silk Lafto,Addis Ababa,Region 14,0.562,addis_subcity,FALSE
+Addis Ababa,Yeka,12,ET140107,Yeka,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,yeka,1,ET140107,Yeka,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,yeka,10,ET140107,Yeka,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,yeka,11,ET140107,Yeka,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,yeka,12,ET140107,Yeka,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,yeka,2,ET140107,Yeka,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,yeka,3,ET140107,Yeka,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,yeka,4,ET140107,Yeka,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,yeka,5,ET140107,Yeka,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,yeka,6,ET140107,Yeka,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,yeka,7,ET140107,Yeka,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,yeka,8,ET140107,Yeka,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Addis Ababa,yeka,9,ET140107,Yeka,Addis Ababa,Region 14,1,addis_subcity,FALSE
+Afar,Awsi /Zone 1,Adaar,ET020109,Adar,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi /Zone 1,Afambo,ET020104,Afambo,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi /Zone 1,Aysaita Town,ET020111,Asayita town,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi /Zone 1,Aysaita Woreda,ET020103,Asayita,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi /Zone 1,Chifra,ET020106,Chifra,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi /Zone 1,Dubti Town,ET020107,Dubti town,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi /Zone 1,Dubti woreda,ET020101,Dubti,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi /Zone 1,Elidar,ET020102,Elidar,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi /Zone 1,Kori,ET020108,Kori,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi /Zone 1,Mille woreda,ET020105,Mile,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi /Zone 1,Samera-Logia Town,ET020198,Samera Logiya town,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi Rasu,Adaar,ET020109,Adar,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi Rasu,Afambo,ET020104,Afambo,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi Rasu,Aysaita Town,ET020111,Asayita town,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi Rasu,Aysaita Woreda,ET020103,Asayita,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi Rasu,Chifra,ET020106,Chifra,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi Rasu,Dubti Town,ET020107,Dubti town,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi Rasu,Dubti woreda,ET020101,Dubti,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi Rasu,Elidar,ET020102,Elidar,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi Rasu,Gereni,ET020110,Gerani,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi Rasu,Kori,ET020108,Kori,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi Rasu,Mille,ET020105,Mile,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Awsi Rasu,Samera-Logia Town,ET020198,Samera Logiya town,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Fanti /Zone 4,Awura,ET010507,Awra (TG),Tigray,Western,1,key,FALSE
+Afar,Fanti /Zone 4,Ewa,ET020402,Euwa,Afar,Fanti /Zone 4,1,key,FALSE
+Afar,Fanti /Zone 4,Golina,ET020405,Gulina,Afar,Fanti /Zone 4,1,key,FALSE
+Afar,Fanti /Zone 4,Teru,ET020403,Teru,Afar,Fanti /Zone 4,1,key,FALSE
+Afar,Fanti /Zone 4,Yallo,ET020404,Yalo,Afar,Fanti /Zone 4,1,key,FALSE
+Afar,Fanti Rasu,Awura,ET010507,Awra (TG),Tigray,Western,1,key,FALSE
+Afar,Fanti Rasu,Ewa,ET020402,Euwa,Afar,Fanti /Zone 4,1,key,FALSE
+Afar,Fanti Rasu,Golina,ET020405,Gulina,Afar,Fanti /Zone 4,1,key,FALSE
+Afar,Fanti Rasu,Teru,ET020403,Teru,Afar,Fanti /Zone 4,1,key,FALSE
+Afar,Fanti Rasu,Yallo,ET020404,Yalo,Afar,Fanti /Zone 4,1,key,FALSE
+Afar,Gabi /Zone 3,Amibara,ET020301,Amibara,Afar,Gabi /Zone 3,1,key,FALSE
+Afar,Gabi /Zone 3,Argoba,ET020306,Arguba,Afar,Gabi /Zone 3,1,key,FALSE
+Afar,Gabi /Zone 3,Awash Fentale,ET020302,Awash,Afar,Gabi /Zone 3,1,key,FALSE
+Afar,Gabi /Zone 3,Awash Town,ET020396,Awash town,Afar,Gabi /Zone 3,1,key,FALSE
+Afar,Gabi /Zone 3,Buremodaytu,ET020305,Gelalu,Afar,Gabi /Zone 3,1,key,FALSE
+Afar,Gabi /Zone 3,Dulecha,ET020304,Dulecha,Afar,Gabi /Zone 3,1,key,FALSE
+Afar,Gabi /Zone 3,Gela'alo,ET020305,Gelalu,Afar,Gabi /Zone 3,1,key,FALSE
+Afar,Gabi /Zone 3,Gewane,ET020303,Gewane,Afar,Gabi /Zone 3,1,key,FALSE
+Afar,Gabi /Zone 3,Hanruka,ET020307,Hanruka,Afar,Gabi /Zone 3,1,key,FALSE
+Afar,Gabi Rasu,Amibara,ET020301,Amibara,Afar,Gabi /Zone 3,1,key,FALSE
+Afar,Gabi Rasu,Argoba,ET020306,Arguba,Afar,Gabi /Zone 3,1,key,FALSE
+Afar,Gabi Rasu,Awash Fentale,ET020302,Awash,Afar,Gabi /Zone 3,1,key,FALSE
+Afar,Gabi Rasu,Awash Town,ET020396,Awash town,Afar,Gabi /Zone 3,1,key,FALSE
+Afar,Gabi Rasu,Buremodaytu,ET020305,Gelalu,Afar,Gabi /Zone 3,1,key,FALSE
+Afar,Gabi Rasu,Dulecha,ET020304,Dulecha,Afar,Gabi /Zone 3,1,key,FALSE
+Afar,Gabi Rasu,Gela'alo,ET020305,Gelalu,Afar,Gabi /Zone 3,1,key,FALSE
+Afar,Gabi Rasu,Gewane,ET020303,Gewane,Afar,Gabi /Zone 3,1,key,FALSE
+Afar,Gabi Rasu,Hanruka,ET020307,Hanruka,Afar,Gabi /Zone 3,1,key,FALSE
+Afar,Hari /Zone 5,Dalifage,ET020504,Dalefage,Afar,Hari /Zone 5,1,key,FALSE
+Afar,Hari /Zone 5,Dewe,ET020503,Dawe,Afar,Hari /Zone 5,1,key,FALSE
+Afar,Hari /Zone 5,Hadeleala,ET020505,Hadelela,Afar,Hari /Zone 5,1,key,FALSE
+Afar,Hari /Zone 5,Samarobi,ET020502,Samurobi,Afar,Hari /Zone 5,1,key,FALSE
+Afar,Hari /Zone 5,Telalak,ET020501,Telalek,Afar,Hari /Zone 5,1,key,FALSE
+Afar,Hari /Zone 6,Gereni Woreda,ET020110,Gerani,Afar,Awsi /Zone 1,1,key,FALSE
+Afar,Hari Rasu,Dalifage,ET020504,Dalefage,Afar,Hari /Zone 5,1,key,FALSE
+Afar,Hari Rasu,Dewe,ET020503,Dawe,Afar,Hari /Zone 5,1,key,FALSE
+Afar,Hari Rasu,Hadeleala,ET020505,Hadelela,Afar,Hari /Zone 5,1,key,FALSE
+Afar,Hari Rasu,Samarobi,ET020502,Samurobi,Afar,Hari /Zone 5,1,key,FALSE
+Afar,Hari Rasu,Telalak,ET020501,Telalek,Afar,Hari /Zone 5,1,key,FALSE
+Afar,Kilbati /Zone2,Abala Town,ET020209,Abaala town,Afar,Kilbati /Zone2,1,key,FALSE
+Afar,Kilbati /Zone2,Abala Woreda,ET020203,Abaala,Afar,Kilbati /Zone2,1,key,FALSE
+Afar,Kilbati /Zone2,Afdera,ET020207,Afdera,Afar,Kilbati /Zone2,1,key,FALSE
+Afar,Kilbati /Zone2,Berehale,ET020205,Berahile,Afar,Kilbati /Zone2,1,key,FALSE
+Afar,Kilbati /Zone2,Biidu,ET020208,Bidu,Afar,Kilbati /Zone2,1,key,FALSE
+Afar,Kilbati /Zone2,Dalol,ET020206,Dalol,Afar,Kilbati /Zone2,1,key,FALSE
+Afar,Kilbati /Zone2,Erebti,ET020201,Erebti,Afar,Kilbati /Zone2,1,key,FALSE
+Afar,Kilbati /Zone2,Konaba,ET020202,Kunneba,Afar,Kilbati /Zone2,1,key,FALSE
+Afar,Kilbati /Zone2,Megalle,ET020204,Megale,Afar,Kilbati /Zone2,1,key,FALSE
+Afar,Kilbati Rasu,Abala Town,ET020209,Abaala town,Afar,Kilbati /Zone2,1,key,FALSE
+Afar,Kilbati Rasu,Abala Woreda,ET020203,Abaala,Afar,Kilbati /Zone2,1,key,FALSE
+Afar,Kilbati Rasu,Afdera,ET020207,Afdera,Afar,Kilbati /Zone2,1,key,FALSE
+Afar,Kilbati Rasu,Berehale,ET020205,Berahile,Afar,Kilbati /Zone2,1,key,FALSE
+Afar,Kilbati Rasu,Biidu,ET020208,Bidu,Afar,Kilbati /Zone2,1,key,FALSE
+Afar,Kilbati Rasu,Dalol,ET020206,Dalol,Afar,Kilbati /Zone2,1,key,FALSE
+Afar,Kilbati Rasu,Erebti,ET020201,Erebti,Afar,Kilbati /Zone2,1,key,FALSE
+Afar,Kilbati Rasu,Konaba,ET020202,Kunneba,Afar,Kilbati /Zone2,1,key,FALSE
+Afar,Kilbati Rasu,Megalle,ET020204,Megale,Afar,Kilbati /Zone2,1,key,FALSE
+Amhara,Awi,Agew_Midir General Hospital,ET030903,Ankasha,Amhara,Awi,1,key,FALSE
+Amhara,Awi,Ankasha Guagusa,ET030903,Ankasha,Amhara,Awi,1,key,FALSE
+Amhara,Awi,Ayehu Guagusa,ET030908,Ayehu Guwagusa,Amhara,Awi,1,key,FALSE
+Amhara,Awi,Banja,ET030902,Banja,Amhara,Awi,1,key,FALSE
+Amhara,Awi,Chagni,ET030999,Chagni town,Amhara,Awi,1,key,FALSE
+Amhara,Awi,Dangila Town,ET030998,Dangila town,Amhara,Awi,1,key,FALSE
+Amhara,Awi,Dangila Zuria,ET030901,Dangila,Amhara,Awi,1,key,FALSE
+Amhara,Awi,Fagita Lokoma,ET030905,Fagta Lakoma,Amhara,Awi,1,key,FALSE
+Amhara,Awi,Guagusa Shekudad,ET030907,Guagusa Shikudad,Amhara,Awi,1,key,FALSE
+Amhara,Awi,Guangua,ET030904,Guangua,Amhara,Awi,1,key,FALSE
+Amhara,Awi,Injibara General Hospital,ET030996,Injibara town,Amhara,Awi,1,key,FALSE
+Amhara,Awi,Injibara Town,ET030996,Injibara town,Amhara,Awi,1,key,FALSE
+Amhara,Awi,Jawi,ET030906,Jawi,Amhara,Awi,1,key,FALSE
+Amhara,Awi,Zigem,ET030997,Zigem,Amhara,Awi,1,key,FALSE
+Amhara,Bahir Dar City,Adinas General Hospital,ET030712,Bahir Dar town,Amhara,West Gojam,1,key,FALSE
+Amhara,Bahir Dar City,Afilas General Hospital,ET030712,Bahir Dar town,Amhara,West Gojam,1,key,FALSE
+Amhara,Bahir Dar City,Bahir Dar Town,ET030712,Bahir Dar town,Amhara,West Gojam,1,key,FALSE
+Amhara,Bahir Dar City,Dream Care General Hospital,ET030712,Bahir Dar town,Amhara,West Gojam,1,key,FALSE
+Amhara,Bahir Dar City,Felege Hiwot Specialized Hospital,ET030712,Bahir Dar town,Amhara,West Gojam,1,key,FALSE
+Amhara,Bahir Dar City,Gamby General Hospital,ET030712,Bahir Dar town,Amhara,West Gojam,1,key,FALSE
+Amhara,Bahir Dar City,Tibebe Ghion Specialized Hospital,ET030712,Bahir Dar town,Amhara,West Gojam,1,key,FALSE
+Amhara,Central Gondar,Alefa,ET031115,Alefa,Amhara,Central Gondar,1,key,FALSE
+Amhara,Central Gondar,Central Armachiho,ET031119,Masero Denb /Central Armacho,Amhara,Central Gondar,1,key,FALSE
+Amhara,Central Gondar,Chilga,ET031106,Chilga 1,Amhara,Central Gondar,1,key,FALSE
+Amhara,Central Gondar,Chilga 1,ET031106,Chilga 1,Amhara,Central Gondar,1,key,FALSE
+Amhara,Central Gondar,Chilga 2,ET031112,Chilga 2,Amhara,Central Gondar,1,key,FALSE
+Amhara,Central Gondar,East Belesa,ET031117,East Belesa,Amhara,Central Gondar,1,key,FALSE
+Amhara,Central Gondar,East Dembia,ET031111,East Dembia,Amhara,Central Gondar,1,key,FALSE
+Amhara,Central Gondar,Gondar Zuria,ET031110,Gonder Zuria,Amhara,Central Gondar,1,key,FALSE
+Amhara,Central Gondar,Kinfaz Begela,ET031122,Kinfaz Begela,Amhara,Central Gondar,1,key,FALSE
+Amhara,Central Gondar,Lay Armachiho,ET031108,Lay Armacho,Amhara,Central Gondar,1,key,FALSE
+Amhara,Central Gondar,Nebaru Chilga,ET031106,Chilga 1,Amhara,Central Gondar,1,key,FALSE
+Amhara,Central Gondar,Tach Armachiho,ET031120,Tach Armacho,Amhara,Central Gondar,1,key,FALSE
+Amhara,Central Gondar,Takusa,ET031121,Takusa,Amhara,Central Gondar,1,key,FALSE
+Amhara,Central Gondar,Tegede,ET031107,Tegede,Amhara,Central Gondar,1,key,FALSE
+Amhara,Central Gondar,West Belesa,ET031116,West Belesa,Amhara,Central Gondar,1,key,FALSE
+Amhara,Central Gondar,West Dembia,ET031125,West Dembiya,Amhara,Central Gondar,1,key,FALSE
+Amhara,Central Gondar,Wogera,ET031109,Wegera,Amhara,Central Gondar,1,key,FALSE
+Amhara,Debre Birhan City,Ayu General Hospital,ET030520,Debre Berhan town,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,Debre Birhan City,Debre Birhan Specialized Hospital,ET030520,Debre Berhan town,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,Debre Birhan City,Debre Birhan Town,ET030520,Debre Berhan town,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,Debre Birhan City,Hakim Gizaw General Hospital,ET030520,Debre Berhan town,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,Debre Markos City,Debre Markos Specialized Hospital,ET030615,Debre Markos town,Amhara,East Gojam,1,key,FALSE
+Amhara,Debre Markos City,Debre Markos Town,ET030615,Debre Markos town,Amhara,East Gojam,1,key,FALSE
+Amhara,Debre Tabor City,Debre Tabor Specialized Hospital,ET030210,Debre Tabor town,Amhara,South Gondar,1,key,FALSE
+Amhara,Debre Tabor City,Debre Tabor Town,ET030210,Debre Tabor town,Amhara,South Gondar,1,key,FALSE
+Amhara,Dessie City,Bati General Hospital,ET030418,Dessie town,Amhara,South Wello,1,key,FALSE
+Amhara,Dessie City,Boru Meda General Hospital,ET030418,Dessie town,Amhara,South Wello,1,key,FALSE
+Amhara,Dessie City,Dessie Specialized Hospital,ET030418,Dessie town,Amhara,South Wello,1,key,FALSE
+Amhara,Dessie City,Dessie Town,ET030418,Dessie town,Amhara,South Wello,1,key,FALSE
+Amhara,Dessie City,Ethio General Hospital,ET030418,Dessie town,Amhara,South Wello,1,key,FALSE
+Amhara,Dessie City,Selam General Hospital,ET030418,Dessie town,Amhara,South Wello,1,key,FALSE
+Amhara,Dessie City,W/ro Sihin General Hospital,ET030418,Dessie town,Amhara,South Wello,1,key,FALSE
+Amhara,East Gojjam,Aneded,ET030617,Aneded,Amhara,East Gojam,1,key,FALSE
+Amhara,East Gojjam,Awabel,ET030612,Awabel,Amhara,East Gojam,1,key,FALSE
+Amhara,East Gojjam,Baso Liben,ET030611,Baso Liben,Amhara,East Gojam,1,key,FALSE
+Amhara,East Gojjam,Bibugn,ET030601,Bibugn,Amhara,East Gojam,1,key,FALSE
+Amhara,East Gojjam,Debay,ET030607,Debay Telatgen,Amhara,East Gojam,1,key,FALSE
+Amhara,East Gojjam,Debre Elias,ET030608,Debre Elias,Amhara,East Gojam,1,key,FALSE
+Amhara,East Gojjam,Dejen,ET030613,Dejen,Amhara,East Gojam,1,key,FALSE
+Amhara,East Gojjam,Enarj Enawga,ET030605,Enarj Enawga,Amhara,East Gojam,1,key,FALSE
+Amhara,East Gojjam,Enebisie Sar Midir,ET030604,Enebse Sarmder,Amhara,East Gojam,1,key,FALSE
+Amhara,East Gojjam,Enemay,ET030606,Enemay,Amhara,East Gojam,1,key,FALSE
+Amhara,East Gojjam,Goncha,ET030603,Goncha Siso Enebse,Amhara,East Gojam,1,key,FALSE
+Amhara,East Gojjam,Gozamen,ET030610,Guzamn,Amhara,East Gojam,1,key,FALSE
+Amhara,East Gojjam,Hulet Eju Enese,ET030602,Hulet Ej Enese,Amhara,East Gojam,1,key,FALSE
+Amhara,East Gojjam,Machakel,ET030609,Michakel,Amhara,East Gojam,1,key,FALSE
+Amhara,East Gojjam,Motta Town,ET030694,Mota Town,Amhara,East Gojam,1,key,FALSE
+Amhara,East Gojjam,Sedie,ET030619,Sedae,Amhara,East Gojam,1,key,FALSE
+Amhara,East Gojjam,Shebel Berenta,ET030614,Shebel Bernta,Amhara,East Gojam,1,key,FALSE
+Amhara,East Gojjam,Shegaw Motta General Hospital,ET030694,Mota Town,Amhara,East Gojam,1,key,FALSE
+Amhara,East Gojjam,Sinan,ET030616,Senan,Amhara,East Gojam,1,key,FALSE
+Amhara,Gondar City,Ayra General Hospital,ET031118,Gondar town,Amhara,Central Gondar,1,key,FALSE
+Amhara,Gondar City,Gondar Town,ET031118,Gondar town,Amhara,Central Gondar,1,key,FALSE
+Amhara,Gondar City,Gondar University Specialized Hospital,ET031118,Gondar town,Amhara,Central Gondar,1,key,FALSE
+Amhara,Gondar City,Nour General Hospital,ET031118,Gondar town,Amhara,Central Gondar,1,key,FALSE
+Amhara,Kombolcha City,Kombolcha General Hospital,ET030417,Kombolcha town,Amhara,South Wello,1,key,FALSE
+Amhara,Kombolcha City,Kombolcha Town,ET030417,Kombolcha town,Amhara,South Wello,1,key,FALSE
+Amhara,North Gojjam,Bahir Dar Zuria,ET030702,Bahirdar Zuria,Amhara,West Gojam,1,key,FALSE
+Amhara,North Gojjam,Gonji Kolela,ET030718,Gonje,Amhara,West Gojam,1,key,FALSE
+Amhara,North Gojjam,North Achefer,ET030701,Semen Achefer,Amhara,West Gojam,1,key,FALSE
+Amhara,North Gojjam,North Mecha,ET030704,Mecha,Amhara,West Gojam,1,key,FALSE
+Amhara,North Gojjam,South Achefer,ET030713,Debub Achefer,Amhara,West Gojam,1,key,FALSE
+Amhara,North Gojjam,South Mecha,ET030715,Debub Mecha,Amhara,West Gojam,1,key,FALSE
+Amhara,North Gojjam,Yilmana Densa,ET030703,Yilmana Densa,Amhara,West Gojam,1,key,FALSE
+Amhara,North Gondar,Adi'Arkay,ET030101,Addi Arekay,Amhara,North Gondar,1,key,FALSE
+Amhara,North Gondar,Beyeda,ET030102,Beyeda,Amhara,North Gondar,1,key,FALSE
+Amhara,North Gondar,Dabat,ET030105,Dabat,Amhara,North Gondar,1,key,FALSE
+Amhara,North Gondar,Debark General Hospital,ET030198,Debark town,Amhara,North Gondar,1,key,FALSE
+Amhara,North Gondar,Debark Town,ET030198,Debark town,Amhara,North Gondar,1,key,FALSE
+Amhara,North Gondar,Debark Zuria,ET030104,Debark,Amhara,North Gondar,1,key,FALSE
+Amhara,North Gondar,East Telemt,ET010106,Tselemti,Tigray,North Western,1,key,FALSE
+Amhara,North Gondar,Janamora,ET030103,Janamora,Amhara,North Gondar,1,key,FALSE
+Amhara,North Gondar,Mytsebry Town,ET010116,May Tsebri town,Tigray,North Western,1,key,FALSE
+Amhara,North Gondar,Telemt,ET030119,Telemt,Amhara,North Gondar,1,key,FALSE
+Amhara,North Gondar,West Telemt,ET010106,Tselemti,Tigray,North Western,1,key,FALSE
+Amhara,North Shewa,Angolela,ET030513,Angolelana Tera,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Ankober,ET030515,Ankober,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Antsokia,ET030507,Antsokiya,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Asagirt,ET030514,Assagirt,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Baso Worana,ET030519,Basona Worena,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Berehet,ET030517,Berehet,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Efrata Gidim,ET030508,Eferatana Gidem,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Enat General Hospital,ET030502,Merhabete,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Ensaro,ET030503,Ensaro,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Gishe,ET030506,Gishe Rabel,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Hagere Mariam,ET030516,Hagere Mariam,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Kewot,ET030512,Kewet,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Mehal Meda General Hospital,ET030505,Menze Gera Midir,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Menz Giera,ET030505,Menze Gera Midir,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Menz Keya,ET030521,Menze Keya Gabriel,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Menz Lalo,ET030522,Menze Lalo Midir,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Menz Mama,ET030509,Menze Mama Midir,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Merhabete,ET030502,Merhabete,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Mida Woremo,ET030501,Mida Woremo,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Minjar Shenkora,ET030518,Minjar Shenkora,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Mojana Wedera,ET030511,Mojan Wedera,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Moretna Jiru,ET030504,Moretna Jiru,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Shewa Robit Town,ET030595,Shoa Robit,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Siyadebrina Wayu,ET030523,Siya Debirna Wayu,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Shewa,Tarmaber,ET030510,Tarema Ber,Amhara,North Shewa (AM),1,key,FALSE
+Amhara,North Wollo,Alamata General Hospital,ET010411,Alamata town,Tigray,Southern,1,key,FALSE
+Amhara,North Wollo,Alamata town,ET010411,Alamata town,Tigray,Southern,1,key,FALSE
+Amhara,North Wollo,Angot,ET030313,Angot,Amhara,North Wello,1,key,FALSE
+Amhara,North Wollo,Bugna,ET030301,Bugna,Amhara,North Wello,1,key,FALSE
+Amhara,North Wollo,Dawunt,ET030311,Dawunt,Amhara,North Wello,1,key,FALSE
+Amhara,North Wollo,Gazo,ET030312,Gazo,Amhara,North Wello,1,key,FALSE
+Amhara,North Wollo,Gidan,ET030303,Gidan,Amhara,North Wello,1,key,FALSE
+Amhara,North Wollo,Gubalaftu,ET030307,Guba Lafto,Amhara,North Wello,1,key,FALSE
+Amhara,North Wollo,Habru,ET030308,Habru,Amhara,North Wello,1,key,FALSE
+Amhara,North Wollo,Kobo Town,ET030399,Kobo town,Amhara,North Wello,1,key,FALSE
+Amhara,North Wollo,Lalibela General Hospital,ET030398,Lalibela town,Amhara,North Wello,1,key,FALSE
+Amhara,North Wollo,Lalibela Town,ET030398,Lalibela town,Amhara,North Wello,1,key,FALSE
+Amhara,North Wollo,Lasta,ET030310,Lasta,Amhara,North Wello,1,key,FALSE
+Amhara,North Wollo,Mekiet,ET030304,Meket,Amhara,North Wello,1,key,FALSE
+Amhara,North Wollo,Raya Alamata,ET010407,Raya Alamata,Tigray,Southern,1,key,FALSE
+Amhara,North Wollo,Raya Bala,ET010406,Raya Azebo,Tigray,Southern,1,key,FALSE
+Amhara,North Wollo,Raya Kobo,ET030302,Raya Kobo,Amhara,North Wello,1,key,FALSE
+Amhara,North Wollo,Wadila,ET030305,Wadla,Amhara,North Wello,1,key,FALSE
+Amhara,Oromo Special Zone,Artuma Fursi,ET031004,Artuma Fursi,Amhara,Oromia,1,key,FALSE
+Amhara,Oromo Special Zone,Bati Town,ET031099,Bati Town,Amhara,Oromia,1,key,FALSE
+Amhara,Oromo Special Zone,Bati Wereda,ET031002,Bati,Amhara,Oromia,1,key,FALSE
+Amhara,Oromo Special Zone,Dawa Chefa,ET031001,Dewa Cheffa,Amhara,Oromia,1,key,FALSE
+Amhara,Oromo Special Zone,Dawa Harewa,ET031005,Dewa Harewa,Amhara,Oromia,1,key,FALSE
+Amhara,Oromo Special Zone,Heal Africa General Hospital,ET031006,Kemisie town,Amhara,Oromia,1,key,FALSE
+Amhara,Oromo Special Zone,Jile Timuga,ET031003,Jilye Tumuga,Amhara,Oromia,1,key,FALSE
+Amhara,Oromo Special Zone,Kemise General Hospital,ET031006,Kemisie town,Amhara,Oromia,1,key,FALSE
+Amhara,Oromo Special Zone,Kemise Town,ET031006,Kemisie town,Amhara,Oromia,1,key,FALSE
+Amhara,South Gondar,Andabiet,ET030211,Andabet/ West Esite,Amhara,South Gondar,1,key,FALSE
+Amhara,South Gondar,Dera,ET030209,Dera (AM),Amhara,South Gondar,1,key,FALSE
+Amhara,South Gondar,Ebinat,ET030201,Ebenat,Amhara,South Gondar,1,key,FALSE
+Amhara,South Gondar,Estie,ET030208,East Esite,Amhara,South Gondar,1,key,FALSE
+Amhara,South Gondar,Farta,ET030204,Farta,Amhara,South Gondar,1,key,FALSE
+Amhara,South Gondar,Fogera,ET030203,Fogera,Amhara,South Gondar,1,key,FALSE
+Amhara,South Gondar,Guna Begemider,ET030212,Guna Begemider,Amhara,South Gondar,1,key,FALSE
+Amhara,South Gondar,Lay Gayint,ET030205,Lay Gayint,Amhara,South Gondar,1,key,FALSE
+Amhara,South Gondar,Libokemkem,ET030202,Libokemekem,Amhara,South Gondar,1,key,FALSE
+Amhara,South Gondar,Meqetewa,ET030213,Mena Meketewa,Amhara,South Gondar,1,key,FALSE
+Amhara,South Gondar,Sedie Muja,ET030214,Sede Muja,Amhara,South Gondar,1,key,FALSE
+Amhara,South Gondar,Simada,ET030207,Semada,Amhara,South Gondar,1,key,FALSE
+Amhara,South Gondar,Tach Gayint,ET030206,Tach Gayint,Amhara,South Gondar,1,key,FALSE
+Amhara,South Gondar,Woreta Town,ET030293,Woreta town,Amhara,South Gondar,1,key,FALSE
+Amhara,South Wollo,Akesta General Hospital,ET030410,Legambo,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Albuko,ET030408,Albuko,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Ambassel,ET030404,Ambasel,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Argoba,ET020306,Arguba,Afar,Gabi /Zone 3,1,key,FALSE
+Amhara,South Wollo,Borena,ET030412,Borena /Debresina,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Delanta,ET030406,Delanta,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Dessie Zuria,ET030409,Dessie Zuria,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Jamma,ET030414,Jama,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Kallu,ET030407,Kalu,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Kellala,ET030413,Kelela,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Kutaber,ET030403,Kutaber,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Legambo,ET030410,Legambo,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Legehida,ET030420,Legehida,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Mehal Sayint,ET030419,Mehal Sayint,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Mekane Selam General Hospital,ET030412,Borena /Debresina,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Mekdella,ET030421,Mekdela,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Sayint,ET030411,Sayint,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Tehulederie,ET030405,Thehulederie,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Tenta,ET030402,Tenta,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Wogdi,ET030416,Wegde,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Worebabo,ET030422,Worebabu,Amhara,South Wello,1,key,FALSE
+Amhara,South Wollo,Woreillu,ET030415,Were Ilu,Amhara,South Wello,1,key,FALSE
+Amhara,Wag Hemra,Abergelie,ET030805,Abergele (AM),Amhara,Wag Hamra,1,key,FALSE
+Amhara,Wag Hemra,Dehana,ET030803,Dehana,Amhara,Wag Hamra,1,key,FALSE
+Amhara,Wag Hemra,Gazgibla,ET030804,Gaz Gibla,Amhara,Wag Hamra,1,key,FALSE
+Amhara,Wag Hemra,Korem General Hospital,ET010410,Korem town,Tigray,Southern,1,key,FALSE
+Amhara,Wag Hemra,Korem Town,ET010410,Korem town,Tigray,Southern,1,key,FALSE
+Amhara,Wag Hemra,Sahala,ET030806,Sahila,Amhara,Wag Hamra,1,key,FALSE
+Amhara,Wag Hemra,Sekota Town,ET030807,Sekota town,Amhara,Wag Hamra,1,key,FALSE
+Amhara,Wag Hemra,Sekota Zuria,ET030802,Sekota,Amhara,Wag Hamra,1,key,FALSE
+Amhara,Wag Hemra,Tefera Hailu General Hospital,ET030807,Sekota town,Amhara,Wag Hamra,1,key,FALSE
+Amhara,Wag Hemra,Tsagibji,ET030808,Tsagbeji,Amhara,Wag Hamra,1,key,FALSE
+Amhara,Wag Hemra,Wofla,ET010408,Ofla,Tigray,Southern,1,key,FALSE
+Amhara,Wag Hemra,Zata,ET010413,Zata,Tigray,Southern,1,key,FALSE
+Amhara,Wag Hemra,Ziquala,ET030801,Zequala,Amhara,Wag Hamra,1,key,FALSE
+Amhara,West Gojjam,Bure Town,ET030798,Bure town,Amhara,West Gojam,1,key,FALSE
+Amhara,West Gojjam,Bure Zuria,ET030710,Bure (AM),Amhara,West Gojam,1,key,FALSE
+Amhara,West Gojjam,Dega Damot,ET030707,Dega Damot,Amhara,West Gojam,1,key,FALSE
+Amhara,West Gojjam,Dembecha,ET030708,Dembecha,Amhara,West Gojam,1,key,FALSE
+Amhara,West Gojjam,Finote Selam General Hospital,ET030714,Finote Selam town,Amhara,West Gojam,1,key,FALSE
+Amhara,West Gojjam,Finote Selam Town,ET030714,Finote Selam town,Amhara,West Gojam,1,key,FALSE
+Amhara,West Gojjam,Jabi Tehnan,ET030709,Jabi Tehnan,Amhara,West Gojam,1,key,FALSE
+Amhara,West Gojjam,Quarit,ET030706,Quarit,Amhara,West Gojam,1,key,FALSE
+Amhara,West Gojjam,Sekela,ET030705,Sekela,Amhara,West Gojam,1,key,FALSE
+Amhara,West Gojjam,Womberma,ET030711,Wemberma,Amhara,West Gojam,1,key,FALSE
+Amhara,West Gondar,Adagn Ager Chako,ET031205,Adagn Ager Chaqo,Amhara,West Gondar,1,key,FALSE
+Amhara,West Gondar,Genda Wuha Town,ET031292,Gendawuha town,Amhara,West Gondar,1,key,FALSE
+Amhara,West Gondar,Metema,ET031213,Metema,Amhara,West Gondar,1,key,FALSE
+Amhara,West Gondar,Metema General Hospital,ET031213,Metema,Amhara,West Gondar,1,key,FALSE
+Amhara,West Gondar,Quara,ET031214,Quara,Amhara,West Gondar,1,key,FALSE
+Amhara,West Gondar,West Armachiho,ET031206,Mirab Armacho,Amhara,West Gondar,1,key,FALSE
+Amhara,Woldia City,Woldia Specialized Hospital,ET030309,Woldiya town,Amhara,North Wello,1,key,FALSE
+Amhara,Woldia City,Woldia Town,ET030309,Woldiya town,Amhara,North Wello,1,key,FALSE
+Amhara,Wolkait Tegedie Setit Humera,Awura,ET010507,Awra (TG),Tigray,Western,1,key,FALSE
+Amhara,Wolkait Tegedie Setit Humera,Dansha,ET010506,Dansha town,Tigray,Western,1,key,FALSE
+Amhara,Wolkait Tegedie Setit Humera,Humera General Hospital,ET010501,Kafta Humera,Tigray,Western,1,key,FALSE
+Amhara,Wolkait Tegedie Setit Humera,Kafta Humera,ET010501,Kafta Humera,Tigray,Western,1,key,FALSE
+Amhara,Wolkait Tegedie Setit Humera,Setit Humera,ET010504,Setit Humera,Tigray,Western,1,key,FALSE
+Amhara,Wolkait Tegedie Setit Humera,Tegedie,ET010503,Tsegede (TG),Tigray,Western,1,key,FALSE
+Amhara,Wolkait Tegedie Setit Humera,Wolkait,ET010502,Welkait,Tigray,Western,1,key,FALSE
+Amhara,Wolkait Tegedie Setit Humera,Woynat General Hospital,ET010502,Welkait,Tigray,Western,1,key,FALSE
+Benishangul Gumuz,Assosa,Abrehamo,ET060303,Assosa,Benishangul Gumz,Assosa,1,key,FALSE
+Benishangul Gumuz,Assosa,Assosa Town,ET060309,Assosa town Administration,Benishangul Gumz,Assosa,1,key,FALSE
+Benishangul Gumuz,Assosa,Bambasi,ET060305,Bambasi,Benishangul Gumz,Assosa,1,key,FALSE
+Benishangul Gumuz,Assosa,Bildigilu,ET060306,Bilidigilu,Benishangul Gumz,Assosa,1,key,FALSE
+Benishangul Gumuz,Assosa,Homosha,ET060307,Homosha,Benishangul Gumz,Assosa,1,key,FALSE
+Benishangul Gumuz,Assosa,Kurmuk,ET060302,Kurmuk,Benishangul Gumz,Assosa,1,key,FALSE
+Benishangul Gumuz,Assosa,Menge,ET060301,Menge,Benishangul Gumz,Assosa,1,key,FALSE
+Benishangul Gumuz,Assosa,Oura,ET060303,Assosa,Benishangul Gumz,Assosa,1,key,FALSE
+Benishangul Gumuz,Assosa,Sherkole,ET060304,Sherkole,Benishangul Gumz,Assosa,1,key,FALSE
+Benishangul Gumuz,Assosa,Undulu,ET060308,Undulu,Benishangul Gumz,Assosa,1,key,FALSE
+Benishangul Gumuz,Kamashi,Dambe,ET060403,Kamashi,Benishangul Gumz,Kamashi,1,key,FALSE
+Benishangul Gumuz,Kamashi,Kamashi,ET060403,Kamashi,Benishangul Gumz,Kamashi,1,key,FALSE
+Benishangul Gumuz,Kamashi,Mizhiga,ET060405,Mizyiga,Benishangul Gumz,Kamashi,1,key,FALSE
+Benishangul Gumuz,Kamashi,Sedal,ET060402,Sedal,Benishangul Gumz,Kamashi,1,key,FALSE
+Benishangul Gumuz,Kamashi,Zayi,ET060400,Kamashi town,Benishangul Gumz,Kamashi,1,key,FALSE
+Benishangul Gumuz,Maokomo special Woreda,Maokomo,ET060508,Maokomo Special,Benishangul Gumz,Mao Komo Special,1,key,FALSE
+Benishangul Gumuz,Metekal,Bullen,ET060207,Bulen,Benishangul Gumz,Metekel,1,key,FALSE
+Benishangul Gumuz,Metekal,Dangur,ET060201,Dangur,Benishangul Gumz,Metekel,1,key,FALSE
+Benishangul Gumuz,Metekal,Dibate,ET060205,Dibate,Benishangul Gumz,Metekel,1,key,FALSE
+Benishangul Gumuz,Metekal,Guba,ET060202,Guba,Benishangul Gumz,Metekel,1,key,FALSE
+Benishangul Gumuz,Metekal,Mandura,ET060204,Mandura,Benishangul Gumz,Metekel,1,key,FALSE
+Benishangul Gumuz,Metekal,Pawe,ET060206,Pawe,Benishangul Gumz,Metekel,1,key,FALSE
+Benishangul Gumuz,Metekal,Wonbera,ET060203,Wembera,Benishangul Gumz,Metekel,1,override,FALSE
+Central Ethiopia,Gurage,Abeshge,ET070102,Abeshege,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Gurage,Agena town,ET070103,Ezha,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Gurage,Arekit  town,ET070109,Gumer,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Gurage,Cheha,ET070110,Cheha,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Gurage,Emdiber town,ET070116,Emdebir town,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Gurage,Enidguagn,ET070108,Endiguagn,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Gurage,Enor,ET070120,Enor Ener,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Gurage,Enor Ener Meger,ET070120,Enor Ener,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Gurage,Ezha,ET070103,Ezha,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Gurage,Gedebano Gutazer Wolene,ET070104,Gedebano Gutazer Welene,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Gurage,Geta,ET070113,Geta,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Gurage,Gumer,ET070109,Gumer,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Gurage,Gunchire town,ET070111,Enemor Ener,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Gurage,Mihur Aklil,ET070112,Muhur Na Aklil,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Gurage,Welkite Town Ad.,ET070114,Welkite town,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Hadiya,Ameka,ET070215,Ameka,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Hadiya,Anne Lemo  WoHO,ET070208,Analemmo,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Hadiya,Bonosha Town,ET072006,Sankura,Central Ethiopia,Siltie,1,key,FALSE
+Central Ethiopia,Hadiya,Duna  WoHO,ET070207,Duna,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Hadiya,East Badwacho  WoHO,ET070205,Misrak Badawacho,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Hadiya,Fonko town,ET070208,Analemmo,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Hadiya,Gibe  WoHO,ET070210,Gibe,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Hadiya,Gimbichu Town,ET070213,Gimbichu town,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Hadiya,Gombora  WoHO,ET070202,Gombora,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Hadiya,Homecho town,ET070210,Gibe,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Hadiya,Hossana   taHO,ET070211,Hosaena town,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Hadiya,Jajura town,ET070214,Jajura town,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Hadiya,Lemo  WoHO,ET070203,Lemmo,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Hadiya,Mirab Soro  WoHO,ET070217,Mirab Soro,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Hadiya,Misha  WoHO,ET070201,Misha,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Hadiya,Shashago  WoHO,ET070204,Shashogo,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Hadiya,Shone  taHO,ET070212,Shone Town,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Hadiya,Siraro Badawacho,ET070216,Siraro Badawacho,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Hadiya,Soro  WoHO,ET070206,Soro,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Hadiya,West Badewacho  WoHO,ET070209,Mirab Badowach,Central Ethiopia,Hadiya,1,key,FALSE
+Central Ethiopia,Halaba,Atoti Ullo Woreda,ET071403,Atote Ulo,Central Ethiopia,Halaba,1,key,FALSE
+Central Ethiopia,Halaba,Kulito town,ET071401,Kulito town,Central Ethiopia,Halaba,1,key,FALSE
+Central Ethiopia,Halaba,Werra Dijo,ET071404,Wera Djo,Central Ethiopia,Halaba,1,key,FALSE
+Central Ethiopia,Halaba,Werra Woreda,ET071402,Wera,Central Ethiopia,Halaba,1,key,FALSE
+Central Ethiopia,Kebena,Kebena,ET070101,Kebena,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Kembata,Adilo WoHO,ET070309,Adilo,Central Ethiopia,Kembata Tembaro,1,key,FALSE
+Central Ethiopia,Kembata,Angecha TA,ET070302,Angacha,Central Ethiopia,Kembata Tembaro,1,key,FALSE
+Central Ethiopia,Kembata,Anigacha WoHO,ET070302,Angacha,Central Ethiopia,Kembata Tembaro,1,key,FALSE
+Central Ethiopia,Kembata,Damboya TA,ET070307,Damboya,Central Ethiopia,Kembata Tembaro,1,key,FALSE
+Central Ethiopia,Kembata,Demboya WoHO,ET070307,Damboya,Central Ethiopia,Kembata Tembaro,1,key,FALSE
+Central Ethiopia,Kembata,Doyogena TA,ET070306,Doyogena,Central Ethiopia,Kembata Tembaro,1,key,FALSE
+Central Ethiopia,Kembata,Doyogena WHO,ET070306,Doyogena,Central Ethiopia,Kembata Tembaro,1,key,FALSE
+Central Ethiopia,Kembata,Durame taHO,ET070308,Durame town,Central Ethiopia,Kembata Tembaro,1,key,FALSE
+Central Ethiopia,Kembata,Hadero Tunto Zuria  WoHO,ET070305,Hadero Tunto,Central Ethiopia,Kembata Tembaro,1,key,FALSE
+Central Ethiopia,Kembata,Hadero taHO,ET070312,Hadero town,Central Ethiopia,Kembata Tembaro,1,key,FALSE
+Central Ethiopia,Kembata,Kacha Birra WoHO,ET070304,Kacha Bira,Central Ethiopia,Kembata Tembaro,1,key,FALSE
+Central Ethiopia,Kembata,Kedida Gamela  WoHO,ET070303,Kediada Gambela,Central Ethiopia,Kembata Tembaro,1,key,FALSE
+Central Ethiopia,Kembata,Sheshicho taHO,ET070310,Shinshincho town,Central Ethiopia,Kembata Tembaro,1,key,FALSE
+Central Ethiopia,Mareko,Mareko,ET070107,Mareko,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Mis/Gurage,Buee town,ET070117,Bui town,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Mis/Gurage,Butajira Town Ad.,ET070115,Butajira town,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Mis/Gurage,Debub Sodo,ET070119,Debub Sodo,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Mis/Gurage,Enseno town,ET070118,Misrak Meskan,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Mis/Gurage,Meskan,ET070106,Meskan,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Mis/Gurage,Misrak meskan,ET070118,Misrak Meskan,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Mis/Gurage,Sodo,ET070105,Sodo,Central Ethiopia,Guraghe,1,key,FALSE
+Central Ethiopia,Silte,Alemgebeya town adm.HO,ET072006,Sankura,Central Ethiopia,Siltie,1,key,FALSE
+Central Ethiopia,Silte,Alicho Wiriro  WoHO,ET072001,Alicho Woriro,Central Ethiopia,Siltie,1,key,FALSE
+Central Ethiopia,Silte,Dallocha  WoHO,ET072005,Dalocha,Central Ethiopia,Siltie,1,key,FALSE
+Central Ethiopia,Silte,Dallocha  town admonstration,ET072005,Dalocha,Central Ethiopia,Siltie,1,key,FALSE
+Central Ethiopia,Silte,East Azernet Berber  WoHO,ET072007,Misrak Azenet Berbere,Central Ethiopia,Siltie,1,key,FALSE
+Central Ethiopia,Silte,Hulbareg  WoHO,ET072008,Wulbareg,Central Ethiopia,Siltie,1,key,FALSE
+Central Ethiopia,Silte,Kibet town adm.HO,ET072011,Kibet town,Central Ethiopia,Siltie,1,key,FALSE
+Central Ethiopia,Silte,Lanfuro  WoHO,ET072003,Lanfero,Central Ethiopia,Siltie,1,key,FALSE
+Central Ethiopia,Silte,Mis silti,ET072013,Misrak Siltie,Central Ethiopia,Siltie,1,key,FALSE
+Central Ethiopia,Silte,Mito,ET072012,Mito,Central Ethiopia,Siltie,1,key,FALSE
+Central Ethiopia,Silte,Sankura  WoHO,ET072006,Sankura,Central Ethiopia,Siltie,1,key,FALSE
+Central Ethiopia,Silte,Silti  WoHO,ET072002,Siltie,Central Ethiopia,Siltie,1,key,FALSE
+Central Ethiopia,Silte,Tora town adm.HO,ET072009,Tora town,Central Ethiopia,Siltie,1,key,FALSE
+Central Ethiopia,Silte,West Azernet  WoHO,ET072004,Mierab Azenet Berbere,Central Ethiopia,Siltie,1,key,FALSE
+Central Ethiopia,Silte,Worabe  town adm HO,ET072010,Worabe town,Central Ethiopia,Siltie,1,key,FALSE
+Central Ethiopia,Tembaro,Modula TA,ET070301,Tembaro,Central Ethiopia,Kembata Tembaro,1,key,FALSE
+Central Ethiopia,Tembaro,Tenbaro woreda,ET070301,Tembaro,Central Ethiopia,Kembata Tembaro,1,key,FALSE
+Central Ethiopia,Yem,Deri  saja woreda,ET072401,Yem SP Woreda,Central Ethiopia,Yem Special,1,key,FALSE
+Central Ethiopia,Yem,Fofa worda,ET072401,Yem SP Woreda,Central Ethiopia,Yem Special,1,key,FALSE
+Central Ethiopia,Yem,Saja Town admnstration,ET072401,Yem SP Woreda,Central Ethiopia,Yem Special,1,key,FALSE
+Central Ethiopia,Yem,Toba woreda,ET072401,Yem SP Woreda,Central Ethiopia,Yem Special,1,key,FALSE
+Dire Dawa,NA,Dilchora Hospital,ET130106,Dire Teyara,Harari,Harari,1,key,FALSE
+Dire Dawa,NA,Sabiyan Hospital,ET150103,Sabian,Dire Dawa,Dire Dawa urban,1,key,FALSE
+Gambella,Anywaa,Abobo,ET120201,Abobo,Gambela,Agnewak,1,key,FALSE
+Gambella,Anywaa,Dima,ET120205,Dima (GM),Gambela,Agnewak,1,key,FALSE
+Gambella,Anywaa,Gambella Woreda,ET120206,Gambela town,Gambela,Agnewak,1,override,FALSE
+Gambella,Anywaa,Gog,ET120203,Gog,Gambela,Agnewak,1,key,FALSE
+Gambella,Anywaa,Jor,ET120204,Jore,Gambela,Agnewak,1,key,FALSE
+Gambella,Majang,Godere,ET120301,Godere,Gambela,Majang,1,key,FALSE
+Gambella,Majang,Mengeshi,ET120308,Mengesh,Gambela,Majang,1,key,FALSE
+Gambella,Nuer,Akobo,ET120101,Akobo,Gambela,Nuwer,1,key,FALSE
+Gambella,Nuer,Jikaw,ET120103,Jikawo,Gambela,Nuwer,1,key,FALSE
+Gambella,Nuer,Lare,ET120102,Lare,Gambela,Nuwer,1,key,FALSE
+Gambella,Nuer,Makuey,ET120105,Makuey,Gambela,Nuwer,1,key,FALSE
+Gambella,Nuer,Wanthoa,ET120104,Wantawo,Gambela,Nuwer,1,key,FALSE
+Gambella,NA,Gambella Town Adminstration,ET120206,Gambela town,Gambela,Agnewak,1,override,FALSE
+Gambella,NA,Itang Special woreda,ET120407,Itang,Gambela,Itang Special woreda,1,override,FALSE
+Harari,Harari,Abadir,ET130109,Abadir,Harari,Harari,1,key,FALSE
+Harari,Harari,Aboker,ET130108,Aboker,Harari,Harari,1,key,FALSE
+Harari,Harari,Amirnur,ET130107,Amir Nur,Harari,Harari,1,key,FALSE
+Harari,Harari,Diretiyara,ET130106,Dire Teyara,Harari,Harari,1,key,FALSE
+Harari,Harari,Erer,ET050104,Erer (SM),Somali,Siti,1,key,FALSE
+Harari,Harari,Hakim,ET130104,Hakim,Harari,Harari,1,key,FALSE
+Harari,Harari,Harari,NA,NA,NA,NA,NA,aggregate_drop,FALSE
+Harari,Harari,Jinela,ET130103,Jinela,Harari,Harari,1,ref_exact,FALSE
+Harari,Harari,Shenkor,ET130102,Shenkor,Harari,Harari,1,key,FALSE
+Harari,Harari,Sofi,ET130101,Sofi,Harari,Harari,1,key,FALSE
+Oromia,Adama Town,Adama Town,ET040714,Adama town,Oromia,East Shewa,1,key,FALSE
+Oromia,Agaro Town,Agaro Town,ET040417,Agaro town,Oromia,Jimma,1,key,FALSE
+Oromia,Ambo Town,Ambo Town,ET040515,Ambo town,Oromia,West Shewa,1,key,FALSE
+Oromia,Arsi,Amigna,ET040810,Amigna,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Aseko,ET040802,Aseko,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Bele Gesgar,ET040823,Bele Gesgar,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Bokoji  Town,ET040894,Bekoji town,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Chole,ET040809,Chole,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Dhera Town,ET040805,Dodota,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Digelu Tijo,ET040815,Degeluna Tijo,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Diksis,ET040822,Diksis,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Dodota,ET040805,Dodota,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Gololcha,ET040803,Golocha,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Guna,ET040819,Guna,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Hetosa,ET040807,Hitosa,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Honkolo Wabe,ET040824,Inkolo Wabe,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Huruta Town,ET040821,Lude Hitosa,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Jeju,ET040804,Jeju,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Lemu Bilbilo,ET040818,Limu Bilbilo,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Lode Hetosa,ET040821,Lude Hitosa,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Merti,ET040801,Merti,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Munesa,ET040817,Munessa,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Robe,ET040812,Robe,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Seru,ET040811,Seru,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Shenan Kolu,ET040893,Shanan Kolu,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Shirka,ET040814,Shirka,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Sire,ET040820,Sire,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Sude,ET040808,Sude,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Tena,ET040813,Tena,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Tiyo,ET040816,Tiyo,Oromia,Arsi,1,key,FALSE
+Oromia,Arsi,Zeway Dugda,ET040806,Ziway Dugda,Oromia,Arsi,1,key,FALSE
+Oromia,Asella Town,Asella Town,ET040825,Asela town,Oromia,Arsi,1,key,FALSE
+Oromia,Bale,Agarfa,ET041104,Agarfa,Oromia,Bale,1,key,FALSE
+Oromia,Bale,Berbere,ET041114,Berbere,Oromia,Bale,1,key,FALSE
+Oromia,Bale,Dinsho,ET041122,Dinsho,Oromia,Bale,1,key,FALSE
+Oromia,Bale,Dolo Mena,ET041112,Mena (Bale),Oromia,Bale,1,key,FALSE
+Oromia,Bale,Gasera,ET041106,Gasera,Oromia,Bale,1,key,FALSE
+Oromia,Bale,Goba  rural,ET041110,Goba (OR),Oromia,Bale,1,key,FALSE
+Oromia,Bale,Goro,ET041116,Goro (Bale),Oromia,Bale,1,key,FALSE
+Oromia,Bale,Gura Damole,ET041115,Gura Damole,Oromia,Bale,1,key,FALSE
+Oromia,Bale,Harena Buluk,ET041111,Harena Buluk,Oromia,Bale,1,key,FALSE
+Oromia,Bale,Sinana,ET041109,Sinana,Oromia,Bale,1,key,FALSE
+Oromia,Batu Town,Batu Town,ET040708,Adama Tulu Jido Kombolcha,Oromia,East Shewa,1,key,FALSE
+Oromia,Bishoftu Town,Bishoftu Town,ET040709,Bishoftu town,Oromia,East Shewa,1,key,FALSE
+Oromia,Borena,Dilo,ET041219,Dilo,Oromia,Borena,1,key,FALSE
+Oromia,Borena,Dire,ET041211,Dire,Oromia,Borena,1,key,FALSE
+Oromia,Borena,Dubluk,ET041291,Dubluk,Oromia,Borena,1,key,FALSE
+Oromia,Borena,El-Waye,ET041295,Elwaya,Oromia,Borena,1,key,FALSE
+Oromia,Borena,Gomole,ET041223,Gomole,Oromia,Borena,1,key,FALSE
+Oromia,Borena,Guchi,ET041290,Guchi,Oromia,Borena,1,key,FALSE
+Oromia,Borena,Mega  PH,ET041211,Dire,Oromia,Borena,1,key,FALSE
+Oromia,Borena,Miyo,ET041216,Miyo,Oromia,Borena,1,key,FALSE
+Oromia,Borena,Moyale W,ET041210,Moyale (OR),Oromia,Borena,1,key,FALSE
+Oromia,Borena,Teltele,ET041212,Teltale,Oromia,Borena,1,key,FALSE
+Oromia,Borena,Teltele PH,ET041212,Teltale,Oromia,Borena,1,key,FALSE
+Oromia,Borena,Yabelo GH,ET041296,Yabelo town,Oromia,Borena,1,key,FALSE
+Oromia,Borena,Yabelo R,ET041207,Yabelo,Oromia,Borena,1,key,FALSE
+Oromia,Borena,Yabelo T,ET041296,Yabelo town,Oromia,Borena,1,key,FALSE
+Oromia,Bule Hora Town,Bule Hora Town,ET041587,Bule Hora town,Oromia,West Guji,1,key,FALSE
+Oromia,Buno Bedele,Bedele Hospital,ET041621,Bedele town,Oromia,Buno Bedele,1,key,FALSE
+Oromia,Buno Bedele,Bedele Rural,ET041622,Bedele Zuria,Oromia,Buno Bedele,1,key,FALSE
+Oromia,Buno Bedele,Bedele town,ET041621,Bedele town,Oromia,Buno Bedele,1,key,FALSE
+Oromia,Buno Bedele,Borecha,ET041607,Borecha,Oromia,Buno Bedele,1,key,FALSE
+Oromia,Buno Bedele,Chewaka,ET041623,Chwaka,Oromia,Buno Bedele,1,key,FALSE
+Oromia,Buno Bedele,Chewaka Hospital,ET041623,Chwaka,Oromia,Buno Bedele,1,key,FALSE
+Oromia,Buno Bedele,Chora,ET041603,Chora (Buno Bedele),Oromia,Buno Bedele,1,key,FALSE
+Oromia,Buno Bedele,Chora Hospital,ET040415,Chora (Jimma),Oromia,Jimma,1,key,FALSE
+Oromia,Buno Bedele,Dabo Hana,ET041605,Dabo Hana,Oromia,Buno Bedele,1,key,FALSE
+Oromia,Buno Bedele,Dega,ET041604,Dega,Oromia,Buno Bedele,1,key,FALSE
+Oromia,Buno Bedele,Didesa,ET041608,Dedesa,Oromia,Buno Bedele,1,key,FALSE
+Oromia,Buno Bedele,Gachii,ET041606,Gechi,Oromia,Buno Bedele,1,key,FALSE
+Oromia,Buno Bedele,Meko,ET041618,Meko,Oromia,Buno Bedele,1,key,FALSE
+Oromia,Buno Bedele,dhidesa hospital,ET041608,Dedesa,Oromia,Buno Bedele,1,key,FALSE
+Oromia,Dodola Town,Dodola Town,ET041700,Dodola town,Oromia,West Arsi,1,key,FALSE
+Oromia,East Bale,Dawe Kach,ET042106,Dawe Ketchen,Oromia,East Bale,1,key,FALSE
+Oromia,East Bale,Dawe Serar,ET042106,Dawe Ketchen,Oromia,East Bale,1,key,FALSE
+Oromia,East Bale,Ginir,ET042103,Ginir,Oromia,East Bale,1,key,FALSE
+Oromia,East Bale,Ginir Hospital,ET042107,Ginir town,Oromia,East Bale,1,key,FALSE
+Oromia,East Bale,Ginir Town,ET042107,Ginir town,Oromia,East Bale,1,key,FALSE
+Oromia,East Bale,Golocha Hospital,ET040803,Golocha,Oromia,Arsi,1,key,FALSE
+Oromia,East Bale,Gololcha,ET040803,Golocha,Oromia,Arsi,1,key,FALSE
+Oromia,East Bale,Lege Hidha,ET042102,Lege Hida,Oromia,East Bale,1,key,FALSE
+Oromia,East Bale,Rayitu,ET042104,Rayitu,Oromia,East Bale,1,key,FALSE
+Oromia,East Bale,Sawena,ET042105,Seweyna,Oromia,East Bale,1,key,FALSE
+Oromia,East Borena,Arero,ET041208,Arero,Oromia,Borena,1,key,FALSE
+Oromia,East Borena,Arero Hospital,ET041208,Arero,Oromia,Borena,1,key,FALSE
+Oromia,East Borena,Dhaas,ET041220,Dhas,Oromia,Borena,1,key,FALSE
+Oromia,East Borena,Goro Dola,ET041116,Goro (Bale),Oromia,Bale,1,key,FALSE
+Oromia,East Borena,Gumi Eldallo,ET041497,Gumi Idalo,Oromia,Guji,1,key,FALSE
+Oromia,East Borena,Liben,ET041407,Liben,Oromia,Guji,1,key,FALSE
+Oromia,East Borena,M/Walabu,ET041113,Meda Welabu,Oromia,Bale,1,key,FALSE
+Oromia,East Borena,Madda Walaabu Hospital,ET041113,Meda Welabu,Oromia,Bale,1,key,FALSE
+Oromia,East Borena,Negelle Borana G/Hospital,ET041414,Negele town,Oromia,Guji,1,key,FALSE
+Oromia,East Borena,Negelle Borana Town,ET041414,Negele town,Oromia,Guji,1,key,FALSE
+Oromia,East Borena,Wacille,ET041298,Wachile,Oromia,Borena,1,key,FALSE
+Oromia,East Borena,Welaabu lixa,ET041113,Meda Welabu,Oromia,Bale,1,key,FALSE
+Oromia,East Hararge,Babile Town,ET041000,Babile town,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Babile Woreda,ET041004,Babile (OR),Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Badano,ET041013,Bedeno,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Bedeno Hospital,ET041013,Bedeno,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Bisidimo Hospital,ET041004,Babile (OR),Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Chalanko Hospital,ET041009,Meta,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Chinaksan,ET041015,Chinaksen,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Dadar Hospital,ET041097,Deder town,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Dadar Town,ET041097,Deder town,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Dadar woreda,ET041011,Deder,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Fadis,ET041005,Fedis,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Garemulata Hospital,ET041016,Girawa,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Girawa,ET041016,Girawa,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Gola Oda,ET041017,Golo Oda,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Goro Gutu,ET041413,Gora Dola,Oromia,Guji,1,key,FALSE
+Oromia,East Hararge,Goro Muti,ET041010,Goro Gutu,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Gursum,ET041003,Gursum (OR),Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Gursum Hospital,ET041003,Gursum (OR),Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Haramaya District,ET041006,Haro Maya,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Jarso,ET041002,Jarso (East Hararghe),Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Karsa,ET041008,Kersa (East Hararge),Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Kombolcha,ET041001,Kombolcha,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Kumbi,ET041098,Kumbi,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Kurfachale,ET041007,Kurfa Chele,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Makanisa Oromo,ET041015,Chinaksen,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Malka Balo,ET041012,Melka Balo,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Mayu Muluke,ET041018,Meyu Muleke,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Meta,ET041009,Meta,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Midhaga,ET041014,Midhaga Tola,Oromia,East Hararge,1,key,FALSE
+Oromia,East Hararge,Midhaga Hospital,ET041014,Midhaga Tola,Oromia,East Hararge,1,key,FALSE
+Oromia,East Shewa,Ada'aa,ET040706,Ada'a,Oromia,East Shewa,1,key,FALSE
+Oromia,East Shewa,Adama,ET040703,Adama,Oromia,East Shewa,1,key,FALSE
+Oromia,East Shewa,Adamitulu Jido kombolichaa,ET040708,Adama Tulu Jido Kombolcha,Oromia,East Shewa,1,key,FALSE
+Oromia,East Shewa,Akaki,ET042012,Akaki,Oromia,Finfine Special,1,key,FALSE
+Oromia,East Shewa,Bora,ET040710,Bora (OR),Oromia,East Shewa,1,key,FALSE
+Oromia,East Shewa,Boset,ET040702,Boset,Oromia,East Shewa,1,key,FALSE
+Oromia,East Shewa,Dugda,ET040707,Dugda,Oromia,East Shewa,1,key,FALSE
+Oromia,East Shewa,Fantale,ET040701,Fentale,Oromia,East Shewa,1,key,FALSE
+Oromia,East Shewa,Gimbichu,ET040705,Gimbichu,Oromia,East Shewa,1,key,FALSE
+Oromia,East Shewa,Liben,ET041407,Liben,Oromia,Guji,1,key,FALSE
+Oromia,East Shewa,Lume,ET040704,Lome (OR),Oromia,East Shewa,1,key,FALSE
+Oromia,East Shewa,Meki Hospital,ET040707,Dugda,Oromia,East Shewa,1,key,FALSE
+Oromia,East Shewa,Meki Town,ET040707,Dugda,Oromia,East Shewa,1,key,FALSE
+Oromia,East Shewa,Metehara Town,ET040799,Metehara town,Oromia,East Shewa,1,key,FALSE
+Oromia,East Shewa,Olaniciti Hospital,ET040702,Boset,Oromia,East Shewa,1,key,FALSE
+Oromia,East Wollega,Arjo Hospital,ET040214,Jimma Arjo,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Boneya Boshe,ET040205,Boneya Boshe,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Diga,ET040210,Diga,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Ebantu,ET040202,Ibantu,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Gida Ayana,ET040203,Gida Ayana,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Gida Hospital,ET040203,Gida Ayana,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Gobu Seyo,ET040208,Gobu Seyo,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Gu/Bila,ET040207,Bila Seyo,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Gutin Town,ET040203,Gida Ayana,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Guto Gida,ET040213,Guto Gida,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Haro Limu,ET040204,Haro Limu,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Jima Arjo,ET040214,Jimma Arjo,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Kiremu,ET040217,Kiremu,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Leka  Dulecha,ET040212,Leka Dulecha,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Limu,ET040201,Limu (OR),Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Nunu kumba,ET040215,Nunu Kumba,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Sasigga,ET040211,Sasiga,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Sibu Sere,ET040209,Sibu Sire,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Sibu Sire Hosp,ET040209,Sibu Sire,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,W/Tuqa,ET040206,Wayu Tuka,Oromia,East Wellega,1,key,FALSE
+Oromia,East Wollega,Wama Hagalo,ET040216,Wama Hagalo,Oromia,East Wellega,1,key,FALSE
+Oromia,Guji,Adola Hospital,ET041492,Adola town,Oromia,Guji,1,key,FALSE
+Oromia,Guji,Adola Rede,ET041403,Adola,Oromia,Guji,1,key,FALSE
+Oromia,Guji,Adola Town,ET041492,Adola town,Oromia,Guji,1,key,FALSE
+Oromia,Guji,Aga Wayyu,ET041482,Aga Wayu,Oromia,Guji,1,key,FALSE
+Oromia,Guji,Anna Sora,ET041411,Ana Sora,Oromia,Guji,1,key,FALSE
+Oromia,Guji,Ardaa Jila M/Bokko,ET041409,Arda Jila,Oromia,Guji,1,key,FALSE
+Oromia,Guji,Bore,ET041402,Bore,Oromia,Guji,1,key,FALSE
+Oromia,Guji,Bore Hospital,ET041402,Bore,Oromia,Guji,1,key,FALSE
+Oromia,Guji,Dama,ET041408,Dama,Oromia,Guji,1,key,FALSE
+Oromia,Guji,Girja,ET041410,Girja /Harenfema,Oromia,Guji,1,key,FALSE
+Oromia,Guji,Haro Walabuu,ET041490,Haro Walabu,Oromia,Guji,1,key,FALSE
+Oromia,Guji,Odo Shakiso,ET041405,Odo Shakiso,Oromia,Guji,1,key,FALSE
+Oromia,Guji,Saba Boru,ET041412,Saba Boru,Oromia,Guji,1,key,FALSE
+Oromia,Guji,Saba Boru Hospital,ET041412,Saba Boru,Oromia,Guji,1,key,FALSE
+Oromia,Guji,Uraga,ET041401,Uraga,Oromia,Guji,1,key,FALSE
+Oromia,Guji,Uraga Hospital,ET041401,Uraga,Oromia,Guji,1,key,FALSE
+Oromia,Guji,Wadara,ET041404,Wadera,Oromia,Guji,1,key,FALSE
+Oromia,Holeta Town,Holeta Town,ET042020,Holeta town,Oromia,Finfine Special,1,key,FALSE
+Oromia,Horro Guduru Wollega,Abay Cooman,ET041905,Abay Chomen,Oromia,Horo Gudru Wellega,1,key,FALSE
+Oromia,Horro Guduru Wollega,Abe Dongoro,ET041910,Abe Dongoro,Oromia,Horo Gudru Wellega,1,key,FALSE
+Oromia,Horro Guduru Wollega,Amuru,ET041909,Amuru,Oromia,Horo Gudru Wellega,1,key,FALSE
+Oromia,Horro Guduru Wollega,Chomen Guduru,ET041911,Choman Guduru,Oromia,Horo Gudru Wellega,1,key,FALSE
+Oromia,Horro Guduru Wollega,Guduruu,ET041903,Guduru,Oromia,Horo Gudru Wellega,1,key,FALSE
+Oromia,Horro Guduru Wollega,Hababo Guduru,ET041904,Ababo,Oromia,Horo Gudru Wellega,1,key,FALSE
+Oromia,Horro Guduru Wollega,Horro,ET041901,Horo,Oromia,Horo Gudru Wellega,1,key,FALSE
+Oromia,Horro Guduru Wollega,Horro Buluk,ET041912,Horo Buluk,Oromia,Horo Gudru Wellega,1,key,FALSE
+Oromia,Horro Guduru Wollega,Jardaga Jarte,ET041908,Jarte Jardega,Oromia,Horo Gudru Wellega,1,key,FALSE
+Oromia,Horro Guduru Wollega,Jima Ganati,ET041906,Jimma Genete,Oromia,Horo Gudru Wellega,1,key,FALSE
+Oromia,Horro Guduru Wollega,Jima Rare,ET041907,Jimma Rare,Oromia,Horo Gudru Wellega,1,key,FALSE
+Oromia,Horro Guduru Wollega,Shambu Hospital,ET041902,Shambu town,Oromia,Horo Gudru Wellega,1,key,FALSE
+Oromia,Horro Guduru Wollega,Shambu Town,ET041902,Shambu town,Oromia,Horo Gudru Wellega,1,key,FALSE
+Oromia,Horro Guduru Wollega,Sulula Fincha,ET041905,Abay Chomen,Oromia,Horo Gudru Wellega,1,key,FALSE
+Oromia,Illuababora,A/Sachi,ET040302,Alge Sachi,Oromia,Ilu Aba Bora,1,key,FALSE
+Oromia,Illuababora,Alle,ET040311,Ale,Oromia,Ilu Aba Bora,1,key,FALSE
+Oromia,Illuababora,Bacho,ET040314,Becho (Ilu Aba Bora),Oromia,Ilu Aba Bora,1,key,FALSE
+Oromia,Illuababora,Bilo Nopha,ET040315,Bilo Nopha,Oromia,Ilu Aba Bora,1,key,FALSE
+Oromia,Illuababora,Bure,ET040312,Bure (OR),Oromia,Ilu Aba Bora,1,key,FALSE
+Oromia,Illuababora,Darimu,ET040301,Darimu,Oromia,Ilu Aba Bora,1,key,FALSE
+Oromia,Illuababora,Didu,ET040317,Didu,Oromia,Ilu Aba Bora,1,key,FALSE
+Oromia,Illuababora,Doreni,ET040324,Dorani,Oromia,Ilu Aba Bora,1,key,FALSE
+Oromia,Illuababora,Halu,ET040319,Halu /Huka,Oromia,Ilu Aba Bora,1,key,FALSE
+Oromia,Illuababora,Hurumu,ET040316,Hurumu,Oromia,Ilu Aba Bora,1,key,FALSE
+Oromia,Illuababora,Matu rural,ET040310,Metu Zuria,Oromia,Ilu Aba Bora,1,key,FALSE
+Oromia,Illuababora,Nono sale,ET040313,Sale Nono,Oromia,Ilu Aba Bora,1,key,FALSE
+Oromia,Illuababora,Yayo,ET040309,Yayu,Oromia,Ilu Aba Bora,1,key,FALSE
+Oromia,Jimma,Botor Tolay,ET040495,Botor Tolay,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Chora Botor,ET040415,Chora (Jimma),Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Dedo,ET040410,Dedo,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Dedo hospital,ET040410,Dedo,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Dimtu hospital,ET040404,Tiro Afeta,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Gera,ET040408,Gera,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Goma,ET040407,Goma,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Gumay,ET040416,Gumay,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Kersa,ET040405,Kersa (Jimma),Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Limu Genet town,ET040401,Limu Seka,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Limu Hospital,ET040401,Limu Seka,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Limu Kosa,ET040402,Limu Kosa,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Limu Seka,ET040401,Limu Seka,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Limu Seka hospital,ET040401,Limu Seka,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Mana,ET040406,Mena (Jimma),Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Mancho,ET040490,Mancho,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Nada hospital,ET040411,Omo Nada,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Nedhi Gibe,ET040404,Tiro Afeta,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Nono Benja,ET040499,Nono Benja,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Omo Beyam,ET040491,Omo Beyam,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Omo Nada,ET040411,Omo Nada,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Satama,ET040413,Setema,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Seka Chokorsa,ET040409,Seka Chekorsa,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Seka Chokorsa hospital,ET040409,Seka Chekorsa,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Setema hospital,ET040413,Setema,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Shabe,ET040414,Shebe Sambo,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Sigmo,ET040412,Sigmo,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma,Sokoru,ET040403,Sekoru,Oromia,Jimma,1,key,FALSE
+Oromia,Jimma Town,Jimma Town,ET040418,Jimma town,Oromia,Jimma,1,key,FALSE
+Oromia,Kellem Wollega,Anfilo,ET041807,Anfilo,Oromia,Kelem Wellega,1,key,FALSE
+Oromia,Kellem Wollega,D/Dollo Hosp.,ET041806,Denbi Dollo town,Oromia,Kelem Wellega,1,key,FALSE
+Oromia,Kellem Wollega,Dale Sadi,ET041808,Dale Sadi,Oromia,Kelem Wellega,1,key,FALSE
+Oromia,Kellem Wollega,Dale Wabera,ET041803,Dale Wabera,Oromia,Kelem Wellega,1,key,FALSE
+Oromia,Kellem Wollega,Dambi Dollo,ET041806,Denbi Dollo town,Oromia,Kelem Wellega,1,key,FALSE
+Oromia,Kellem Wollega,Gawo Kebe,ET041804,Gawo Kebe,Oromia,Kelem Wellega,1,key,FALSE
+Oromia,Kellem Wollega,Gidami,ET041809,Gidami,Oromia,Kelem Wellega,1,key,FALSE
+Oromia,Kellem Wollega,Gidami Hosp.,ET041809,Gidami,Oromia,Kelem Wellega,1,key,FALSE
+Oromia,Kellem Wollega,Hawa Gelan,ET041801,Hawa Galan,Oromia,Kelem Wellega,1,key,FALSE
+Oromia,Kellem Wollega,Hawa Gelan Hosp.,ET041801,Hawa Galan,Oromia,Kelem Wellega,1,key,FALSE
+Oromia,Kellem Wollega,Jima Horo,ET041810,Jimma Horo,Oromia,Kelem Wellega,1,key,FALSE
+Oromia,Kellem Wollega,Kake Hosp.,ET041803,Dale Wabera,Oromia,Kelem Wellega,1,key,FALSE
+Oromia,Kellem Wollega,Lalo Kile,ET041811,Lalo Kile,Oromia,Kelem Wellega,1,key,FALSE
+Oromia,Kellem Wollega,Sadi Chanka,ET041812,Sedi Chenka,Oromia,Kelem Wellega,1,key,FALSE
+Oromia,Kellem Wollega,Seyo,ET041805,Sayo,Oromia,Kelem Wellega,1,key,FALSE
+Oromia,Kellem Wollega,Yemalogi Walal,ET041802,Yama Logi Welel,Oromia,Kelem Wellega,1,key,FALSE
+Oromia,Maya Town,Maya Town,ET041006,Haro Maya,Oromia,East Hararge,1,key,FALSE
+Oromia,Metu Town,Metu Town,ET040320,Metu town,Oromia,Ilu Aba Bora,1,key,FALSE
+Oromia,Modjo town,Modjo town,ET040797,Mojo Town,Oromia,East Shewa,1,key,FALSE
+Oromia,Moyale Town,Moyale Town,ET041210,Moyale (OR),Oromia,Borena,1,key,FALSE
+Oromia,Nejo Town,Nejo Town,ET040199,Nejo town,Oromia,West Wellega,1,key,FALSE
+Oromia,Nekemte Town,Nekemte Town,ET040297,Nekemte town,Oromia,East Wellega,1,key,FALSE
+Oromia,North Shoa,Abichu Gnea,ET040609,Abichugna Gne'a,Oromia,North Shewa (OR),1,key,FALSE
+Oromia,North Shoa,Aleltu,ET040617,Aleltu,Oromia,North Shewa (OR),1,key,FALSE
+Oromia,North Shoa,Berek Woreda,ET042011,Bereh,Oromia,Finfine Special,1,key,FALSE
+Oromia,North Shoa,Debre Libanos,ET040607,Debre Libanos,Oromia,North Shewa (OR),1,key,FALSE
+Oromia,North Shoa,Degam,ET040605,Degem,Oromia,North Shewa (OR),1,key,FALSE
+Oromia,North Shoa,Dera,ET030209,Dera (AM),Amhara,South Gondar,1,key,FALSE
+Oromia,North Shoa,Fitche Hospital,ET040613,Fiche town,Oromia,North Shewa (OR),1,key,FALSE
+Oromia,North Shoa,Fitche Town,ET040613,Fiche town,Oromia,North Shewa (OR),1,key,FALSE
+Oromia,North Shoa,G.M.Hospital,ET040602,Dera (OR),Oromia,North Shewa (OR),1,key,FALSE
+Oromia,North Shoa,Garba guracha town,ET040604,Kuyu,Oromia,North Shewa (OR),1,key,FALSE
+Oromia,North Shoa,Gerar Jarso,ET040606,Gerar Jarso,Oromia,North Shewa (OR),1,key,FALSE
+Oromia,North Shoa,Hidabu Abote,ET040603,Hidabu Abote,Oromia,North Shewa (OR),1,key,FALSE
+Oromia,North Shoa,Jida,ET040615,Jida,Oromia,North Shewa (OR),1,key,FALSE
+Oromia,North Shoa,Kuyu,ET040604,Kuyu,Oromia,North Shewa (OR),1,key,FALSE
+Oromia,North Shoa,Kuyu  Hospital,ET040604,Kuyu,Oromia,North Shewa (OR),1,key,FALSE
+Oromia,North Shoa,MukeTuri Hospital,ET040608,Wuchale,Oromia,North Shewa (OR),1,key,FALSE
+Oromia,North Shoa,Mulo Woreda,ET042016,Mulo,Oromia,Finfine Special,1,key,FALSE
+Oromia,North Shoa,Wera  Jarso,ET040601,Wara Jarso,Oromia,North Shewa (OR),1,key,FALSE
+Oromia,North Shoa,Wuchale,ET040608,Wuchale,Oromia,North Shewa (OR),1,key,FALSE
+Oromia,North Shoa,Yaya  Gulale,ET040614,Yaya Gulele,Oromia,North Shewa (OR),1,key,FALSE
+Oromia,North Shoa,chancho hosp,ET042016,Mulo,Oromia,Finfine Special,1,key,FALSE
+Oromia,North Shoa,chancho town,ET042013,Sululta,Oromia,Finfine Special,1,key,FALSE
+Oromia,North Shoa,kimbibit,ET040610,Kimbibit,Oromia,North Shewa (OR),1,key,FALSE
+Oromia,North Shoa,sululta woreda,ET042013,Sululta,Oromia,Finfine Special,1,key,FALSE
+Oromia,Robe Town,Robe Town,ET041119,Robe Town,Oromia,Bale,1,key,FALSE
+Oromia,Sendafa Town,Sendafa Town,ET042018,Sendafa town,Oromia,Finfine Special,1,key,FALSE
+Oromia,Shager-City,Ane Dima Hospital,ET042001,Burayu,Oromia,Finfine Special,1,key,FALSE
+Oromia,Shager-City,Burayu Sub-city,ET042001,Burayu,Oromia,Finfine Special,1,key,FALSE
+Oromia,Shager-City,Eeka-Tefo Sub-city,ET042004,Lege Tafo-Lege Dadi town,Oromia,Finfine Special,1,key,FALSE
+Oromia,Shager-City,Furi Sub-city,ET042006,Sebeta Hawas,Oromia,Finfine Special,1,key,FALSE
+Oromia,Shager-City,Gafarsa-Guje Sub-city,ET042001,Burayu,Oromia,Finfine Special,1,key,FALSE
+Oromia,Shager-City,Galan Sub-city,ET042098,Gelana (Finfine),Oromia,Finfine Special,1,key,FALSE
+Oromia,Shager-City,Galan-Guda Sbu-city,ET042098,Gelana (Finfine),Oromia,Finfine Special,1,key,FALSE
+Oromia,Shager-City,Koye Fache Sub-city,ET042098,Gelana (Finfine),Oromia,Finfine Special,1,key,FALSE
+Oromia,Shager-City,Kura-Jida Sub-city,ET042004,Lege Tafo-Lege Dadi town,Oromia,Finfine Special,1,key,FALSE
+Oromia,Shager-City,Malka-Nono Sub-city,ET042001,Burayu,Oromia,Finfine Special,1,key,FALSE
+Oromia,Shager-City,Mana Abichu Sub-city,ET042005,Sululta town,Oromia,Finfine Special,1,key,FALSE
+Oromia,Shager-City,Sabata Sub-city,ET042009,Sebeta town,Oromia,Finfine Special,1,key,FALSE
+Oromia,Shager-City,Sululta Sub-city,ET042005,Sululta town,Oromia,Finfine Special,1,key,FALSE
+Oromia,Shakiso Town,Shakiso Town,ET041499,Shakiso town,Oromia,Guji,1,key,FALSE
+Oromia,Shashemene  Town,Shashemene  Town,ET041711,Shashemene town,Oromia,West Arsi,1,key,FALSE
+Oromia,Sheno Town,Sheno Town,ET040610,Kimbibit,Oromia,North Shewa (OR),1,key,FALSE
+Oromia,South West Shewa,Ameya,ET041301,Ameya,Oromia,South West Shewa,1,key,FALSE
+Oromia,South West Shewa,Ameya Hosp.,ET041301,Ameya,Oromia,South West Shewa,1,key,FALSE
+Oromia,South West Shewa,Bacho,ET040314,Becho (Ilu Aba Bora),Oromia,Ilu Aba Bora,1,key,FALSE
+Oromia,South West Shewa,Bantu Hosp.,ET041308,Tole,Oromia,South West Shewa,1,key,FALSE
+Oromia,South West Shewa,Dawo,ET041304,Dawo,Oromia,South West Shewa,1,key,FALSE
+Oromia,South West Shewa,Elu,ET041305,Ilu,Oromia,South West Shewa,1,key,FALSE
+Oromia,South West Shewa,Goro,ET041116,Goro (Bale),Oromia,Bale,1,key,FALSE
+Oromia,South West Shewa,Kersa Malima,ET041307,Kersana Malima,Oromia,South West Shewa,1,key,FALSE
+Oromia,South West Shewa,Lemen Hosp.,ET070203,Lemmo,Central Ethiopia,Hadiya,1,key,FALSE
+Oromia,South West Shewa,Sadan Sodo,ET041310,Seden Sodo,Oromia,South West Shewa,1,key,FALSE
+Oromia,South West Shewa,Sebata Hawas,ET042006,Sebeta Hawas,Oromia,Finfine Special,1,key,FALSE
+Oromia,South West Shewa,Sodo Dachi,ET041314,Sodo Daci,Oromia,South West Shewa,1,key,FALSE
+Oromia,South West Shewa,St.Luke Hosp.,ET041311,Woliso town,Oromia,South West Shewa,1,key,FALSE
+Oromia,South West Shewa,Tole,ET041308,Tole,Oromia,South West Shewa,1,key,FALSE
+Oromia,South West Shewa,Tulu Bolo Hosp.,ET041309,Becho (SW Shewa),Oromia,South West Shewa,1,key,FALSE
+Oromia,South West Shewa,Woliso Rural,ET041303,Waliso,Oromia,South West Shewa,1,key,FALSE
+Oromia,South West Shewa,Wonchi,ET041302,Wenchi,Oromia,South West Shewa,1,key,FALSE
+Oromia,West Arsi,Adaba,ET041710,Adaba,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,Dodola R,ET041707,Dodola,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,Gambo General Hosp,ET041705,Kore,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,Gedab Hasasa,ET041706,Gedeb Asasa,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,Heban Arsi,ET041783,Heban Arsi,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,Kofale Town,ET041704,Kofele,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,Kofele Rural,ET041704,Kofele,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,Kokosa,ET041708,Kokosa,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,Kokosa Primary Hospital,ET041708,Kokosa,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,"Kore
+",ET041705,Kore,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,Loke primary hospital,ET041709,Nenesebo,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,Nagelle Arsi Woreda,ET041703,Arsi Negele,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,Negelle Arsi  Town,ET041799,Arsi Negele town,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,Negelle Arsi Primary Hospital,ET041799,Arsi Negele town,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,Nensebo,ET041709,Nenesebo,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,Nensebo Primary Hospita,ET041709,Nenesebo,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,Shalla,ET041702,Shala,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,Shshemene,ET041712,Shashemene Zuria,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,Siraro,ET041701,Siraro,Oromia,West Arsi,1,key,FALSE
+Oromia,West Arsi,Wondo,ET041797,Wondo,Oromia,West Arsi,1,key,FALSE
+Oromia,West Guji,Abaya,ET041513,Abaya,Oromia,West Guji,1,key,FALSE
+Oromia,West Guji,B/H/Woreda,ET041501,Bule Hora,Oromia,West Guji,1,key,FALSE
+Oromia,West Guji,Birbirsa Kojowa,ET041596,Birbirsa Kojowa,Oromia,West Guji,1,key,FALSE
+Oromia,West Guji,Bule/Hora/Hos,ET041587,Bule Hora town,Oromia,West Guji,1,key,FALSE
+Oromia,West Guji,Dugda dawa,ET041515,Dugda Dawa,Oromia,West Guji,1,key,FALSE
+Oromia,West Guji,Gelana,ET041517,Gelana (West Guji),Oromia,West Guji,1,key,FALSE
+Oromia,West Guji,Gelana Hospital,ET042098,Gelana (Finfine),Oromia,Finfine Special,1,key,FALSE
+Oromia,West Guji,H/Wamena,ET041509,Hambela Wamena,Oromia,West Guji,1,key,FALSE
+Oromia,West Guji,Kercha,ET041502,Kercha,Oromia,West Guji,1,key,FALSE
+Oromia,West Guji,Kercha Town,ET041502,Kercha,Oromia,West Guji,1,key,FALSE
+Oromia,West Guji,Kercha hospital,ET041502,Kercha,Oromia,West Guji,1,key,FALSE
+Oromia,West Guji,Melka soda,ET041518,Melka Soda,Oromia,West Guji,1,key,FALSE
+Oromia,West Guji,Melka/Soda/Hos,ET041518,Melka Soda,Oromia,West Guji,1,key,FALSE
+Oromia,West Guji,Suro,ET041594,Suro Berguda,Oromia,West Guji,1,key,FALSE
+Oromia,West Harerge,Anchar,ET040906,Anchar,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Asebot Hospital,ET040903,Tulo (OR),Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Bedesa Hospital,ET040914,Bedesa,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Bedesa town,ET040914,Bedesa,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Boke,ET040910,Boke,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Burka dhintu,ET040998,Burqua Dhintu,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Burqadhintu Hospital,ET040998,Burqua Dhintu,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Chiro Hospital,ET040905,Chiro town,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Chiro Rural,ET040913,Chiro Zuria,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Chiro town,ET040905,Chiro town,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Daro Labu,ET040909,Daro Lebu,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Darolebu Hospita,ET040909,Daro Lebu,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Doba,ET040902,Doba,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Gelemso Hospital,ET040908,Habro,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Gelemso town,ET040908,Habro,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Gemechis,ET040912,Gemechis,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Guba koricha,ET040907,Goba Koricha,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Gumbi Bordode,ET040991,Gumbi Bordede,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Habro,ET040908,Habro,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Hawigudina,ET040915,Hawi Gudina,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Hirna Hospital,ET040903,Tulo (OR),Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Hirna town,ET040903,Tulo (OR),Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Mechara-Micheta T.,ET040908,Habro,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Mieso,ET040901,Mieso,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Oda Bultum,ET040911,Kuni /Oda Bultum,Oromia,West Hararge,1,key,FALSE
+Oromia,West Harerge,Shenen Dugo,ET040893,Shanan Kolu,Oromia,Arsi,1,key,FALSE
+Oromia,West Harerge,Tullo,ET040903,Tulo (OR),Oromia,West Hararge,1,key,FALSE
+Oromia,West Shoa,Abuna Gindeberet,ET040516,Abuna Ginde Beret,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Adea Berga,ET040513,Adda Berga,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Ambo,ET040503,Ambo Zuria,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Ambo University Referal Hospital,ET040515,Ambo town,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Bako Primary Hospital,ET040506,Bako Tibe,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Bako Tibe,ET040506,Bako Tibe,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Chelia,ET040505,Cheliya,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Chobi,ET040592,Cobi,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Dano,ET040507,Dano,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Dendi,ET040510,Dendi,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Dendi Primary Hospital,ET040510,Dendi,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Dire Enchini,ET040509,Tikur Enchini,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Ejere,ET040511,Ejere /Addis Alem,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Ejersa Lafo,ET040590,Ejersa Lafo,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Enchini Primary Hospital,ET040513,Adda Berga,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Gedo General Hospital,ET040505,Cheliya,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Gindabarat,ET040501,Ginde Beret,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Gindeberet General Hospital,ET040501,Ginde Beret,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Guder Primary Hospital,ET040517,Toke Kutaye,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Ilfata,ET040519,Ifata,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Ilu Galan,ET040500,Illu Galan,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Jaldu,ET040502,Jeldu,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Jaldu Primary Hospital,ET040502,Jeldu,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Jibat,ET040518,Jibat,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Liban Jawi,ET040597,Liban Jawi,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Meta Robi,ET040514,Meta Robi,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Meta Walkite,ET040594,Meta Walkite,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Mide Kegn,ET040504,Mida Kegn,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Nono,ET040508,Nono,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Toke Kutaye,ET040517,Toke Kutaye,Oromia,West Shewa,1,key,FALSE
+Oromia,West Shoa,Welmera,ET042014,Welmera,Oromia,Finfine Special,1,key,FALSE
+Oromia,West Wollega,Aira,ET040107,Ayira,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Aira hospital,ET040107,Ayira,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Babo Gambel,ET040111,Babo,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Begi,ET040116,Begi,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Begi hospital,ET040116,Begi,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Boji Chokorsa,ET040110,Boji Chekorsa,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Boji Dirmaji,ET040106,Boji Dirmeji,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Bube Hospital,ET040115,Nole Kaba,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Ganji Hospital,ET040113,Gaji,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Genji,ET040113,Gaji,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Ghimbi Adv.hospital,ET040193,Gimbi town,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Ghimbi Rural,ET040103,Gimbi,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Ghimbi Town,ET040193,Gimbi town,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Ghimbi pub. Hospital,ET040193,Gimbi town,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Gulliso,ET040119,Guliso,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Haru,ET040114,Haru,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Homa,ET040117,Homa,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Jarso,ET041002,Jarso (East Hararghe),Oromia,East Hararge,1,key,FALSE
+Oromia,West Wollega,Kiltu Kara,ET040105,Kiltu Kara,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Kondala,ET040109,Gudetu Kondole,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Lalo Assabi,ET040104,Lalo Asabi,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Lata Sibu,ET040197,Leta Sibu,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Mana Sibu,ET040101,Mana Sibu,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Mendi Hospital,ET040198,Mendi town,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Mendi Town,ET040198,Mendi town,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Nejo,ET040102,Nejo,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Nole kaba,ET040115,Nole Kaba,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Sayo Nole,ET040118,Sayo Nole,Oromia,West Wellega,1,key,FALSE
+Oromia,West Wollega,Yubdo,ET040112,Yubdo,Oromia,West Wellega,1,key,FALSE
+Oromia,Woliso Town,Woliso Town,ET041311,Woliso town,Oromia,South West Shewa,1,key,FALSE
+Sidama,Central Sidama,Arbegona  WoHO,ET160003,Arbegona,Sidama,Sidama,1,key,FALSE
+Sidama,East Sidama,Aroressa  WoHO,ET160009,Aroresa,Sidama,Sidama,1,key,FALSE
+Sidama,Hawassa City Admn,Tula Sub City,ET160018,Hawasa town,Sidama,Sidama,1,key,FALSE
+Sidama,North Sidama,Bilate Zuria woreda,ET160032,Bilate Zuria,Sidama,Sidama,1,key,FALSE
+Sidama,South Sidama,Aleta Chuko  Town,ET160016,Aleta Chuko,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Aleta Chuko  WoHO,ET160016,Aleta Chuko,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Aleta Wondo  WoHO,ET160005,Aleta Wendo,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Aleta Wondo  taHO,ET160021,Aleta Wondo town,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Bensa  WoHO,ET160008,Bensa,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Bona Zuria  WoHO,ET160017,Bona Zuria,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Boricha  WoHO,ET160010,Boricha,Sidama,Sidama,1,override,FALSE
+Sidama,NA,Borricha  WoHO,ET160010,Boricha,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Burra Woreda,ET160024,Bura,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Bursa  WoHO,ET160015,Bursa,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Chabe  WoHO,ET160029,Chabe Gambeltu,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Chire  WoHO,ET160014,Chire,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Chirone Woreda,ET160027,Chirone,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Daela Woreda,ET160034,Daella,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Dale  WoHO,ET160004,Dale,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Dara  WoHO,ET160006,Dara,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Dara otlcho woreda,ET160025,Dara Otilicho,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Darara Woreda,ET160033,Darara,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Daye  taHO,ET160030,Daye town,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Gorche  WoHO,ET160011,Gorche,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Hawassa City,ET160018,Hawasa town,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Hawassa Zuria  WoHO,ET160002,Hawassa Zuria,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Hawela  WoHO,ET160023,Hawela,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Hooko Woreda,ET160031,Hokko,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Hulla  WoHO,ET160007,Hulla,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Leku  taHO,ET160022,Leku town,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Loka Abaya  WoHO,ET160037,Loka Abaya,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Melga  WoHO,ET160012,Malga,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Shafamo WoHO,ET160028,Shafamo,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Shebedino  WoHO,ET160001,Shebe Dino,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Teticha woreda,ET160026,Teticha,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Wensho  WoHO,ET160013,Wonosho,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Wondo Genet  Town,ET160036,Wondo-Genet town,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Wondo Genet  WoHO,ET160019,Wondo-Genet,Sidama,Sidama,1,key,FALSE
+Sidama,NA,Yirgalem   taHO,ET160020,Yirgalem town,Sidama,Sidama,1,key,FALSE
+Somali,Afder,Barey,ET050807,Barey,Somali,Afder,1,key,FALSE
+Somali,Afder,Charati,ET050802,Charati,Somali,Afder,1,key,FALSE
+Somali,Afder,Dolobay,ET050808,Dolobay,Somali,Afder,1,key,FALSE
+Somali,Afder,Elkare/Serer,ET050804,Elkare /Serer,Somali,Afder,1,key,FALSE
+Somali,Afder,God-God,ET050899,God-God,Somali,Afder,1,key,FALSE
+Somali,Afder,Hargele,ET050806,Hargele,Somali,Afder,1,key,FALSE
+Somali,Afder,Hargele Hosp.,ET050806,Hargele,Somali,Afder,1,key,FALSE
+Somali,Afder,Kohle,ET050898,Kohle /Qoxle,Somali,Afder,1,key,FALSE
+Somali,Afder,Raso,ET050809,Raso,Somali,Afder,1,key,FALSE
+Somali,Afder,Raso Hosp,ET050809,Raso,Somali,Afder,1,key,FALSE
+Somali,Afder,West Imi,ET050805,West Imi,Somali,Afder,1,key,FALSE
+Somali,Daawa,Hudet,ET051104,Hudet,Somali,Daawa,1,key,FALSE
+Somali,Daawa,Lehey Hospital,ET051103,Moyale (SM),Somali,Daawa,1,key,FALSE
+Somali,Daawa,Moyale (SM),ET051103,Moyale (SM),Somali,Daawa,1,key,FALSE
+Somali,Daawa,Mubarek,ET051187,Mubarek,Somali,Daawa,1,key,FALSE
+Somali,Daawa,Qade Duma,ET051198,Qada Duma,Somali,Daawa,1,key,FALSE
+Somali,Doolo,Bokh,ET050702,Bokh,Somali,Doolo,1,key,FALSE
+Somali,Doolo,Danod,ET050701,Danod,Somali,Doolo,1,key,FALSE
+Somali,Doolo,Daratole,ET050788,Daratole,Somali,Doolo,1,key,FALSE
+Somali,Doolo,Galadi,ET050703,Galadi,Somali,Doolo,1,key,FALSE
+Somali,Doolo,Galhamur,ET050799,Galhamur,Somali,Doolo,1,key,FALSE
+Somali,Doolo,Lehel-Yucub,ET050798,Lehel-Yucub,Somali,Doolo,1,key,FALSE
+Somali,Doolo,Warder,ET050704,Warder,Somali,Doolo,1,key,FALSE
+Somali,Doolo,Wardher Hosp.,ET050704,Warder,Somali,Doolo,1,key,FALSE
+Somali,Erer,Fik,ET050402,Fik,Somali,Erer,1,key,FALSE
+Somali,Erer,Fik Hosp.,ET050402,Fik,Somali,Erer,1,key,FALSE
+Somali,Erer,Hamaro,ET050404,Hamero,Somali,Erer,1,key,FALSE
+Somali,Erer,Lagahida,ET050407,Lagahida,Somali,Erer,1,key,FALSE
+Somali,Erer,Mayumuluka,ET041018,Meyu Muleke,Oromia,East Hararge,1,key,FALSE
+Somali,Erer,Qubi,ET050497,Qubi,Somali,Erer,1,key,FALSE
+Somali,Erer,Salahad,ET050403,Salahad,Somali,Erer,1,key,FALSE
+Somali,Erer,Wangay,ET050499,Wangey,Somali,Erer,1,key,FALSE
+Somali,Erer,Yohob,ET050498,Yahob,Somali,Erer,1,key,FALSE
+Somali,Fafan,Aw-Bare,ET050205,Aw-Bare,Somali,Fafan,1,key,FALSE
+Somali,Fafan,Babile (SM),ET050203,Babile (SM),Somali,Fafan,1,key,FALSE
+Somali,Fafan,Goljano,ET050290,Goljano,Somali,Fafan,1,key,FALSE
+Somali,Fafan,Gursum (SM),ET050202,Gursum (SM),Somali,Fafan,1,key,FALSE
+Somali,Fafan,Harawo,ET050299,Harawo,Somali,Fafan,1,key,FALSE
+Somali,Fafan,Haroreys,ET050298,Haroreys,Somali,Fafan,1,key,FALSE
+Somali,Fafan,Harshin,ET050207,Harshin,Somali,Fafan,1,key,FALSE
+Somali,Fafan,Jigjiga Referal Hosp.,ET050293,Jigjiga town,Somali,Fafan,1,key,FALSE
+Somali,Fafan,Jijiga Primary Hospital,ET050293,Jigjiga town,Somali,Fafan,1,key,FALSE
+Somali,Fafan,Jijiga city,ET050293,Jigjiga town,Somali,Fafan,1,key,FALSE
+Somali,Fafan,Kabribeyah Rural,ET050206,Kebribeyah,Somali,Fafan,1,key,FALSE
+Somali,Fafan,Karamara Hosp.,ET050293,Jigjiga town,Somali,Fafan,1,key,FALSE
+Somali,Fafan,Kebribayah town,ET050296,Kebribayah town,Somali,Fafan,1,key,FALSE
+Somali,Fafan,Koran/Mulla,ET050297,Koran /Mulla,Somali,Fafan,1,key,FALSE
+Somali,Fafan,Shabelely,ET050204,Shabeeley,Somali,Fafan,1,key,FALSE
+Somali,Fafan,Tuliguleed,ET050283,Tuliguled,Somali,Fafan,1,key,FALSE
+Somali,Fafan,Wajale town,ET050295,Wajale town,Somali,Fafan,1,key,FALSE
+Somali,Jarar,Ararso,ET050395,Ararso,Somali,Jarar,1,key,FALSE
+Somali,Jarar,Aware,ET050303,Aware,Somali,Jarar,1,key,FALSE
+Somali,Jarar,Bilcil-Bur,ET050306,Bilcil-Bur,Somali,Jarar,1,key,FALSE
+Somali,Jarar,Birkod,ET050394,Burqod,Somali,Jarar,1,key,FALSE
+Somali,Jarar,Daror,ET050392,Daror,Somali,Jarar,1,key,FALSE
+Somali,Jarar,Degahabur  Hosp,ET050307,Degahabur town,Somali,Jarar,1,key,FALSE
+Somali,Jarar,Degahabur town,ET050307,Degahabur town,Somali,Jarar,1,key,FALSE
+Somali,Jarar,Degahbur  Rural,ET050302,Degehabur,Somali,Jarar,1,key,FALSE
+Somali,Jarar,Degahmado,ET050301,Degehamedo,Somali,Jarar,1,key,FALSE
+Somali,Jarar,Dig,ET050399,Dig,Somali,Jarar,1,key,FALSE
+Somali,Jarar,Gashamo,ET050304,Gashamo,Somali,Jarar,1,key,FALSE
+Somali,Jarar,Gashamo Hospital,ET050304,Gashamo,Somali,Jarar,1,key,FALSE
+Somali,Jarar,Gunagado,ET050305,Gunagado,Somali,Jarar,1,key,FALSE
+Somali,Jarar,Yocale,ET050382,Yocale,Somali,Jarar,1,key,FALSE
+Somali,Korahe,Bodaley,ET050599,Bodaley,Somali,Korahe,1,key,FALSE
+Somali,Korahe,Debeweyin,ET050504,Debeweyin,Somali,Korahe,1,key,FALSE
+Somali,Korahe,El-Ogaden,ET050598,El-Ogaden,Somali,Korahe,1,key,FALSE
+Somali,Korahe,Higloley,ET050597,Higloley,Somali,Korahe,1,key,FALSE
+Somali,Korahe,Kabridahre  Hosp.,ET050592,Kebridehar town,Somali,Korahe,1,key,FALSE
+Somali,Korahe,Kebridehar,ET050502,Kebridehar,Somali,Korahe,1,key,FALSE
+Somali,Korahe,Kebridehar town,ET050592,Kebridehar town,Somali,Korahe,1,key,FALSE
+Somali,Korahe,Kudunbur,ET050595,Goglo,Somali,Korahe,1,key,FALSE
+Somali,Korahe,Lasdhankayre,ET050596,Lasdhankayre,Somali,Korahe,1,key,FALSE
+Somali,Korahe,Marsin,ET050586,Marsin,Somali,Korahe,1,key,FALSE
+Somali,Korahe,Shaygosh,ET050501,Shaygosh,Somali,Korahe,1,key,FALSE
+Somali,Korahe,Shilabo,ET050503,Shilabo,Somali,Korahe,1,key,FALSE
+Somali,Liban,Bokolmayo,ET050999,Bokolmayo,Somali,Liban,1,key,FALSE
+Somali,Liban,Deka Suftu,ET050991,Deka Suftu,Somali,Liban,1,key,FALSE
+Somali,Liban,Dollo Ado hospital,ET050902,Dolo Ado,Somali,Liban,1,key,FALSE
+Somali,Liban,Dolo Ado,ET050902,Dolo Ado,Somali,Liban,1,key,FALSE
+Somali,Liban,Filtu,ET050901,Filtu,Somali,Liban,1,key,FALSE
+Somali,Liban,Filtu Hosp.,ET050901,Filtu,Somali,Liban,1,key,FALSE
+Somali,Liban,Goro Baqaqsa,ET050903,Goro Baqaqsa,Somali,Liban,1,key,FALSE
+Somali,Liban,Guradamole,ET050904,Guradamole,Somali,Liban,1,key,FALSE
+Somali,Liban,Kersadula,ET050991,Deka Suftu,Somali,Liban,1,key,FALSE
+Somali,Nogob,Ayun,ET051001,Ayun,Somali,Nogob,1,key,FALSE
+Somali,Nogob,Dihun,ET051006,Dihun,Somali,Nogob,1,key,FALSE
+Somali,Nogob,Elwayne,ET051002,Elwayne,Somali,Nogob,1,key,FALSE
+Somali,Nogob,Garbo,ET051003,Garbo,Somali,Nogob,1,key,FALSE
+Somali,Nogob,Garbo- Hospital,ET051003,Garbo,Somali,Nogob,1,key,FALSE
+Somali,Nogob,Hararey,ET050298,Haroreys,Somali,Fafan,1,key,FALSE
+Somali,Nogob,Horoshagah,ET051095,Horshagah,Somali,Nogob,1,key,FALSE
+Somali,Nogob,Sagag,ET051005,Sagag,Somali,Nogob,1,key,FALSE
+Somali,Shabelle,Aba-Korow,ET050699,Aba-Korow,Somali,Shabelle,1,key,FALSE
+Somali,Shabelle,Adadle,ET050602,Adadle,Somali,Shabelle,1,key,FALSE
+Somali,Shabelle,Berocano,ET050608,Berocano,Somali,Shabelle,1,key,FALSE
+Somali,Shabelle,Danan,ET050603,Danan,Somali,Shabelle,1,key,FALSE
+Somali,Shabelle,East Imi,ET050601,East Imi,Somali,Shabelle,1,key,FALSE
+Somali,Shabelle,Elale,ET020102,Elidar,Afar,Awsi /Zone 1,1,key,FALSE
+Somali,Shabelle,Ferfer,ET050607,Ferfer,Somali,Shabelle,1,key,FALSE
+Somali,Shabelle,Gode Hosp,ET050696,Godey town,Somali,Shabelle,1,key,FALSE
+Somali,Shabelle,Gode Rural,ET050604,Gode,Somali,Shabelle,1,key,FALSE
+Somali,Shabelle,Gode town,ET050696,Godey town,Somali,Shabelle,1,key,FALSE
+Somali,Shabelle,Kelafo,ET050605,Kelafo,Somali,Shabelle,1,key,FALSE
+Somali,Shabelle,Mustahil,ET050606,Mustahil,Somali,Shabelle,1,key,FALSE
+Somali,Siti,Afdem,ET050105,Afdem,Somali,Siti,1,key,FALSE
+Somali,Siti,Ayisha,ET050101,Ayisha,Somali,Siti,1,key,FALSE
+Somali,Siti,Bike Hosp.,ET050198,Gota-Biki,Somali,Siti,1,key,FALSE
+Somali,Siti,Daymeed,ET050105,Afdem,Somali,Siti,1,key,FALSE
+Somali,Siti,Dembel,ET050102,Dembel,Somali,Siti,1,key,FALSE
+Somali,Siti,Dhuunyar,ET050105,Afdem,Somali,Siti,1,key,FALSE
+Somali,Siti,Erer (SM),ET050104,Erer (SM),Somali,Siti,1,key,FALSE
+Somali,Siti,Gablaalu,ET050199,Gablalu,Somali,Siti,1,key,FALSE
+Somali,Siti,Goota-biki,ET050198,Gota-Biki,Somali,Siti,1,key,FALSE
+Somali,Siti,Hadhagala,ET050106,Hadhagala,Somali,Siti,1,key,FALSE
+Somali,Siti,Miesso,ET050107,Miesso,Somali,Siti,1,key,FALSE
+Somali,Siti,Shinile,ET050103,Shinile,Somali,Siti,1,key,FALSE
+Somali,Siti,Shinile Hospital,ET050103,Shinile,Somali,Siti,1,key,FALSE
+South Ethiopia,Alle,Kolango Zuria,ET071205,Alle Special,Southern Ethiopi,Alle,1,key,FALSE
+South Ethiopia,Alle,Kolango town,ET071205,Alle Special,Southern Ethiopi,Alle,1,key,FALSE
+South Ethiopia,Ari,Backa dawla,ET070710,Boko Dawula,Southern Ethiopi,South Omo,1,key,FALSE
+South Ethiopia,Ari,Gelila Town Admin.,ET070703,North Ari,Southern Ethiopi,South Omo,1,key,FALSE
+South Ethiopia,Ari,Jinka Town Administration,ET070709,Jinka town,Southern Ethiopi,South Omo,1,key,FALSE
+South Ethiopia,Ari,North Ari  WoHO,ET070703,North Ari,Southern Ethiopi,South Omo,1,key,FALSE
+South Ethiopia,Ari,South Ari  WoHO,ET070702,South Ari,Southern Ethiopi,South Omo,1,key,FALSE
+South Ethiopia,Ari,Woba Ari,ET070711,Wub Ari,Southern Ethiopi,South Omo,1,key,FALSE
+South Ethiopia,Basketo,Laska Zuria,ET071601,Basketo SP Woreda,Southern Ethiopi,Basketo,1,key,FALSE
+South Ethiopia,Basketo,Laska town,ET071601,Basketo SP Woreda,Southern Ethiopi,Basketo,1,key,FALSE
+South Ethiopia,Burji,Soyama Zuria,ET072203,Burji Special,Southern Ethiopi,Burji,1,key,FALSE
+South Ethiopia,Burji,Soyama town,ET072203,Burji Special,Southern Ethiopi,Burji,1,key,FALSE
+South Ethiopia,Gamo,Arba Minch Town,ET071021,Arba Minch town,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,Arba Minch Zuria,ET071015,Arba Minch Zuria,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,Birbir Town,ET071005,Mirab Abaya,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,Bonke,ET071014,Bonke,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,Boreda,ET071004,Boreda,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,Chencha Town,ET071010,Chencha,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,Chencha Zuria,ET071006,Chencha Zuriya,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,Daramalo,ET071009,Daramalo,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,Dita,ET071008,Dita,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,Gacho Baba,ET071016,Gacho Baba,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,Garda Martha,ET071018,Garda Marta,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,Gerese,ET071013,Gerese,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,Gerese Town,ET071013,Gerese,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,Kamba Tow,ET071012,Kemba town,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,Kamba Zuria,ET071011,Kemba,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,Kogota,ET071007,Ezo /Kogota,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,Mirab Abaya,ET071005,Mirab Abaya,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,Selamber Tow,ET071003,Selamber town,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,kucha Alpha,ET071017,Kucha Alpha,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gamo,kucha zuria,ET071019,Kucha,Southern Ethiopi,Gamo,1,key,FALSE
+South Ethiopia,Gardula,Derashe Woreda,ET072304,Derashe Special,Southern Ethiopi,Derashe,1,key,FALSE
+South Ethiopia,Gardula,Gidole Twon,ET072304,Derashe Special,Southern Ethiopi,Derashe,1,key,FALSE
+South Ethiopia,Gedio,Bulle  WoHO,ET070504,Bule,Southern Ethiopi,Gedeo,1,key,FALSE
+South Ethiopia,Gedio,Chelelekitu taHo,ET070508,Chelelektu town,Southern Ethiopi,Gedeo,1,key,FALSE
+South Ethiopia,Gedio,Chorisso WoHo,ET070510,Churso,Southern Ethiopi,Gedeo,1,key,FALSE
+South Ethiopia,Gedio,Dilla  taHO,ET070507,Dila town,Southern Ethiopi,Gedeo,1,key,FALSE
+South Ethiopia,Gedio,Dilla Zuria  WoHO,ET070505,Dila Zuria,Southern Ethiopi,Gedeo,1,key,FALSE
+South Ethiopia,Gedio,Gedeb taHo,ET070511,Gedeb town,Southern Ethiopi,Gedeo,1,key,FALSE
+South Ethiopia,Gedio,Gedeb woreda,ET070506,Gedeb,Southern Ethiopi,Gedeo,1,key,FALSE
+South Ethiopia,Gedio,Kochore  WoHO,ET070503,Kochere,Southern Ethiopi,Gedeo,1,key,FALSE
+South Ethiopia,Gedio,Rappe WoHo,ET070509,Rape,Southern Ethiopi,Gedeo,1,key,FALSE
+South Ethiopia,Gedio,Wenago  Town,ET070501,Wenago,Southern Ethiopi,Gedeo,1,key,FALSE
+South Ethiopia,Gedio,Wenago  WoHO,ET070501,Wenago,Southern Ethiopi,Gedeo,1,key,FALSE
+South Ethiopia,Gedio,Yirga Chefe  taHO,ET070512,Yirgachefe town,Southern Ethiopi,Gedeo,1,key,FALSE
+South Ethiopia,Gedio,Yirgachefe,ET070502,Yirgachefe,Southern Ethiopi,Gedeo,1,key,FALSE
+South Ethiopia,Gofa,Beto Town,ET071504,Uba Debre Tsehay,Southern Ethiopi,Gofa,1,key,FALSE
+South Ethiopia,Gofa,Bulki town,ET071508,Bulike town,Southern Ethiopi,Gofa,1,key,FALSE
+South Ethiopia,Gofa,Denba Gofa,ET071502,Denba Gofa,Southern Ethiopi,Gofa,1,key,FALSE
+South Ethiopia,Gofa,Geze Gofa,ET071505,Gezei Gofa,Southern Ethiopi,Gofa,1,key,FALSE
+South Ethiopia,Gofa,Laha Town,ET071501,Melekoza,Southern Ethiopi,Gofa,1,key,FALSE
+South Ethiopia,Gofa,Melo Gada,ET071509,Melo Gada,Southern Ethiopi,Gofa,1,key,FALSE
+South Ethiopia,Gofa,Melokoza,ET071501,Melekoza,Southern Ethiopi,Gofa,0.875,fuzzy_high,FALSE
+South Ethiopia,Gofa,Oyda,ET071506,O'yida,Southern Ethiopi,Gofa,1,override,FALSE
+South Ethiopia,Gofa,Sawla Town,ET071507,Sawla town,Southern Ethiopi,Gofa,1,key,FALSE
+South Ethiopia,Gofa,Uba Debretsahay  WoHO,ET071504,Uba Debre Tsehay,Southern Ethiopi,Gofa,1,key,FALSE
+South Ethiopia,Gofa,Zalla WoHO,ET071503,Zala,Southern Ethiopi,Gofa,1,key,FALSE
+South Ethiopia,Konso,Karat Town,ET071301,Karat town,Southern Ethiopi,Konso,1,key,FALSE
+South Ethiopia,Konso,Karat Zuria,ET071303,Karat Zuria,Southern Ethiopi,Konso,1,key,FALSE
+South Ethiopia,Konso,Kenna WoHO,ET071304,Kena,Southern Ethiopi,Konso,1,key,FALSE
+South Ethiopia,Konso,Kolme WoHO,ET071303,Karat Zuria,Southern Ethiopi,Konso,1,key,FALSE
+South Ethiopia,Konso,Segen Zuria WoHO,ET071302,Segen Zuria,Southern Ethiopi,Konso,1,key,FALSE
+South Ethiopia,Koore,Gorka,ET041705,Kore,Oromia,West Arsi,1,key,FALSE
+South Ethiopia,Koore,Kele Town,ET041705,Kore,Oromia,West Arsi,1,key,FALSE
+South Ethiopia,Koore,Sarmale,ET041705,Kore,Oromia,West Arsi,1,key,FALSE
+South Ethiopia,South Omo,Bena Tsemay,ET070705,Bena Tsemay,Southern Ethiopi,South Omo,1,key,FALSE
+South Ethiopia,South Omo,Dasench,ET070706,Dasenech /Kuraz,Southern Ethiopi,South Omo,1,key,FALSE
+South Ethiopia,South Omo,Hamer,ET070704,Hamer,Southern Ethiopi,South Omo,1,key,FALSE
+South Ethiopia,South Omo,Malie  WoHO,ET070707,Malie,Southern Ethiopi,South Omo,1,key,FALSE
+South Ethiopia,South Omo,Nyangatom  WoHO,ET070708,Nyngatom,Southern Ethiopi,South Omo,1,key,FALSE
+South Ethiopia,South Omo,Salamago  WoHO,ET070701,Salamago,Southern Ethiopi,South Omo,1,key,FALSE
+South Ethiopia,South Omo,Turmi Town Admin.,ET070704,Hamer,Southern Ethiopi,South Omo,1,key,FALSE
+South Ethiopia,Wolaiyta,Abala abaya,ET070621,Abela Abaya,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Areka   taHO,ET070614,Areka town,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Bele Town,ET040823,Bele Gesgar,Oromia,Arsi,1,key,FALSE
+South Ethiopia,Wolaiyta,Beyra Koysha WoHO,ET070622,Bayera Koisha,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Boditi   taHO,ET070615,Boditi town,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Bolossa Bonibe  WoHO,ET070608,Boloso Bombe,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Bolosso Sore   WoHO,ET070601,Boloso Sore,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Damot Gale  WoHO,ET070602,Damot Gale,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Damot Pulussa  WoHO,ET070611,Damot Pullasa,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Damot Sore  WoHO,ET070609,Damot Sore,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Damot Woyde  WoHO,ET070603,Damot Woide,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Duguna Fango  WoHO,ET070612,Duguna Fango,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Gesuba taHO,ET070617,Gesuba town,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Gununo Hamus taHO,ET070618,Gununo Hamus town,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Hobicha WoHO,ET070619,Hobicha Abaya,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Humbo  WoHO,ET070604,Humbo,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Kawo Koysha WoHO,ET070620,Kawo Koisha,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Kindo Didaye  WoHO,ET070610,Kindo Daddaye,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Kindo Koysha  WoHO,ET070606,Kindo Koyesha,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Offa  WoHO,ET070607,Ofa,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Soddo  taHO,ET070613,Sodo Town,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Sodo Zuria  WoHO,ET070605,Sodo Zuria,Southern Ethiopi,Wolayita,1,key,FALSE
+South Ethiopia,Wolaiyta,Tebela taHO,ET070616,Tebela town,Southern Ethiopi,Wolayita,1,key,FALSE
+Tigray,Central,Chilla,ET010201,Chila,Tigray,Central,1,override,FALSE
+Tigray,East,Bizet,ET010310,Bizet,Tigray,Eastern,1,key,FALSE
+Tigray,Mekelle,Semen,ET010701,Mekelle,Tigray,Mekelle,1,key,FALSE
+Tigray,South,Emba Alaje,ET010404,Emba Alaje,Tigray,Southern,1,key,FALSE
+Tigray,South East,Deguae Tembien,ET010604,Degua Temben,Tigray,South Eastern,0.857,fuzzy_high,FALSE
+Tigray,NA,Abergele Yechila,ET010210,Abergele (TG),Tigray,Central,1,key,FALSE
+Tigray,NA,Abiadi Town,ET010211,Abi Adi town,Tigray,Central,0.917,fuzzy_high,FALSE
+Tigray,NA,Adet,ET010207,Adet,Tigray,Central,1,key,FALSE
+Tigray,NA,Adidaero,ET010111,Adi Daero,Tigray,North Western,1,key,FALSE
+Tigray,NA,Adigrat Town,ET010308,Adigrat town,Tigray,Eastern,1,key,FALSE
+Tigray,NA,Adihaki,ET010701,Mekelle,Tigray,Mekelle,1,key,FALSE
+Tigray,NA,Adwa,ET041492,Adola town,Oromia,Guji,1,key,FALSE
+Tigray,NA,Adwa Town,ET010212,Adwa town,Tigray,Central,1,key,FALSE
+Tigray,NA,Ahferom,ET010202,Aheferom,Tigray,Central,1,key,FALSE
+Tigray,NA,Ahsea,ET010215,Ahsea,Tigray,Central,1,key,FALSE
+Tigray,NA,Alamata Town,ET010411,Alamata town,Tigray,Southern,1,key,FALSE
+Tigray,NA,Asgede,ET010105,Asgede,Tigray,North Western,1,key,FALSE
+Tigray,NA,Atsbi,ET010307,Atsbi,Tigray,Eastern,1,key,FALSE
+Tigray,NA,Axum Town,ET010213,Axum town,Tigray,Central,1,key,FALSE
+Tigray,NA,Ayder,ET010701,Mekelle,Tigray,Mekelle,1,key,FALSE
+Tigray,NA,Bora,ET040710,Bora (OR),Oromia,East Shewa,1,key,FALSE
+Tigray,NA,Edagahamus Town,ET010311,Edaga Hamus town,Tigray,Eastern,0.938,fuzzy_high,FALSE
+Tigray,NA,Egela,ET010216,Egela,Tigray,Central,1,key,FALSE
+Tigray,NA,Embasneyti,ET010219,Emba Sieneti,Tigray,Central,1,key,FALSE
+Tigray,NA,Endabaguna Town,ET010114,Endabaguna town,Tigray,North Western,1,key,FALSE
+Tigray,NA,Endamakhoni,ET010405,Endamehoni,Tigray,Southern,1,override,FALSE
+Tigray,NA,Enderta,ET010602,Enderta,Tigray,South Eastern,1,key,FALSE
+Tigray,NA,Enticho Town,ET010220,Enticho town,Tigray,Central,1,ref_exact,FALSE
+Tigray,NA,Erob,ET010302,Erob,Tigray,Eastern,1,key,FALSE
+Tigray,NA,Freweini Town,ET010313,Freweyni town,Tigray,Eastern,0.923,fuzzy_high,FALSE
+Tigray,NA,Gantaafeshum,ET010304,Ganta Afeshum,Tigray,Eastern,0.923,fuzzy_high,FALSE
+Tigray,NA,Gerealta,ET010317,Geraleta,Tigray,Eastern,1,key,FALSE
+Tigray,NA,Gulomekeda,ET010301,Gulo Mekeda,Tigray,Eastern,1,key,FALSE
+Tigray,NA,Hadnet,ET010701,Mekelle,Tigray,Mekelle,1,key,FALSE
+Tigray,NA,Hagereselam Town,ET010605,Hagere Selam town,Tigray,South Eastern,0.941,fuzzy_high,FALSE
+Tigray,NA,Hahaile,ET010217,Hahayle,Tigray,Central,1,key,FALSE
+Tigray,NA,Hawelti,ET010701,Mekelle,Tigray,Mekelle,1,key,FALSE
+Tigray,NA,Hawzen,ET010305,Hawzen,Tigray,Eastern,1,key,FALSE
+Tigray,NA,Hawzen Town,ET010312,Hawzen town,Tigray,Eastern,1,ref_exact,FALSE
+Tigray,NA,Hntalo,ET010603,Hintalo,Tigray,South Eastern,0.857,fuzzy_high,FALSE
+Tigray,NA,Keyih Tekli,ET010221,Keyhe tekli,Tigray,Central,1,override,FALSE
+Tigray,NA,Kola Tembien,ET010208,Kola Temben,Tigray,Central,0.917,fuzzy_high,FALSE
+Tigray,NA,Korem Town,ET010410,Korem town,Tigray,Southern,1,key,FALSE
+Tigray,NA,Laealay Maichew,ET010205,Laelay Maychew,Tigray,Central,0.867,fuzzy_high,FALSE
+Tigray,NA,Laelay Koraro,ET010109,Selekleka,Tigray,North Western,1,key,FALSE
+Tigray,NA,Maichew Town,ET010409,Maichew town,Tigray,Southern,1,key,FALSE
+Tigray,NA,Mekhoni Town,ET010412,Mekhoni town,Tigray,Southern,1,ref_exact,FALSE
+Tigray,NA,Naeder,ET010209,Naeder,Tigray,Central,1,key,FALSE
+Tigray,NA,Neksege,ET010403,Neqsege,Tigray,Southern,0.857,fuzzy_high,FALSE
+Tigray,NA,Ofla,ET010408,Ofla,Tigray,Southern,1,key,FALSE
+Tigray,NA,Quiha,ET010701,Mekelle,Tigray,Mekelle,1,key,FALSE
+Tigray,NA,Raya Alamata,ET010407,Raya Alamata,Tigray,Southern,1,key,FALSE
+Tigray,NA,Raya Azebo,ET010406,Raya Azebo,Tigray,Southern,1,key,FALSE
+Tigray,NA,Raya Chercher,ET010414,Chercher,Tigray,Southern,1,key,FALSE
+Tigray,NA,Samre,ET010606,Samre,Tigray,South Eastern,1,key,FALSE
+Tigray,NA,Seharti,ET010601,Saharti,Tigray,South Eastern,1,key,FALSE
+Tigray,NA,Selewa,ET010401,Selewa,Tigray,Southern,1,key,FALSE
+Tigray,NA,Seyemti Adiyabo,ET010110,Seyemti Adyabo,Tigray,North Western,0.933,fuzzy_high,FALSE
+Tigray,NA,Sheraro Town,ET010107,Sheraro town,Tigray,North Western,1,key,FALSE
+Tigray,NA,Tahatay Adiyabo,ET010101,Tahtay Adiyabo,Tigray,North Western,0.933,fuzzy_high,FALSE
+Tigray,NA,Tahatay Koraro,ET010104,Tahtay Koraro,Tigray,North Western,0.929,fuzzy_high,FALSE
+Tigray,NA,Tahatay Maichew,ET010206,Tahtay Mayechew,Tigray,Central,1,override,FALSE
+Tigray,NA,Tanqua Mlash,ET010222,Tanqua Melashe,Tigray,Central,0.857,fuzzy_high,FALSE
+Tigray,NA,Tsaeda Emba,ET010314,Tsaeda Emba,Tigray,Eastern,1,key,FALSE
+Tigray,NA,Tselemti,ET010106,Tselemti,Tigray,North Western,1,key,FALSE
+Tigray,NA,Tsmbla,ET010113,Tsimbla,Tigray,North Western,0.857,fuzzy_high,FALSE
+Tigray,NA,Wejirat,ET010608,Wajirat,Tigray,South Eastern,0.857,fuzzy_high,FALSE
+Tigray,NA,Wukro Town,ET010309,Wukro town,Tigray,Eastern,1,key,FALSE
+Tigray,NA,Zalanbesa,ET010318,Zala Anbesa town,Tigray,Eastern,1,key,FALSE
+Tigray,NA,Zana,ET010103,Zana,Tigray,North Western,1,key,FALSE
+Tigray,NA,Zata,ET010413,Zata,Tigray,Southern,1,key,FALSE
+Dire Dawa,NA,Addis ketema PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.765,unmatched,TRUE
+Dire Dawa,NA,Biyoawale PHCU,NA,NA,Dire Dawa,Dire Dawa rural,0.643,unmatched,TRUE
+Dire Dawa,NA,Boren /Industry/ PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.211,unmatched,TRUE
+Dire Dawa,NA,Dechatu PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.583,unmatched,TRUE
+Dire Dawa,NA,Dire Dawa PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.286,unmatched,TRUE
+Dire Dawa,NA,Dr Abel MM (Gende kore )PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.385,unmatched,TRUE
+Dire Dawa,NA,Gende Gerada PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.412,unmatched,TRUE
+Dire Dawa,NA,Gende kore PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.667,unmatched,TRUE
+Dire Dawa,NA,Goro PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.2,unmatched,TRUE
+Dire Dawa,NA,Jeldesa /Qelad/ PHCU,NA,NA,Dire Dawa,Dire Dawa rural,0.389,unmatched,TRUE
+Dire Dawa,NA,Jelo Belina PHCU,NA,NA,Dire Dawa,Dire Dawa rural,0.312,unmatched,TRUE
+Dire Dawa,NA,Kalich PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.333,unmatched,TRUE
+Dire Dawa,NA,Legehare PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.615,unmatched,TRUE
+Dire Dawa,NA,Legoda gudenfeta PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.238,unmatched,TRUE
+Dire Dawa,NA,Melka Jebdu PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.474,unmatched,TRUE
+Dire Dawa,NA,Melka kero PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.368,unmatched,TRUE
+Dire Dawa,NA,Wahil PHCU,NA,NA,Dire Dawa,Dire Dawa rural,0.5,unmatched,TRUE
+Oromia,Shagger City,Shagger City,NA,NA,Oromia,West Arsi,0.357,unmatched,TRUE
+Tigray,Northwest,Shire Town,NA,NA,Tigray,North Western,0.667,unmatched,TRUE
+Tigray,NA,Adigudom Town,NA,NA,Tigray,Eastern,0.692,unmatched,TRUE
+Tigray,NA,E/selassie Town,NA,NA,Tigray,North Western,0.706,unmatched,TRUE
+Tigray,NA,Endabatshama,NA,NA,Tigray,North Western,0.467,unmatched,TRUE
+Tigray,NA,Kedamay Woyane,NA,NA,Tigray,North Western,0.357,unmatched,TRUE
+Tigray,NA,Kleate Awlaelo,NA,NA,Tigray,Eastern,0.733,unmatched,TRUE
+Tigray,NA,Laelay Tselemti,NA,NA,Tigray,North Western,0.533,unmatched,TRUE
+Tigray,NA,Maekel Adiyabo,NA,NA,Tigray,North Western,0.643,unmatched,TRUE
+Tigray,NA,Maiknetal,NA,NA,Tigray,South Eastern,0.444,unmatched,TRUE
+Tigray,NA,Mytsebri,NA,NA,Tigray,North Western,0.533,unmatched,TRUE
+Tigray,NA,Rama adi-4,NA,NA,Tigray,Southern,0.5,unmatched,TRUE
+Tigray,NA,Subha Sasea,NA,NA,Tigray,Central,0.364,unmatched,TRUE
+Tigray,NA,Tsrea Wenberta,NA,NA,Tigray,Eastern,0.5,unmatched,TRUE

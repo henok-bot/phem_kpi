@@ -1,0 +1,398 @@
+---
+title: "PHEM KPI Dashboard"
+logo: ../assets/ephi_logo.png
+format:
+  dashboard:
+    theme: [flatly, dashboard.scss]
+    embed-resources: true
+    nav-buttons:
+      - icon: globe
+        href: https://www.ephi.gov.et
+    orientation: rows
+    scrolling: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+library(dplyr); library(readr); library(tidyr); library(stringr)
+library(plotly); library(leaflet); library(DT); library(sf)
+
+# Quarto renders with the working directory set to the .qmd folder (reports/).
+root <- normalizePath(file.path(getwd(), ".."))
+op   <- function(...) file.path(root, "output", ...)
+tb   <- function(...) file.path(root, "exports", "tables", ...)
+
+source(file.path(root, "scripts", "catalog.R"))   # PERIOD_LEVELS/LABELS, FOCUS_PERIOD
+
+national <- read_csv(op("kpi_national.csv"),       show_col_types = FALSE)
+region   <- read_csv(op("kpi_region.csv"),         show_col_types = FALSE)
+wide     <- read_csv(op("master_woreda_wide.csv"), show_col_types = FALSE)
+wpcode   <- read_csv(op("kpi_woreda_pcode.csv"),   show_col_types = FALSE)
+catalog  <- read_csv(op("indicator_catalog.csv"),  show_col_types = FALSE)
+
+trend_nat  <- read_csv(tb("trend_national_by_period.csv"), show_col_types = FALSE)
+trend_comp <- read_csv(tb("trend_region_composite.csv"),  show_col_types = FALSE)
+trend_dq   <- read_csv(tb("trend_data_quality.csv"),      show_col_types = FALSE)
+trend_cf   <- read_csv(tb("trend_corefunction.csv"),      show_col_types = FALSE)
+
+# Reusable woreda geometry from the GIS shapefile (1,082 woredas keyed by
+# adm3_pcode). It joins directly to kpi_woreda_pcode.csv. See assets/README.
+geo3 <- readRDS(file.path(root, "assets", "eth_adm3_geo.rds"))
+geo1 <- readRDS(file.path(root, "assets", "eth_adm1_geo.rds"))
+
+# --- GUARDRAIL: proportions must never exceed 100% ---------------------------
+# The pipeline already caps and validates pairs; assert it here so a bad render
+# fails loudly rather than shipping a >100% figure.
+bad <- bind_rows(national, region) |>
+  filter(value_type == "proportion", !is.na(value_pct), value_pct > 100.0001)
+if (nrow(bad) > 0) stop("Guardrail tripped: ", nrow(bad), " proportion(s) > 100%.")
+
+# --- conveniences ------------------------------------------------------------
+FP        <- FOCUS_PERIOD
+FP_LABEL  <- unname(PERIOD_LABELS[FP])
+prop_only <- function(df) filter(df, value_type == "proportion")
+pf        <- function(p) factor(p, levels = PERIOD_LEVELS,
+                                labels = unname(PERIOD_LABELS[PERIOD_LEVELS]))
+EPHI_GREEN <- "#006600"
+
+# performance palette: red (poor) -> green (good), per house style
+perf_pal <- function(domain = c(0, 100))
+  colorNumeric("RdYlGn", domain = domain, na.color = "#e6e6e6")
+
+# focus-period slices
+nat_fp <- national |> filter(period == FP)
+reg_fp <- region   |> filter(period == FP)
+wide_fp <- wide    |> filter(period == FP)
+```
+
+```{r headline-numbers}
+n_reg <- n_distinct(reg_fp$region)
+n_wor <- wide_fp |> distinct(region, woreda) |> nrow()
+
+nat_prop <- prop_only(nat_fp)
+n_met    <- sum(nat_prop$value_pct_capped >= 80, na.rm = TRUE)
+n_prop   <- sum(!is.na(nat_prop$value_pct_capped))
+pct_met  <- if (n_prop > 0) round(100 * n_met / n_prop) else NA_real_
+composite <- round(mean(nat_prop$value_pct_capped, na.rm = TRUE))
+```
+
+# Overview
+
+## Row {height="22%"}
+
+```{r}
+#| content: valuebox
+#| title: "Regions reporting"
+list(icon = "buildings", color = "primary", value = n_reg)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Woredas reporting"
+list(icon = "geo-alt", color = "info", value = format(n_wor, big.mark = ","))
+```
+
+```{r}
+#| content: valuebox
+#| title: "National indicators ≥ 80% target"
+list(icon = "check2-circle",
+     color = if (isTRUE(pct_met >= 50)) "success" else "warning",
+     value = paste0(pct_met, "%"))
+```
+
+```{r}
+#| content: valuebox
+#| title: "National composite (mean of proportions)"
+list(icon = "speedometer2",
+     color = if (isTRUE(composite >= 80)) "success" else "secondary",
+     value = paste0(composite, "%"))
+```
+
+## Row
+
+### Column {width="60%"}
+
+```{r}
+#| title: "National KPI performance — current period"
+d <- nat_prop |>
+  mutate(label = str_trunc(label, 52)) |>
+  arrange(value_pct_capped)
+d$label <- factor(d$label, levels = d$label)
+plot_ly(d, x = ~value_pct_capped, y = ~label, type = "bar",
+        orientation = "h",
+        marker = list(color = ~value_pct_capped,
+                      colorscale = list(c(0, "#d73027"), c(0.5, "#fee08b"),
+                                        c(1, "#1a9850")),
+                      cmin = 0, cmax = 100),
+        hovertemplate = "%{y}<br>%{x:.0f}%<extra></extra>") |>
+  layout(xaxis = list(title = "% (capped at 100)", range = c(0, 105)),
+         yaxis = list(title = ""),
+         shapes = list(list(type = "line", x0 = 80, x1 = 80,
+                            y0 = -0.5, y1 = nrow(d) - 0.5,
+                            line = list(color = "grey40", dash = "dash"))),
+         margin = list(l = 320))
+```
+
+### Column {width="40%"}
+
+```{r}
+#| title: "% of indicators meeting target, by region"
+rt <- reg_fp |>
+  prop_only() |>
+  group_by(region) |>
+  summarise(pct_met = round(100 * mean(value_pct_capped >= 80, na.rm = TRUE)),
+            .groups = "drop") |>
+  arrange(pct_met)
+rt$region <- factor(rt$region, levels = rt$region)
+plot_ly(rt, x = ~pct_met, y = ~region, type = "bar", orientation = "h",
+        marker = list(color = EPHI_GREEN),
+        hovertemplate = "%{y}<br>%{x}% of indicators ≥ 80%<extra></extra>") |>
+  layout(xaxis = list(title = "% of indicators ≥ 80%", range = c(0, 100)),
+         yaxis = list(title = ""))
+```
+
+# Regional
+
+## Row
+
+```{r}
+#| title: "Region × indicator performance (%, current period)"
+mat <- reg_fp |>
+  prop_only() |>
+  mutate(label = str_trunc(label, 46)) |>
+  select(region, label, value_pct_capped)
+
+natcol <- nat_prop |>
+  mutate(label = str_trunc(label, 46), region = "NATIONAL") |>
+  select(region, label, value_pct_capped)
+
+hm <- bind_rows(mat, natcol) |>
+  pivot_wider(names_from = region, values_from = value_pct_capped)
+
+# order columns with NATIONAL last, order rows by national performance
+ord <- natcol |> arrange(desc(value_pct_capped)) |> pull(label)
+hm  <- hm[match(ord, hm$label), ]
+labs <- hm$label
+M    <- as.matrix(hm[, -1])
+cols <- c(setdiff(colnames(M), "NATIONAL"), "NATIONAL")
+M    <- M[, cols]
+
+plot_ly(x = colnames(M), y = labs, z = M, type = "heatmap",
+        colorscale = list(c(0, "#d73027"), c(0.5, "#fee08b"), c(1, "#1a9850")),
+        zmin = 0, zmax = 100,
+        hovertemplate = "%{x}<br>%{y}<br>%{z:.0f}%<extra></extra>") |>
+  layout(xaxis = list(title = "", tickangle = -45),
+         yaxis = list(title = "", automargin = TRUE),
+         margin = list(l = 300, b = 120))
+```
+
+## Row {height="40%"}
+
+### Column
+
+```{r}
+#| title: "Regional composite score (current period)"
+comp <- trend_comp |>
+  filter(period == FP) |>
+  arrange(composite)
+comp$region <- factor(comp$region, levels = comp$region)
+plot_ly(comp, x = ~composite, y = ~region, type = "bar", orientation = "h",
+        marker = list(color = ~composite,
+                      colorscale = list(c(0, "#d73027"), c(0.5, "#fee08b"),
+                                        c(1, "#1a9850")),
+                      cmin = 0, cmax = 100),
+        hovertemplate = "%{y}<br>composite %{x:.0f}%<extra></extra>") |>
+  layout(xaxis = list(title = "Composite (mean of proportions, %)",
+                      range = c(0, 100)),
+         yaxis = list(title = ""))
+```
+
+### Column
+
+```{r}
+#| title: "Region table (current period)"
+reg_tab <- reg_fp |>
+  prop_only() |>
+  group_by(region) |>
+  summarise(
+    indicators_reported = sum(!is.na(value_pct_capped)),
+    `mean %`            = round(mean(value_pct_capped, na.rm = TRUE)),
+    `% at target`       = round(100 * mean(value_pct_capped >= 80, na.rm = TRUE)),
+    .groups = "drop") |>
+  arrange(desc(`mean %`))
+datatable(reg_tab, rownames = FALSE, options = list(dom = "t", pageLength = 20))
+```
+
+# Trends
+
+::: {.callout-note title="Comparing periods of different length"}
+`r FP_LABEL` (weeks 28–52) spans **two quarters**, while the earlier periods are
+single quarters. Proportion KPIs are ratios, so they remain comparable across
+periods. Only raw counts scale with period length.
+:::
+
+## Row
+
+### Column {width="60%"}
+
+```{r}
+#| title: "National KPI trajectory across periods"
+tn <- trend_nat |>
+  mutate(period_lab = pf(period), label = str_trunc(label, 40))
+plot_ly(tn, x = ~period_lab, y = ~value_pct, color = ~label,
+        type = "scatter", mode = "lines+markers",
+        hovertemplate = "%{fullData.name}<br>%{x}: %{y:.0f}%<extra></extra>") |>
+  layout(xaxis = list(title = ""),
+         yaxis = list(title = "%", range = c(0, 105)),
+         shapes = list(list(type = "line", x0 = -0.2, x1 = 2.2, y0 = 80, y1 = 80,
+                            line = list(color = "grey40", dash = "dash"))),
+         legend = list(font = list(size = 9)))
+```
+
+### Column {width="40%"}
+
+```{r}
+#| title: "PHEM core functions over time"
+cf <- trend_cf |> mutate(period_lab = pf(period))
+plot_ly(cf, x = ~period_lab, y = ~value, color = ~group,
+        type = "scatter", mode = "lines+markers",
+        hovertemplate = "%{fullData.name}<br>%{x}: %{y:.0f}%<extra></extra>") |>
+  layout(xaxis = list(title = ""),
+         yaxis = list(title = "mean %", range = c(0, 105)))
+```
+
+## Row {height="38%"}
+
+```{r}
+#| title: "Regional composite trend (newest period highlighted)"
+tc <- trend_comp |> mutate(period_lab = pf(period))
+plot_ly(tc, x = ~period_lab, y = ~composite, color = ~region,
+        type = "scatter", mode = "lines+markers",
+        hovertemplate = "%{fullData.name}<br>%{x}: %{y:.0f}%<extra></extra>") |>
+  layout(xaxis = list(title = ""), yaxis = list(title = "composite %",
+                                                range = c(0, 100)))
+```
+
+# Map
+
+## Row
+
+::: {.card title="Woreda performance map (current period)"}
+
+```{r}
+# Build a leaflet choropleth for a chosen indicator (or composite) over the
+# focus period, joining woreda rollups to the GIS geometry on adm3_pcode.
+make_map <- function(indicator_code = NULL, title = "") {
+  if (is.null(indicator_code)) {
+    vals <- wpcode |>
+      filter(period == FP, value_type == "proportion") |>
+      group_by(adm3_pcode) |>
+      summarise(v = mean(value_pct_capped, na.rm = TRUE), .groups = "drop")
+  } else {
+    vals <- wpcode |>
+      filter(period == FP, indicator == indicator_code) |>
+      group_by(adm3_pcode) |>
+      summarise(v = mean(value_pct_capped, na.rm = TRUE), .groups = "drop")
+  }
+  g <- geo3 |> left_join(vals, by = "adm3_pcode")
+  pal <- perf_pal()
+  lab <- sprintf("<b>%s</b><br/>%s: %s",
+                 g$adm3_en, title,
+                 ifelse(is.na(g$v), "no data", paste0(round(g$v), "%"))) |>
+    lapply(htmltools::HTML)
+  leaflet(g, options = leafletOptions(minZoom = 5)) |>
+    addProviderTiles(providers$CartoDB.Positron) |>
+    addPolygons(fillColor = ~pal(v), fillOpacity = 0.85, weight = 0.4,
+                color = "white", label = lab,
+                highlightOptions = highlightOptions(weight = 2, color = "#333",
+                                                    bringToFront = TRUE)) |>
+    addPolylines(data = geo1, color = "#444", weight = 1, opacity = 0.7) |>
+    addLegend(pal = pal, values = c(0, 100), title = paste0(title, " (%)"),
+              position = "bottomright") |>
+    setView(lng = 39.5, lat = 9.0, zoom = 6)
+}
+```
+
+::: {.panel-tabset}
+
+## Composite
+
+```{r}
+make_map(NULL, "Composite")
+```
+
+## Timeliness
+
+```{r}
+make_map("RPT_TIMELY", "Reports on time")
+```
+
+## Completeness
+
+```{r}
+make_map("RPT_COMPLETE", "Reports complete")
+```
+
+## Response 24–48h
+
+```{r}
+make_map("RESP_2448", "Response 24–48h")
+```
+
+:::
+
+:::
+
+# Data quality
+
+## Row {height="35%"}
+
+```{r}
+#| title: "Data-quality metrics by period"
+dq <- trend_dq |>
+  mutate(period = unname(PERIOD_LABELS[period])) |>
+  rename(`regions` = regions_reporting, `woreda units` = woreda_units,
+         `mapped woredas` = mapped_woredas, `records` = records,
+         `% entries filled` = pct_filled,
+         `num > denom (errors)` = impossible_num_gt_denom,
+         `raw > 100% (pre-cap)` = over_100_raw)
+datatable(dq, rownames = FALSE, options = list(dom = "t"))
+```
+
+## Row
+
+```{r}
+#| title: "Reporting completeness — % of woredas reporting each indicator (current period)"
+rc <- nat_fp |>
+  mutate(label = str_trunc(label, 52)) |>
+  arrange(pct_reported)
+rc$label <- factor(rc$label, levels = rc$label)
+plot_ly(rc, x = ~pct_reported, y = ~label, type = "bar", orientation = "h",
+        marker = list(color = ~pct_reported,
+                      colorscale = list(c(0, "#d73027"), c(0.5, "#fee08b"),
+                                        c(1, "#1a9850")),
+                      cmin = 0, cmax = 100),
+        hovertemplate = "%{y}<br>%{x:.0f}% of woredas reported<extra></extra>") |>
+  layout(xaxis = list(title = "% of woredas reporting", range = c(0, 105)),
+         yaxis = list(title = ""), margin = list(l = 320))
+```
+
+# Data
+
+## Row
+
+```{r}
+#| title: "Woreda × indicator values (current period) — search and export"
+dt <- wide_fp |>
+  select(region, zone, woreda, population_best,
+         RPT_TIMELY, RPT_COMPLETE, NOTIFY_24H, RESP_2448, LAB_7D,
+         EPRP_PLAN, DHIS2_RPT, ATTACK_RATE, CFR) |>
+  mutate(across(where(is.numeric), ~round(.x, 1)))
+datatable(dt, rownames = FALSE, filter = "top",
+          extensions = "Buttons",
+          options = list(pageLength = 25, scrollX = TRUE,
+                         dom = "Bfrtip", buttons = c("csv", "excel")))
+```

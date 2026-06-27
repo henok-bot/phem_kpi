@@ -1,0 +1,483 @@
+---
+title: "PHEM KPI Pipeline — Developer & Reproducibility Guide"
+subtitle: "The approach in concept, then a teaching walkthrough of the code"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    embed-resources: true
+    code-fold: false
+    code-overflow: wrap
+  docx:
+    toc: true
+    number-sections: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+library(readr); library(dplyr); library(knitr)
+root <- normalizePath(file.path(getwd(), ".."))
+op <- function(...) file.path(root, "output", ...)
+```
+
+# Part I — The approach, in concept
+
+This first part explains *how the pipeline thinks* before any code. Read it once
+and the scripts in Part II will read as an implementation of these ideas rather
+than a wall of R.
+
+## 1.1 The problem
+
+Each region submits a PHEM KPI workbook. The workbooks describe the same 23
+indicators, but they are not standardised. Sheet names differ, a title row sits
+above the header in some files, one region carries a Population column and others
+do not, Addis reports by sub-city, Dire Dawa reports by health facility, and a
+proportion is written on a 0–1 scale in one file and 0–100 in another. We now
+hold **three reporting periods** of these workbooks, and more will arrive.
+
+The goal is a single, tidy, reproducible dataset from which regional and national
+performance, maps, and a written report follow automatically, and which extends
+to each new quarter with a small, documented change.
+
+## 1.2 The central idea: one long tidy table keyed by period
+
+Everything rests on one table, `output/master_woreda.csv`, with exactly one row
+per **woreda × indicator × period**. This "long" grain is the design decision
+that makes the rest simple.
+
+```
+region  period        woreda    indicator    numerator  denominator  value_reported
+Afar    2025-Wk28-52  Adaar     RPT_TIMELY    18         20           90
+Afar    2025-Wk28-52  Adaar     RESP_2448     1          1            100
+Afar    2025-Wk16-27  Adaar     RPT_TIMELY    9          12           75
+...
+```
+
+Because `period` is a column rather than a separate file, adding a quarter does
+not change the schema. Region rollups, national rollups, the woreda map, and the
+cross-period trends are all *the same table grouped differently*. A new period
+simply adds rows.
+
+## 1.3 The four rules that make numbers trustworthy
+
+These are the analytic commitments. They matter more than any single line of
+code, and they are the reason the figures can be defended.
+
+**Rule 1 — Recompute every proportion from counts.** A reported percentage cannot
+be trusted (0–1 here, 0–100 there, rounded elsewhere). We keep the numerator and
+denominator and compute the percentage ourselves:
+
+$$\text{value} = 100 \times \frac{\sum \text{numerator}}{\sum \text{denominator}}$$
+
+**Rule 2 — Aggregate as totals, never as a mean of percentages.** A region's
+value is the summed numerators over the summed denominators across its woredas.
+Averaging woreda percentages would let a tiny woreda count as much as a large
+one. (This is also the EPHI house rule for any Total row.)
+
+**Rule 3 — Complete pairs only, and a proportion's numerator cannot exceed its
+denominator.** A woreda contributes to a ratio only when it has both a numerator
+and a denominator greater than zero, and for a proportion the numerator must be
+less than or equal to the denominator. This single rule is what keeps every
+percentage at or below 100%. It is the fix for the >100% values seen in an early
+draft (a timeliness figure of 122% came from rows with a numerator but no
+denominator, and from a leaked "total" row of 15/3).
+
+**Rule 4 — "Not reported" is not zero.** A blank cell is `NA` (not reported); a
+typed `0` is a genuine zero. We never let `na.rm` quietly turn missing data into
+a zero, because a region can look like 0% purely because nobody filled the cell
+in. Every output therefore also carries a *reporting rate*, so performance and
+reporting are always read together.
+
+## 1.4 How messy columns become structured records
+
+A workbook's data sheet is a wide strip of repeating
+`[Numerator | Denominator | Value]` groups, with no machine-readable grouping.
+The pipeline reconstructs the grouping by reading left to right and remembering
+the most recent numerator and denominator, then attaching them to the next value
+column it meets. Each value column is matched to a canonical indicator by a
+**keyword in its header**, not by its position, so a region reordering its
+columns does not break anything.
+
+## 1.5 How a reported name becomes a map
+
+Reported woreda names never match the 2021 shapefile directly. We resolve them
+through a chain of the cleaning artefacts you maintain:
+
+```
+reported name ─► Gname (cleaning key) ─► reference woreda (region-scoped) ─► ADM3_PCODE
+```
+
+Scoping the candidates to the reporting region is what removes ambiguity when a
+woreda name occurs in more than one region. Joining on `ADM3_PCODE` (never on
+names) is what lets the data meet the shapefile cleanly.
+
+## 1.6 Two report products from one dataset
+
+- **`kpi_report.qmd`** is the standing single-period report. It is pinned to
+  `FOCUS_PERIOD`, which auto-advances to the newest quarter, so it always
+  describes the latest period on its own.
+- **`kpi_trends.qmd`** is the cross-period report. It discovers every period in
+  the data and compares them, with the data-quality story foregrounded.
+
+When a new quarter arrives the single-period report becomes that quarter's report
+and the previous render is archived under its period name, so prior reports are
+preserved.
+
+---
+
+# Part II — The code, walked through with examples
+
+```
+raw xlsx/docx ─► convert.R ─► converted/  (readable copies, optional)
+
+                 catalog.R   (config: 23 indicators + per-period read rules)
+                     │ sourced by
+                     ▼
+master ◄─ harmonize.R ─► output/master_woreda.csv  (woreda × indicator × PERIOD)
+                          output/kpi_region.csv, kpi_national.csv
+
+names ─► crosswalk_build.R ─► output/crosswalk_woreda.csv   (name → ADM3_PCODE)
+            uses: All GIS names.xlsx + reference_geo_names.csv
+
+geocode ◄─ spatialize.R ─► output/master_woreda_geo.csv  (+ population backfill)
+                           output/kpi_woreda_pcode.csv
+                           uses: Population by GIS woreda best.xlsx
+
+figures ◄─ analyze.R + analyze_depth.R  (FOCUS_PERIOD)  ─► exports/figures, exports/tables
+           analyze_trends.R             (ALL periods)   ─► exports/figures/T0*, trend_*.csv
+
+reports ◄─ kpi_report.qmd, kpi_trends.qmd, pipeline_documentation.qmd ─► HTML + Word
+```
+
+Run everything from the project root:
+
+```r
+Rscript scripts/run_all.R
+```
+
+`run_all.R` calls each script in order with `system2("Rscript", …)`, then renders
+the reports and archives the single-period report under its period. Each script
+is independent and re-runnable; they communicate only through CSVs in `output/`.
+
+## 2.1 `catalog.R` — the configuration you edit most
+
+Two objects, both plain tibbles.
+
+**`KPI_CATALOG`** defines the 23 indicators. Each row gives a stable `code`, the
+PHEM `group`, a `value_type` (`proportion` or `rate`), a `label`, and a
+**`pattern`** — a regex matched against the value-column header in the workbooks.
+
+```r
+  4, "RPT_TIMELY", "Reporting", "proportion",
+     "Surveillance reports submitted on time (timeliness)",
+     "submitted surveillance reports(?!.*complet)(?!.*through dhis)"
+```
+
+The regex matters because columns move. "Proportion of submitted surveillance
+reports…" is a far more stable handle than "column 11". The negative lookaheads
+stop the timeliness pattern from also catching the completeness and DHIS2
+columns, which share the opening words.
+
+**`REGION_CONFIG`** is now **multi-period**. There is one tribble block per
+period, each row describing how to read one workbook (`file`, `sheet`,
+`header_row`, `region`), and the block stamps its own `dir` and `period`:
+
+```r
+cfg_wk2852 <- tibble::tribble(
+  ~file, ~sheet, ~header_row, ~region, ~notes,
+  "DDAHB, week 28-52, 2025 KPI report.xlsx", "data collection tool", 2L, "Dire Dawa", "title row offset; facility level",
+  ...
+) |> dplyr::mutate(dir = "raw/2025-Wk28-52", period = "2025-Wk28-52")
+
+REGION_CONFIG <- dplyr::bind_rows(cfg_wk0315, cfg_wk1627, cfg_wk2852)
+```
+
+`harmonize.R` loops over **every row of every block**, so all periods are read in
+one pass. `header_row = 2L` is how the Dire Dawa and Central Ethiopia title rows
+are skipped. Three more values steer the rest of the pipeline:
+
+```r
+PERIOD_LEVELS <- c("2025-Wk03-15", "2025-Wk16-27", "2025-Wk28-52")  # oldest -> newest
+PERIOD_LABELS <- c("2025-Wk28-52" = "Q3-Q4 · Wk 28-52", ...)        # friendly axis labels
+FOCUS_PERIOD  <- tail(PERIOD_LEVELS, 1)                             # newest = single-period report
+```
+
+```{r}
+read_csv(op("indicator_catalog.csv"), show_col_types = FALSE) |>
+  select(order, code, group, value_type, target) |> head(6) |>
+  kable(caption = "First rows of the catalog (output/indicator_catalog.csv).")
+```
+
+## 2.2 `harmonize.R` — building the master
+
+### Step 1: classify every column
+
+`classify()` tags each header from its leading words:
+
+```r
+if (str_detect(hl, "^proportion|attack rate|case-?fatality rate")) return("value")
+if (str_detect(hl, "^total number|^number of expected"))           return("denom")
+if (str_detect(hl, "^number of|^district +for which|^total"))      return("num")
+# plus region / zone / woreda / date / population / sn
+```
+
+### Step 2: the left-to-right walk (worked example)
+
+Imagine a five-column slice of a sheet, already classified:
+
+```
+header:   Number of reports on time | Total reports expected | Proportion timely | Number of responses | Proportion responded
+role:     num                       | denom                  | value             | num                 | value
+```
+
+The walk remembers the latest `num` and `denom`, and emits a triplet at each
+`value`:
+
+```r
+last_num <- NA; last_denom <- NA
+for (j in start:length(hdr)) {
+  if      (roles[j] == "num")   last_num   <- j
+  else if (roles[j] == "denom") last_denom <- j
+  else if (roles[j] == "value")
+    triplets[[length(triplets)+1]] <- list(value_col = j, num_col = last_num,
+                                            denom_col = last_denom, header = hdr[j])
+}
+```
+
+Result: "Proportion timely" pairs with columns 1 and 2; "Proportion responded"
+pairs with column 4 and *reuses* denominator column 2 (the nearest preceding
+denominator). Rates are the exception — they carry two "Number of…" columns, so
+after matching we override them positionally (`num = value-2, denom = value-1`).
+
+### Step 3: name each value column
+
+`match_code()` tests a value header against every catalog `pattern` and takes the
+first hit. If a region repeats an indicator (a disease-specific copy), the
+duplicate is dropped. If a column matches nothing but the count of value columns
+equals the catalog length, an order-based fallback fills the gaps.
+
+### Step 4: drop aggregate rows (worked example)
+
+Regions leak "Total" and "Regional cumulative" rows into the woreda list, and
+Addis puts a regional-total line under the sub-city it reports by. `is_aggregate()`
+catches both the unit cell and the zone cell:
+
+```r
+is_aggregate <- function(x) {
+  xl <- str_squish(tolower(ifelse(is.na(x), "", x)))
+  xl %in% c("total","regional cumulative","region","grand total","sum",
+            "cumulative","aa","a.a","addis ababa") |
+    str_detect(xl, "cumu|grand total|^total$|^sum$|^region$")
+}
+keep <- !blank_woreda & !is_aggregate(geo$woreda) & !is_aggregate(geo$zone)
+```
+
+The `cumu` fragment is deliberate: it catches both "cumulative" and the misspelt
+"cumuative" that appeared in one file. Without this, a single leaked total row
+would double-count an entire region.
+
+### Step 5: the four rules in code
+
+```r
+value_pct  = 100 * numerator / denominator,                    # Rule 1
+reported   = !is.na(numerator) | !is.na(denominator) | !is.na(value_reported), # Rule 4
+valid_pair = !is.na(numerator) & !is.na(denominator) & denominator > 0 &
+             (value_type == "rate" | numerator <= denominator) # Rule 3
+```
+
+and the rollup applies Rules 1 and 2 together over complete pairs only:
+
+```r
+summarise(num_sum   = sum(numerator[valid_pair]),    # complete pairs only
+          denom_sum = sum(denominator[valid_pair])) |>
+  mutate(value_pct = 100 * num_sum / denom_sum)      # totals, not mean of %
+```
+
+`roll(master, region, period)` and `roll(master, period)` produce the region and
+national tables. Because `period` is in the grouping, **every period is rolled up
+independently in the same call**.
+
+```{r}
+read_csv(op("kpi_national.csv"), show_col_types = FALSE) |>
+  filter(value_type == "proportion") |>
+  count(period, name = "indicator_rows") |>
+  kable(caption = "kpi_national.csv holds every period (grouped, not mixed).")
+```
+
+## 2.3 `crosswalk_build.R` — names to `ADM3_PCODE`
+
+`match_one(region, zone, woreda)` tries, in order: a manual override, the Addis
+sub-city rule, the cleaning key, a direct exact match, then a fuzzy match
+(`adist`) as a last resort. A worked example of the chain for one name:
+
+```
+reported "Wonbera" (Benishangul Gumuz)
+  ─► MANUAL_OVERRIDE says Wonbera → "Wembera"
+  ─► reference row with woreda "Wembera" AND region "Benishangul Gumz"
+  ─► ADM3_PCODE  ET060201
+```
+
+Region scoping is the key step. The same woreda name can occur in several
+regions, so candidates are filtered to the reporting region (`REGION_XWALK`
+translates the KPI region name to the 2021 reference name) before any tie-break.
+The crosswalk runs on the distinct names in the master, so it is period-agnostic
+— one mapping serves every period. To fix a stubborn name, add a line:
+
+```r
+"Gambella", "Gambella Woreda", "Gambela town"   # region, reported, reference name
+```
+
+Tigray and Central Ethiopia were added to `REGION_XWALK` (they match the 2021
+names exactly). Tigray, reporting for the first time, has ~17 woreda names not
+yet in the cleaning key; these are flagged in `crosswalk_unmatched.csv` and do
+not affect Tigray's region-level numbers.
+
+## 2.4 `spatialize.R` — geocode, roll to woreda, backfill population
+
+Joins the master to the crosswalk on `(region, zone, woreda)` to attach
+`adm3_pcode`, then rolls up to the canonical woreda (P-code) level using the same
+complete-pair rule. Two additions are worth noting.
+
+**Population backfill.** Many regions leave Population blank, which blocks
+population-based metrics such as attack rate. `Population by GIS woreda best.xlsx`
+maps a clean shapefile woreda name to a population. We join it on the crosswalked
+reference name and coalesce:
+
+```r
+population_best = coalesce(population, population_ref)   # reported first, else reference
+```
+
+`population_best` is what an attack-rate or incidence calculation should use. A
+compact lookup is written to `output/woreda_population.csv`.
+
+**Wide master.** `master_woreda_wide.csv` pivots indicators into columns (one row
+per woreda × period) for quick browsing in the Data Explorer.
+
+## 2.5 `analyze.R` / `analyze_depth.R` — the single-period figures
+
+Both **source `catalog.R` and filter to `FOCUS_PERIOD`**, so the standing report
+shows one period:
+
+```r
+region   <- filter(region,   period == FOCUS_PERIOD)
+national <- filter(national, period == FOCUS_PERIOD)
+```
+
+Conventions: the performance palette is red→yellow→green (`perf_fill()`), with
+grey for not-reported; the grey→orange→red ramp is reserved for count maps. The
+heatmap appends a National column; the region map greys non-reporting regions;
+the woreda map joins `kpi_woreda_pcode` to ADM3 polygons on `adm3_pcode`.
+
+## 2.6 `analyze_trends.R` — the cross-period figures
+
+Reads the all-period rollups, **discovers the periods from the data**, orders
+them by `PERIOD_LEVELS`, and draws the newest period bold and red (house style).
+It emits the participation matrix (T01), coverage trend (T02), data-quality
+scorecard (T03), reporting-completeness trend (T04), national trajectory (T05),
+core-function bars (T06), and region composite trend (T07), plus `trend_*.csv`
+for each.
+
+It also carries an explicit guardrail. Although Rule 3 already keeps every
+rollup at or below 100%, the script asserts it and stops the run if any future
+data slips through:
+
+```r
+bad <- bind_rows(region, national) |>
+  filter(value_type == "proportion", value_pct > 100.0001)
+if (nrow(bad) > 0) stop("Guardrail tripped: a proportion exceeds 100%. ...")
+```
+
+## 2.7 Output data model
+
+```{r}
+tibble::tribble(
+  ~File, ~Grain, ~Key,
+  "master_woreda.csv", "woreda × indicator × period (long)", "region, period, woreda, indicator",
+  "master_woreda_geo.csv", "as above + geocode + population_best", "+ adm3_pcode",
+  "master_woreda_wide.csv", "woreda × period, indicators as columns", "region, woreda, period",
+  "kpi_region.csv", "region × indicator × period", "region, period, indicator",
+  "kpi_national.csv", "national × indicator × period", "period, indicator",
+  "kpi_woreda_pcode.csv", "woreda(P-code) × indicator × period", "adm3_pcode, period, indicator",
+  "woreda_population.csv", "woreda population lookup", "adm3_pcode",
+  "crosswalk_woreda.csv", "reported name → P-code", "region, zone, woreda",
+  "trend_*.csv", "cross-period comparison tables", "period (+ region/indicator)"
+) |> kable()
+```
+
+---
+
+# Part III — Reproducing this next quarter
+
+This is the workflow to run when the next quarter's workbooks arrive. Nothing
+here requires rewriting logic — only configuration and a re-run.
+
+**1. Place the files.** Create `raw/<new-period>/` (one folder per period, e.g.
+`raw/2025-Wk53-65/`) and drop that quarter's workbooks in. Keep the shared,
+period-independent files in the project root: `All GIS names.xlsx`,
+`reference_geo_names.csv`, and `Population by GIS woreda best.xlsx`.
+
+**2. Inspect the new workbooks once.** Sheet names and header rows drift between
+quarters. From R:
+
+```r
+source("scripts/view.R")
+kpi_files()                 # lists every file under raw/ (all periods)
+sheets("Tigray")            # which sheet holds the data
+vx("Tigray", "Woreda")      # open it in the Data Explorer to find the header row
+```
+
+Note, for each file, the data sheet name and the 1-based header row (the row
+holding "Region or city administration", "Proportion of…", and so on).
+
+**3. Add one config block** in `scripts/catalog.R`: copy a `cfg_<period>` tribble,
+fill in `file` / `sheet` / `header_row` / `region` for each workbook, append
+`|> dplyr::mutate(dir = "raw/<new-period>", period = "<new-period>")`, add it to
+the `bind_rows(...)` call, and append the new label to `PERIOD_LEVELS` and
+`PERIOD_LABELS`.
+
+**4. Re-run** `Rscript scripts/run_all.R`.
+
+What happens automatically:
+
+- the master gains the new period; all rollups and the wide table extend;
+- `FOCUS_PERIOD` advances, so `kpi_report.qmd` becomes the new quarter's standing
+  report, and the previous render is archived as
+  `reports/archive/kpi_report_<previous-period>.{html,docx}`;
+- `kpi_trends.qmd` discovers the new period and extends every figure and table;
+- the >100% guardrail and the not-reported / complete-pair rules apply unchanged.
+
+**5. Check the new period parsed correctly.** Read `output/harmonize_log.txt`
+(rows kept and value columns found per workbook) and the crosswalk summary
+(mapped vs needs-review). Add any new unmatched woreda names to `MANUAL_OVERRIDE`
+in `crosswalk_build.R` and re-run.
+
+## Common tasks
+
+| You want to… | Do this |
+|---|---|
+| Add the next quarter | Part III above |
+| Add a region to an existing period | add a row to that period's `cfg_*` block in `catalog.R` |
+| Add / rename an indicator | add a row to `KPI_CATALOG` with a distinctive `pattern` |
+| Set official targets | edit the `KPI_CATALOG$target` line in `catalog.R` |
+| Fix an unmatched woreda | add a row to `MANUAL_OVERRIDE` in `crosswalk_build.R` |
+| Change which period the standing report shows | it tracks the newest period; to pin another, set `FOCUS_PERIOD` in `catalog.R` |
+| Rebuild everything | `Rscript scripts/run_all.R` |
+
+## Caveats
+
+- **Targets are an 80% benchmark**, editable in `catalog.R`.
+- **Addis granularity differs by period** — sub-city level in Wk 3–15, woreda
+  level in the other two. Proportions stay comparable; woreda counts do not.
+- **Period length differs** — Wk 28–52 is two quarters, the others one each.
+  Proportions are comparable; raw counts scale with length.
+- **Dire Dawa** reports by facility; most facility names are not in the cleaning
+  key, so its within-region woreda map is incomplete (region numbers are fine).
+- **Tigray** woreda names are ~80% mapped (new region, cleaning key incomplete).
+- **Disease-specific attack-rate / CFR** columns are dropped; the generic rate is
+  kept. Splitting them, and computing attack rate from `population_best`, are the
+  natural next enhancements.
