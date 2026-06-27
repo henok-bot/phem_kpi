@@ -1,0 +1,32 @@
+region,zone,woreda,adm3_pcode,adm3_en,adm1_en,adm2_en,score,method,needs_review
+Dire Dawa,NA,Addis ketema PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.765,unmatched,TRUE
+Dire Dawa,NA,Biyoawale PHCU,NA,NA,Dire Dawa,Dire Dawa rural,0.643,unmatched,TRUE
+Dire Dawa,NA,Boren /Industry/ PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.211,unmatched,TRUE
+Dire Dawa,NA,Dechatu PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.583,unmatched,TRUE
+Dire Dawa,NA,Dire Dawa PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.286,unmatched,TRUE
+Dire Dawa,NA,Dr Abel MM (Gende kore )PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.385,unmatched,TRUE
+Dire Dawa,NA,Gende Gerada PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.412,unmatched,TRUE
+Dire Dawa,NA,Gende kore PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.667,unmatched,TRUE
+Dire Dawa,NA,Goro PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.2,unmatched,TRUE
+Dire Dawa,NA,Jeldesa /Qelad/ PHCU,NA,NA,Dire Dawa,Dire Dawa rural,0.389,unmatched,TRUE
+Dire Dawa,NA,Jelo Belina PHCU,NA,NA,Dire Dawa,Dire Dawa rural,0.312,unmatched,TRUE
+Dire Dawa,NA,Kalich PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.333,unmatched,TRUE
+Dire Dawa,NA,Legehare PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.615,unmatched,TRUE
+Dire Dawa,NA,Legoda gudenfeta PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.238,unmatched,TRUE
+Dire Dawa,NA,Melka Jebdu PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.474,unmatched,TRUE
+Dire Dawa,NA,Melka kero PHCU,NA,NA,Dire Dawa,Dire Dawa urban,0.368,unmatched,TRUE
+Dire Dawa,NA,Wahil PHCU,NA,NA,Dire Dawa,Dire Dawa rural,0.5,unmatched,TRUE
+Oromia,Shagger City,Shagger City,NA,NA,Oromia,West Arsi,0.357,unmatched,TRUE
+Tigray,Northwest,Shire Town,NA,NA,Tigray,North Western,0.667,unmatched,TRUE
+Tigray,NA,Adigudom Town,NA,NA,Tigray,Eastern,0.692,unmatched,TRUE
+Tigray,NA,E/selassie Town,NA,NA,Tigray,North Western,0.706,unmatched,TRUE
+Tigray,NA,Endabatshama,NA,NA,Tigray,North Western,0.467,unmatched,TRUE
+Tigray,NA,Kedamay Woyane,NA,NA,Tigray,North Western,0.357,unmatched,TRUE
+Tigray,NA,Kleate Awlaelo,NA,NA,Tigray,Eastern,0.733,unmatched,TRUE
+Tigray,NA,Laelay Tselemti,NA,NA,Tigray,North Western,0.533,unmatched,TRUE
+Tigray,NA,Maekel Adiyabo,NA,NA,Tigray,North Western,0.643,unmatched,TRUE
+Tigray,NA,Maiknetal,NA,NA,Tigray,South Eastern,0.444,unmatched,TRUE
+Tigray,NA,Mytsebri,NA,NA,Tigray,North Western,0.533,unmatched,TRUE
+Tigray,NA,Rama adi-4,NA,NA,Tigray,Southern,0.5,unmatched,TRUE
+Tigray,NA,Subha Sasea,NA,NA,Tigray,Central,0.364,unmatched,TRUE
+Tigray,NA,Tsrea Wenberta,NA,NA,Tigray,Eastern,0.5,unmatched,TRUE

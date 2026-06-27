@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import openpyxl; print\\('openpyxl', openpyxl.__version__\\)\")",
+      "Bash(python3 -c \"import pandas; print\\('pandas', pandas.__version__\\)\")",
+      "Bash(python3 -c \"import xlrd; print\\('xlrd', xlrd.__version__\\)\")",
+      "Bash(Rscript -e 'cat\\(rownames\\(installed.packages\\(\\)\\)\\)')",
+      "Bash(Rscript -e ' *)",
+      "Bash(unzip -l \"week 16- week  27 , 2025.zip\")",
+      "Bash(unzip -l \"Week 3- 15, 2015.zip\")",
+      "Bash(git config *)",
+      "Bash(echo \"user.name : $\\(git config --global user.name || echo '\\(not set\\)'\\)\")",
+      "Bash(echo \"user.email: $\\(git config --global user.email || echo '\\(not set\\)'\\)\")",
+      "Bash(ssh -o StrictHostKeyChecking=accept-new -o ConnectTimeout=8 -T git@github.com)"
+    ]
+  }
+}

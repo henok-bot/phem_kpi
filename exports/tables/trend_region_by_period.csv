@@ -1,0 +1,709 @@
+period,region,indicator,label,value_pct,pct_reported
+2025-Wk03-15,Addis Ababa,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,100
+2025-Wk03-15,Addis Ababa,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,100
+2025-Wk03-15,Addis Ababa,DETECT_7D,Outbreaks detected within 7 days,NA,100
+2025-Wk03-15,Addis Ababa,RPT_TIMELY,Surveillance reports submitted on time (timeliness),100,100
+2025-Wk03-15,Addis Ababa,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,100
+2025-Wk03-15,Addis Ababa,CB_ELIM,Case-based reporting: elimination/eradication diseases,100,100
+2025-Wk03-15,Addis Ababa,CB_EVENTS,Case-based reporting: selected events/conditions,100,100
+2025-Wk03-15,Addis Ababa,NOTIFY_24H,Suspected outbreaks notified within 24 hours,100,100
+2025-Wk03-15,Addis Ababa,NOTIFY_30M,Immediately reportable events notified within 30 minutes,100,100
+2025-Wk03-15,Addis Ababa,LINEGRAPH,Current line graph available for priority diseases,100,100
+2025-Wk03-15,Addis Ababa,OBR_ANALYZED,Outbreak reports with analyzed case-based data,4.166666666666667,100
+2025-Wk03-15,Addis Ababa,LAB_7D,Outbreaks with laboratory results within 7 days,100,100
+2025-Wk03-15,Addis Ababa,RESP_2448,Confirmed outbreaks with response within 24-48 hours,100,100
+2025-Wk03-15,Addis Ababa,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,100,100
+2025-Wk03-15,Addis Ababa,RISK_MAP,Districts conducting risk & resource mapping,100,100
+2025-Wk03-15,Addis Ababa,EPR_FUNDS,Districts with EPR funds / budget line,0,100
+2025-Wk03-15,Addis Ababa,CONTINGENCY,Districts with contingency stocks (3-6 months),0,100
+2025-Wk03-15,Addis Ababa,PHEM_OFFICER,Health facilities with PHEM officer,100,100
+2025-Wk03-15,Addis Ababa,DHIS2_RPT,Districts reporting weekly via DHIS2,NA,100
+2025-Wk03-15,Addis Ababa,COORD_PLATFORM,Districts with functional coordination platform / RRT,NA,100
+2025-Wk16-27,Addis Ababa,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),0,100
+2025-Wk16-27,Addis Ababa,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,100
+2025-Wk16-27,Addis Ababa,DETECT_7D,Outbreaks detected within 7 days,NA,100
+2025-Wk16-27,Addis Ababa,RPT_TIMELY,Surveillance reports submitted on time (timeliness),100,100
+2025-Wk16-27,Addis Ababa,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,100
+2025-Wk16-27,Addis Ababa,CB_ELIM,Case-based reporting: elimination/eradication diseases,100,100
+2025-Wk16-27,Addis Ababa,CB_EVENTS,Case-based reporting: selected events/conditions,100,100
+2025-Wk16-27,Addis Ababa,NOTIFY_24H,Suspected outbreaks notified within 24 hours,100,100
+2025-Wk16-27,Addis Ababa,NOTIFY_30M,Immediately reportable events notified within 30 minutes,100,100
+2025-Wk16-27,Addis Ababa,LINEGRAPH,Current line graph available for priority diseases,100,100
+2025-Wk16-27,Addis Ababa,OBR_ANALYZED,Outbreak reports with analyzed case-based data,0.8333333333333334,100
+2025-Wk16-27,Addis Ababa,LAB_7D,Outbreaks with laboratory results within 7 days,97.29729729729728,100
+2025-Wk16-27,Addis Ababa,RESP_2448,Confirmed outbreaks with response within 24-48 hours,2.702702702702702,100
+2025-Wk16-27,Addis Ababa,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,100,100
+2025-Wk16-27,Addis Ababa,RISK_MAP,Districts conducting risk & resource mapping,100,100
+2025-Wk16-27,Addis Ababa,EPR_FUNDS,Districts with EPR funds / budget line,15.126050420168069,100
+2025-Wk16-27,Addis Ababa,CONTINGENCY,Districts with contingency stocks (3-6 months),15.126050420168069,100
+2025-Wk16-27,Addis Ababa,PHEM_OFFICER,Health facilities with PHEM officer,100,100
+2025-Wk16-27,Addis Ababa,DHIS2_RPT,Districts reporting weekly via DHIS2,11.215834118755891,100
+2025-Wk16-27,Addis Ababa,COORD_PLATFORM,Districts with functional coordination platform / RRT,11.027332704995288,100
+2025-Wk28-52,Addis Ababa,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),0,100
+2025-Wk28-52,Addis Ababa,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,100
+2025-Wk28-52,Addis Ababa,DETECT_7D,Outbreaks detected within 7 days,NA,100
+2025-Wk28-52,Addis Ababa,RPT_TIMELY,Surveillance reports submitted on time (timeliness),100,100
+2025-Wk28-52,Addis Ababa,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,100
+2025-Wk28-52,Addis Ababa,CB_ELIM,Case-based reporting: elimination/eradication diseases,100,100
+2025-Wk28-52,Addis Ababa,CB_EVENTS,Case-based reporting: selected events/conditions,100,100
+2025-Wk28-52,Addis Ababa,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,100
+2025-Wk28-52,Addis Ababa,NOTIFY_30M,Immediately reportable events notified within 30 minutes,0,100
+2025-Wk28-52,Addis Ababa,LINEGRAPH,Current line graph available for priority diseases,100,100
+2025-Wk28-52,Addis Ababa,OBR_ANALYZED,Outbreak reports with analyzed case-based data,0,100
+2025-Wk28-52,Addis Ababa,LAB_7D,Outbreaks with laboratory results within 7 days,97.22222222222224,100
+2025-Wk28-52,Addis Ababa,RESP_2448,Confirmed outbreaks with response within 24-48 hours,2.7777777777777777,100
+2025-Wk28-52,Addis Ababa,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,100,100
+2025-Wk28-52,Addis Ababa,RISK_MAP,Districts conducting risk & resource mapping,100,100
+2025-Wk28-52,Addis Ababa,EPR_FUNDS,Districts with EPR funds / budget line,15.254237288135592,100
+2025-Wk28-52,Addis Ababa,CONTINGENCY,Districts with contingency stocks (3-6 months),15.254237288135592,100
+2025-Wk28-52,Addis Ababa,PHEM_OFFICER,Health facilities with PHEM officer,100,100
+2025-Wk28-52,Addis Ababa,DHIS2_RPT,Districts reporting weekly via DHIS2,11.270296084049663,100
+2025-Wk28-52,Addis Ababa,COORD_PLATFORM,Districts with functional coordination platform / RRT,11.0792741165234,100
+2025-Wk03-15,Afar,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,100
+2025-Wk03-15,Afar,EBS_DETECT,Outbreaks detected through event-based surveillance,0,100
+2025-Wk03-15,Afar,DETECT_7D,Outbreaks detected within 7 days,100,100
+2025-Wk03-15,Afar,RPT_TIMELY,Surveillance reports submitted on time (timeliness),93.26923076923076,100
+2025-Wk03-15,Afar,RPT_COMPLETE,Surveillance reports submitted completely (completeness),95.57692307692308,100
+2025-Wk03-15,Afar,CB_ELIM,Case-based reporting: elimination/eradication diseases,NA,100
+2025-Wk03-15,Afar,CB_EVENTS,Case-based reporting: selected events/conditions,45.45454545454545,100
+2025-Wk03-15,Afar,NOTIFY_24H,Suspected outbreaks notified within 24 hours,100,100
+2025-Wk03-15,Afar,NOTIFY_30M,Immediately reportable events notified within 30 minutes,0,100
+2025-Wk03-15,Afar,LINEGRAPH,Current line graph available for priority diseases,0,100
+2025-Wk03-15,Afar,OBR_ANALYZED,Outbreak reports with analyzed case-based data,5,100
+2025-Wk03-15,Afar,LAB_7D,Outbreaks with laboratory results within 7 days,0,100
+2025-Wk03-15,Afar,RESP_2448,Confirmed outbreaks with response within 24-48 hours,100,100
+2025-Wk03-15,Afar,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,5,100
+2025-Wk03-15,Afar,RISK_MAP,Districts conducting risk & resource mapping,5,100
+2025-Wk03-15,Afar,EPR_FUNDS,Districts with EPR funds / budget line,0,100
+2025-Wk03-15,Afar,CONTINGENCY,Districts with contingency stocks (3-6 months),0,100
+2025-Wk03-15,Afar,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk03-15,Afar,DHIS2_RPT,Districts reporting weekly via DHIS2,4.964539007092198,100
+2025-Wk03-15,Afar,COORD_PLATFORM,Districts with functional coordination platform / RRT,0.4728132387706856,100
+2025-Wk16-27,Afar,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,100
+2025-Wk16-27,Afar,EBS_DETECT,Outbreaks detected through event-based surveillance,50,100
+2025-Wk16-27,Afar,DETECT_7D,Outbreaks detected within 7 days,100,100
+2025-Wk16-27,Afar,RPT_TIMELY,Surveillance reports submitted on time (timeliness),87.88461538461539,100
+2025-Wk16-27,Afar,RPT_COMPLETE,Surveillance reports submitted completely (completeness),96.25246548323472,100
+2025-Wk16-27,Afar,CB_ELIM,Case-based reporting: elimination/eradication diseases,92.10526315789474,100
+2025-Wk16-27,Afar,CB_EVENTS,Case-based reporting: selected events/conditions,26.923076923076923,100
+2025-Wk16-27,Afar,NOTIFY_24H,Suspected outbreaks notified within 24 hours,75,100
+2025-Wk16-27,Afar,NOTIFY_30M,Immediately reportable events notified within 30 minutes,0,100
+2025-Wk16-27,Afar,LINEGRAPH,Current line graph available for priority diseases,0,100
+2025-Wk16-27,Afar,OBR_ANALYZED,Outbreak reports with analyzed case-based data,12.5,100
+2025-Wk16-27,Afar,LAB_7D,Outbreaks with laboratory results within 7 days,0,100
+2025-Wk16-27,Afar,RESP_2448,Confirmed outbreaks with response within 24-48 hours,100,100
+2025-Wk16-27,Afar,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,22.5,100
+2025-Wk16-27,Afar,RISK_MAP,Districts conducting risk & resource mapping,5,100
+2025-Wk16-27,Afar,EPR_FUNDS,Districts with EPR funds / budget line,0,100
+2025-Wk16-27,Afar,CONTINGENCY,Districts with contingency stocks (3-6 months),0,100
+2025-Wk16-27,Afar,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk16-27,Afar,DHIS2_RPT,Districts reporting weekly via DHIS2,9.456264775413713,100
+2025-Wk16-27,Afar,COORD_PLATFORM,Districts with functional coordination platform / RRT,1.182033096926714,100
+2025-Wk28-52,Afar,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,100
+2025-Wk28-52,Afar,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,100
+2025-Wk28-52,Afar,DETECT_7D,Outbreaks detected within 7 days,NA,100
+2025-Wk28-52,Afar,RPT_TIMELY,Surveillance reports submitted on time (timeliness),85,100
+2025-Wk28-52,Afar,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,100
+2025-Wk28-52,Afar,CB_ELIM,Case-based reporting: elimination/eradication diseases,75.67567567567568,100
+2025-Wk28-52,Afar,CB_EVENTS,Case-based reporting: selected events/conditions,75.67567567567568,100
+2025-Wk28-52,Afar,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,100
+2025-Wk28-52,Afar,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,100
+2025-Wk28-52,Afar,LINEGRAPH,Current line graph available for priority diseases,45,100
+2025-Wk28-52,Afar,OBR_ANALYZED,Outbreak reports with analyzed case-based data,0,100
+2025-Wk28-52,Afar,LAB_7D,Outbreaks with laboratory results within 7 days,NA,100
+2025-Wk28-52,Afar,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,100
+2025-Wk28-52,Afar,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,100,100
+2025-Wk28-52,Afar,RISK_MAP,Districts conducting risk & resource mapping,0,100
+2025-Wk28-52,Afar,EPR_FUNDS,Districts with EPR funds / budget line,0,100
+2025-Wk28-52,Afar,CONTINGENCY,Districts with contingency stocks (3-6 months),0,100
+2025-Wk28-52,Afar,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk28-52,Afar,DHIS2_RPT,Districts reporting weekly via DHIS2,7.723577235772358,100
+2025-Wk28-52,Afar,COORD_PLATFORM,Districts with functional coordination platform / RRT,0,100
+2025-Wk03-15,Amhara,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,0
+2025-Wk03-15,Amhara,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,8.1
+2025-Wk03-15,Amhara,DETECT_7D,Outbreaks detected within 7 days,100,8.1
+2025-Wk03-15,Amhara,RPT_TIMELY,Surveillance reports submitted on time (timeliness),91.20421245421244,100
+2025-Wk03-15,Amhara,RPT_COMPLETE,Surveillance reports submitted completely (completeness),91.40146693338184,100
+2025-Wk03-15,Amhara,CB_ELIM,Case-based reporting: elimination/eradication diseases,21.15689381933439,100
+2025-Wk03-15,Amhara,CB_EVENTS,Case-based reporting: selected events/conditions,71.36659436008676,100
+2025-Wk03-15,Amhara,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,0
+2025-Wk03-15,Amhara,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,0
+2025-Wk03-15,Amhara,LINEGRAPH,Current line graph available for priority diseases,NA,0
+2025-Wk03-15,Amhara,OBR_ANALYZED,Outbreak reports with analyzed case-based data,NA,0
+2025-Wk03-15,Amhara,LAB_7D,Outbreaks with laboratory results within 7 days,NA,0
+2025-Wk03-15,Amhara,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,0
+2025-Wk03-15,Amhara,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,NA,100
+2025-Wk03-15,Amhara,RISK_MAP,Districts conducting risk & resource mapping,NA,0
+2025-Wk03-15,Amhara,EPR_FUNDS,Districts with EPR funds / budget line,NA,0
+2025-Wk03-15,Amhara,CONTINGENCY,Districts with contingency stocks (3-6 months),NA,0
+2025-Wk03-15,Amhara,PHEM_OFFICER,Health facilities with PHEM officer,NA,0
+2025-Wk03-15,Amhara,DHIS2_RPT,Districts reporting weekly via DHIS2,NA,0
+2025-Wk03-15,Amhara,COORD_PLATFORM,Districts with functional coordination platform / RRT,NA,0
+2025-Wk16-27,Amhara,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,0
+2025-Wk16-27,Amhara,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,0
+2025-Wk16-27,Amhara,DETECT_7D,Outbreaks detected within 7 days,NA,0
+2025-Wk16-27,Amhara,RPT_TIMELY,Surveillance reports submitted on time (timeliness),86.78895877009084,100
+2025-Wk16-27,Amhara,RPT_COMPLETE,Surveillance reports submitted completely (completeness),92.2642500656685,100
+2025-Wk16-27,Amhara,CB_ELIM,Case-based reporting: elimination/eradication diseases,NA,0
+2025-Wk16-27,Amhara,CB_EVENTS,Case-based reporting: selected events/conditions,NA,0
+2025-Wk16-27,Amhara,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,0
+2025-Wk16-27,Amhara,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,0
+2025-Wk16-27,Amhara,LINEGRAPH,Current line graph available for priority diseases,NA,0
+2025-Wk16-27,Amhara,OBR_ANALYZED,Outbreak reports with analyzed case-based data,NA,0
+2025-Wk16-27,Amhara,LAB_7D,Outbreaks with laboratory results within 7 days,NA,0
+2025-Wk16-27,Amhara,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,0
+2025-Wk16-27,Amhara,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,NA,100
+2025-Wk16-27,Amhara,RISK_MAP,Districts conducting risk & resource mapping,NA,0
+2025-Wk16-27,Amhara,EPR_FUNDS,Districts with EPR funds / budget line,NA,0
+2025-Wk16-27,Amhara,CONTINGENCY,Districts with contingency stocks (3-6 months),NA,0
+2025-Wk16-27,Amhara,PHEM_OFFICER,Health facilities with PHEM officer,NA,0
+2025-Wk16-27,Amhara,DHIS2_RPT,Districts reporting weekly via DHIS2,NA,0
+2025-Wk16-27,Amhara,COORD_PLATFORM,Districts with functional coordination platform / RRT,NA,0
+2025-Wk28-52,Amhara,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,0
+2025-Wk28-52,Amhara,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,0
+2025-Wk28-52,Amhara,DETECT_7D,Outbreaks detected within 7 days,NA,0
+2025-Wk28-52,Amhara,RPT_TIMELY,Surveillance reports submitted on time (timeliness),91.3585236074628,100
+2025-Wk28-52,Amhara,RPT_COMPLETE,Surveillance reports submitted completely (completeness),91.3585236074628,100
+2025-Wk28-52,Amhara,CB_ELIM,Case-based reporting: elimination/eradication diseases,NA,0
+2025-Wk28-52,Amhara,CB_EVENTS,Case-based reporting: selected events/conditions,NA,0
+2025-Wk28-52,Amhara,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,0
+2025-Wk28-52,Amhara,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,0
+2025-Wk28-52,Amhara,LINEGRAPH,Current line graph available for priority diseases,NA,0
+2025-Wk28-52,Amhara,OBR_ANALYZED,Outbreak reports with analyzed case-based data,NA,0
+2025-Wk28-52,Amhara,LAB_7D,Outbreaks with laboratory results within 7 days,NA,0
+2025-Wk28-52,Amhara,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,0
+2025-Wk28-52,Amhara,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,NA,100
+2025-Wk28-52,Amhara,RISK_MAP,Districts conducting risk & resource mapping,NA,0
+2025-Wk28-52,Amhara,EPR_FUNDS,Districts with EPR funds / budget line,NA,0
+2025-Wk28-52,Amhara,CONTINGENCY,Districts with contingency stocks (3-6 months),NA,0
+2025-Wk28-52,Amhara,PHEM_OFFICER,Health facilities with PHEM officer,NA,0
+2025-Wk28-52,Amhara,DHIS2_RPT,Districts reporting weekly via DHIS2,NA,0
+2025-Wk28-52,Amhara,COORD_PLATFORM,Districts with functional coordination platform / RRT,NA,0
+2025-Wk03-15,Benishangul Gumuz,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),100,100
+2025-Wk03-15,Benishangul Gumuz,EBS_DETECT,Outbreaks detected through event-based surveillance,100,100
+2025-Wk03-15,Benishangul Gumuz,DETECT_7D,Outbreaks detected within 7 days,77.77777777777777,100
+2025-Wk03-15,Benishangul Gumuz,RPT_TIMELY,Surveillance reports submitted on time (timeliness),100,100
+2025-Wk03-15,Benishangul Gumuz,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,100
+2025-Wk03-15,Benishangul Gumuz,CB_ELIM,Case-based reporting: elimination/eradication diseases,67.52645502645503,100
+2025-Wk03-15,Benishangul Gumuz,CB_EVENTS,Case-based reporting: selected events/conditions,20,100
+2025-Wk03-15,Benishangul Gumuz,NOTIFY_24H,Suspected outbreaks notified within 24 hours,88.88888888888889,100
+2025-Wk03-15,Benishangul Gumuz,NOTIFY_30M,Immediately reportable events notified within 30 minutes,88.88888888888889,100
+2025-Wk03-15,Benishangul Gumuz,LINEGRAPH,Current line graph available for priority diseases,0,100
+2025-Wk03-15,Benishangul Gumuz,OBR_ANALYZED,Outbreak reports with analyzed case-based data,39.130434782608695,100
+2025-Wk03-15,Benishangul Gumuz,LAB_7D,Outbreaks with laboratory results within 7 days,77.77777777777777,100
+2025-Wk03-15,Benishangul Gumuz,RESP_2448,Confirmed outbreaks with response within 24-48 hours,100,100
+2025-Wk03-15,Benishangul Gumuz,EPI_DETECT_REG,Epidemics detected at regional level from district data,0,100
+2025-Wk03-15,Benishangul Gumuz,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,69.56521739130434,100
+2025-Wk03-15,Benishangul Gumuz,RISK_MAP,Districts conducting risk & resource mapping,69.56521739130434,100
+2025-Wk03-15,Benishangul Gumuz,EPR_FUNDS,Districts with EPR funds / budget line,0,100
+2025-Wk03-15,Benishangul Gumuz,CONTINGENCY,Districts with contingency stocks (3-6 months),0,100
+2025-Wk03-15,Benishangul Gumuz,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk03-15,Benishangul Gumuz,DHIS2_RPT,Districts reporting weekly via DHIS2,73.91304347826087,100
+2025-Wk03-15,Benishangul Gumuz,COORD_PLATFORM,Districts with functional coordination platform / RRT,78.26086956521739,100
+2025-Wk16-27,Benishangul Gumuz,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),100,100
+2025-Wk16-27,Benishangul Gumuz,EBS_DETECT,Outbreaks detected through event-based surveillance,100,100
+2025-Wk16-27,Benishangul Gumuz,DETECT_7D,Outbreaks detected within 7 days,100,100
+2025-Wk16-27,Benishangul Gumuz,RPT_TIMELY,Surveillance reports submitted on time (timeliness),90.3010033444816,100
+2025-Wk16-27,Benishangul Gumuz,RPT_COMPLETE,Surveillance reports submitted completely (completeness),93.31103678929766,100
+2025-Wk16-27,Benishangul Gumuz,CB_ELIM,Case-based reporting: elimination/eradication diseases,1.7241379310344829,100
+2025-Wk16-27,Benishangul Gumuz,CB_EVENTS,Case-based reporting: selected events/conditions,69.23076923076923,100
+2025-Wk16-27,Benishangul Gumuz,NOTIFY_24H,Suspected outbreaks notified within 24 hours,100,100
+2025-Wk16-27,Benishangul Gumuz,NOTIFY_30M,Immediately reportable events notified within 30 minutes,100,100
+2025-Wk16-27,Benishangul Gumuz,LINEGRAPH,Current line graph available for priority diseases,0,100
+2025-Wk16-27,Benishangul Gumuz,OBR_ANALYZED,Outbreak reports with analyzed case-based data,4.3478260869565215,100
+2025-Wk16-27,Benishangul Gumuz,LAB_7D,Outbreaks with laboratory results within 7 days,92.3076923076923,100
+2025-Wk16-27,Benishangul Gumuz,RESP_2448,Confirmed outbreaks with response within 24-48 hours,100,100
+2025-Wk16-27,Benishangul Gumuz,EPI_DETECT_REG,Epidemics detected at regional level from district data,0,100
+2025-Wk16-27,Benishangul Gumuz,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,69.56521739130434,100
+2025-Wk16-27,Benishangul Gumuz,RISK_MAP,Districts conducting risk & resource mapping,69.56521739130434,100
+2025-Wk16-27,Benishangul Gumuz,EPR_FUNDS,Districts with EPR funds / budget line,0,100
+2025-Wk16-27,Benishangul Gumuz,CONTINGENCY,Districts with contingency stocks (3-6 months),0,100
+2025-Wk16-27,Benishangul Gumuz,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk16-27,Benishangul Gumuz,DHIS2_RPT,Districts reporting weekly via DHIS2,73.91304347826087,100
+2025-Wk16-27,Benishangul Gumuz,COORD_PLATFORM,Districts with functional coordination platform / RRT,78.26086956521739,100
+2025-Wk28-52,Benishangul Gumuz,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),100,100
+2025-Wk28-52,Benishangul Gumuz,EBS_DETECT,Outbreaks detected through event-based surveillance,100,100
+2025-Wk28-52,Benishangul Gumuz,DETECT_7D,Outbreaks detected within 7 days,100,100
+2025-Wk28-52,Benishangul Gumuz,RPT_TIMELY,Surveillance reports submitted on time (timeliness),93.21739130434784,100
+2025-Wk28-52,Benishangul Gumuz,RPT_COMPLETE,Surveillance reports submitted completely (completeness),93.21739130434784,100
+2025-Wk28-52,Benishangul Gumuz,CB_ELIM,Case-based reporting: elimination/eradication diseases,54.285714285714285,100
+2025-Wk28-52,Benishangul Gumuz,CB_EVENTS,Case-based reporting: selected events/conditions,71.06598984771574,100
+2025-Wk28-52,Benishangul Gumuz,NOTIFY_24H,Suspected outbreaks notified within 24 hours,100,100
+2025-Wk28-52,Benishangul Gumuz,NOTIFY_30M,Immediately reportable events notified within 30 minutes,100,100
+2025-Wk28-52,Benishangul Gumuz,LINEGRAPH,Current line graph available for priority diseases,0,100
+2025-Wk28-52,Benishangul Gumuz,OBR_ANALYZED,Outbreak reports with analyzed case-based data,17.391304347826086,100
+2025-Wk28-52,Benishangul Gumuz,LAB_7D,Outbreaks with laboratory results within 7 days,100,100
+2025-Wk28-52,Benishangul Gumuz,RESP_2448,Confirmed outbreaks with response within 24-48 hours,100,100
+2025-Wk28-52,Benishangul Gumuz,EPI_DETECT_REG,Epidemics detected at regional level from district data,0,100
+2025-Wk28-52,Benishangul Gumuz,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,69.56521739130434,100
+2025-Wk28-52,Benishangul Gumuz,RISK_MAP,Districts conducting risk & resource mapping,69.56521739130434,100
+2025-Wk28-52,Benishangul Gumuz,EPR_FUNDS,Districts with EPR funds / budget line,0,100
+2025-Wk28-52,Benishangul Gumuz,CONTINGENCY,Districts with contingency stocks (3-6 months),0,100
+2025-Wk28-52,Benishangul Gumuz,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk28-52,Benishangul Gumuz,DHIS2_RPT,Districts reporting weekly via DHIS2,73.91304347826087,100
+2025-Wk28-52,Benishangul Gumuz,COORD_PLATFORM,Districts with functional coordination platform / RRT,78.26086956521739,100
+2025-Wk03-15,Central Ethiopia,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),100,100
+2025-Wk03-15,Central Ethiopia,EBS_DETECT,Outbreaks detected through event-based surveillance,100,100
+2025-Wk03-15,Central Ethiopia,DETECT_7D,Outbreaks detected within 7 days,100,100
+2025-Wk03-15,Central Ethiopia,RPT_TIMELY,Surveillance reports submitted on time (timeliness),100,100
+2025-Wk03-15,Central Ethiopia,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,100
+2025-Wk03-15,Central Ethiopia,CB_ELIM,Case-based reporting: elimination/eradication diseases,98.50746268656717,100
+2025-Wk03-15,Central Ethiopia,CB_EVENTS,Case-based reporting: selected events/conditions,100,100
+2025-Wk03-15,Central Ethiopia,NOTIFY_24H,Suspected outbreaks notified within 24 hours,100,100
+2025-Wk03-15,Central Ethiopia,NOTIFY_30M,Immediately reportable events notified within 30 minutes,100,100
+2025-Wk03-15,Central Ethiopia,LINEGRAPH,Current line graph available for priority diseases,100,100
+2025-Wk03-15,Central Ethiopia,OBR_ANALYZED,Outbreak reports with analyzed case-based data,18.29268292682927,100
+2025-Wk03-15,Central Ethiopia,LAB_7D,Outbreaks with laboratory results within 7 days,84.5360824742268,100
+2025-Wk03-15,Central Ethiopia,RESP_2448,Confirmed outbreaks with response within 24-48 hours,100,100
+2025-Wk03-15,Central Ethiopia,EPI_DETECT_REG,Epidemics detected at regional level from district data,0,100
+2025-Wk03-15,Central Ethiopia,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,100,100
+2025-Wk03-15,Central Ethiopia,RISK_MAP,Districts conducting risk & resource mapping,0,100
+2025-Wk03-15,Central Ethiopia,EPR_FUNDS,Districts with EPR funds / budget line,0,100
+2025-Wk03-15,Central Ethiopia,CONTINGENCY,Districts with contingency stocks (3-6 months),0,100
+2025-Wk03-15,Central Ethiopia,PHEM_OFFICER,Health facilities with PHEM officer,100,100
+2025-Wk03-15,Central Ethiopia,DHIS2_RPT,Districts reporting weekly via DHIS2,100,100
+2025-Wk03-15,Central Ethiopia,COORD_PLATFORM,Districts with functional coordination platform / RRT,100,100
+2025-Wk03-15,Dire Dawa,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,100
+2025-Wk03-15,Dire Dawa,EBS_DETECT,Outbreaks detected through event-based surveillance,0,100
+2025-Wk03-15,Dire Dawa,DETECT_7D,Outbreaks detected within 7 days,100,100
+2025-Wk03-15,Dire Dawa,RPT_TIMELY,Surveillance reports submitted on time (timeliness),97.14285714285714,100
+2025-Wk03-15,Dire Dawa,RPT_COMPLETE,Surveillance reports submitted completely (completeness),99.04761904761904,100
+2025-Wk03-15,Dire Dawa,CB_ELIM,Case-based reporting: elimination/eradication diseases,94.34276206322797,100
+2025-Wk03-15,Dire Dawa,CB_EVENTS,Case-based reporting: selected events/conditions,100,100
+2025-Wk03-15,Dire Dawa,NOTIFY_24H,Suspected outbreaks notified within 24 hours,100,100
+2025-Wk03-15,Dire Dawa,NOTIFY_30M,Immediately reportable events notified within 30 minutes,100,100
+2025-Wk03-15,Dire Dawa,LINEGRAPH,Current line graph available for priority diseases,NA,0
+2025-Wk03-15,Dire Dawa,OBR_ANALYZED,Outbreak reports with analyzed case-based data,NA,100
+2025-Wk03-15,Dire Dawa,LAB_7D,Outbreaks with laboratory results within 7 days,NA,0
+2025-Wk03-15,Dire Dawa,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,100
+2025-Wk03-15,Dire Dawa,EPI_DETECT_REG,Epidemics detected at regional level from district data,0,94.4
+2025-Wk03-15,Dire Dawa,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,100,94.4
+2025-Wk03-15,Dire Dawa,RISK_MAP,Districts conducting risk & resource mapping,100,94.4
+2025-Wk03-15,Dire Dawa,EPR_FUNDS,Districts with EPR funds / budget line,0,94.4
+2025-Wk03-15,Dire Dawa,CONTINGENCY,Districts with contingency stocks (3-6 months),100,94.4
+2025-Wk03-15,Dire Dawa,PHEM_OFFICER,Health facilities with PHEM officer,0,94.4
+2025-Wk03-15,Dire Dawa,DHIS2_RPT,Districts reporting weekly via DHIS2,100,94.4
+2025-Wk03-15,Dire Dawa,COORD_PLATFORM,Districts with functional coordination platform / RRT,100,94.4
+2025-Wk16-27,Dire Dawa,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,100
+2025-Wk16-27,Dire Dawa,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,100
+2025-Wk16-27,Dire Dawa,DETECT_7D,Outbreaks detected within 7 days,NA,100
+2025-Wk16-27,Dire Dawa,RPT_TIMELY,Surveillance reports submitted on time (timeliness),95.23809523809524,100
+2025-Wk16-27,Dire Dawa,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,100
+2025-Wk16-27,Dire Dawa,CB_ELIM,Case-based reporting: elimination/eradication diseases,74.66666666666667,100
+2025-Wk16-27,Dire Dawa,CB_EVENTS,Case-based reporting: selected events/conditions,100,100
+2025-Wk16-27,Dire Dawa,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,100
+2025-Wk16-27,Dire Dawa,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,100
+2025-Wk16-27,Dire Dawa,LINEGRAPH,Current line graph available for priority diseases,NA,0
+2025-Wk16-27,Dire Dawa,OBR_ANALYZED,Outbreak reports with analyzed case-based data,NA,100
+2025-Wk16-27,Dire Dawa,LAB_7D,Outbreaks with laboratory results within 7 days,NA,0
+2025-Wk16-27,Dire Dawa,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,100
+2025-Wk16-27,Dire Dawa,EPI_DETECT_REG,Epidemics detected at regional level from district data,NA,94.4
+2025-Wk16-27,Dire Dawa,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,100,94.4
+2025-Wk16-27,Dire Dawa,RISK_MAP,Districts conducting risk & resource mapping,100,94.4
+2025-Wk16-27,Dire Dawa,EPR_FUNDS,Districts with EPR funds / budget line,0,94.4
+2025-Wk16-27,Dire Dawa,CONTINGENCY,Districts with contingency stocks (3-6 months),100,94.4
+2025-Wk16-27,Dire Dawa,PHEM_OFFICER,Health facilities with PHEM officer,0,94.4
+2025-Wk16-27,Dire Dawa,DHIS2_RPT,Districts reporting weekly via DHIS2,100,94.4
+2025-Wk16-27,Dire Dawa,COORD_PLATFORM,Districts with functional coordination platform / RRT,100,94.4
+2025-Wk28-52,Dire Dawa,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,100
+2025-Wk28-52,Dire Dawa,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,100
+2025-Wk28-52,Dire Dawa,DETECT_7D,Outbreaks detected within 7 days,100,100
+2025-Wk28-52,Dire Dawa,RPT_TIMELY,Surveillance reports submitted on time (timeliness),100,100
+2025-Wk28-52,Dire Dawa,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,100
+2025-Wk28-52,Dire Dawa,CB_ELIM,Case-based reporting: elimination/eradication diseases,96.44549763033176,100
+2025-Wk28-52,Dire Dawa,CB_EVENTS,Case-based reporting: selected events/conditions,100,100
+2025-Wk28-52,Dire Dawa,NOTIFY_24H,Suspected outbreaks notified within 24 hours,100,100
+2025-Wk28-52,Dire Dawa,NOTIFY_30M,Immediately reportable events notified within 30 minutes,100,100
+2025-Wk28-52,Dire Dawa,LINEGRAPH,Current line graph available for priority diseases,NA,0
+2025-Wk28-52,Dire Dawa,OBR_ANALYZED,Outbreak reports with analyzed case-based data,NA,100
+2025-Wk28-52,Dire Dawa,LAB_7D,Outbreaks with laboratory results within 7 days,NA,0
+2025-Wk28-52,Dire Dawa,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,100
+2025-Wk28-52,Dire Dawa,EPI_DETECT_REG,Epidemics detected at regional level from district data,100,100
+2025-Wk28-52,Dire Dawa,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,100,100
+2025-Wk28-52,Dire Dawa,RISK_MAP,Districts conducting risk & resource mapping,100,100
+2025-Wk28-52,Dire Dawa,EPR_FUNDS,Districts with EPR funds / budget line,5.555555555555555,100
+2025-Wk28-52,Dire Dawa,CONTINGENCY,Districts with contingency stocks (3-6 months),100,100
+2025-Wk28-52,Dire Dawa,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk28-52,Dire Dawa,DHIS2_RPT,Districts reporting weekly via DHIS2,100,100
+2025-Wk28-52,Dire Dawa,COORD_PLATFORM,Districts with functional coordination platform / RRT,100,100
+2025-Wk03-15,Gambella,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),100,100
+2025-Wk03-15,Gambella,EBS_DETECT,Outbreaks detected through event-based surveillance,11.11111111111111,100
+2025-Wk03-15,Gambella,DETECT_7D,Outbreaks detected within 7 days,100,64.3
+2025-Wk03-15,Gambella,RPT_TIMELY,Surveillance reports submitted on time (timeliness),78.02197802197803,100
+2025-Wk03-15,Gambella,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,100
+2025-Wk03-15,Gambella,CB_ELIM,Case-based reporting: elimination/eradication diseases,93.17725752508362,100
+2025-Wk03-15,Gambella,CB_EVENTS,Case-based reporting: selected events/conditions,0,100
+2025-Wk03-15,Gambella,NOTIFY_24H,Suspected outbreaks notified within 24 hours,100,100
+2025-Wk03-15,Gambella,NOTIFY_30M,Immediately reportable events notified within 30 minutes,77.77777777777777,100
+2025-Wk03-15,Gambella,LINEGRAPH,Current line graph available for priority diseases,0,100
+2025-Wk03-15,Gambella,OBR_ANALYZED,Outbreak reports with analyzed case-based data,64.28571428571429,100
+2025-Wk03-15,Gambella,LAB_7D,Outbreaks with laboratory results within 7 days,0,100
+2025-Wk03-15,Gambella,RESP_2448,Confirmed outbreaks with response within 24-48 hours,100,100
+2025-Wk03-15,Gambella,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,64.28571428571429,100
+2025-Wk03-15,Gambella,RISK_MAP,Districts conducting risk & resource mapping,64.28571428571429,100
+2025-Wk03-15,Gambella,EPR_FUNDS,Districts with EPR funds / budget line,0,100
+2025-Wk03-15,Gambella,CONTINGENCY,Districts with contingency stocks (3-6 months),0,100
+2025-Wk03-15,Gambella,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk03-15,Gambella,DHIS2_RPT,Districts reporting weekly via DHIS2,0,100
+2025-Wk03-15,Gambella,COORD_PLATFORM,Districts with functional coordination platform / RRT,5.921052631578948,100
+2025-Wk16-27,Gambella,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,100
+2025-Wk16-27,Gambella,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,100
+2025-Wk16-27,Gambella,DETECT_7D,Outbreaks detected within 7 days,NA,100
+2025-Wk16-27,Gambella,RPT_TIMELY,Surveillance reports submitted on time (timeliness),70.87912087912088,100
+2025-Wk16-27,Gambella,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,100
+2025-Wk16-27,Gambella,CB_ELIM,Case-based reporting: elimination/eradication diseases,NA,100
+2025-Wk16-27,Gambella,CB_EVENTS,Case-based reporting: selected events/conditions,NA,100
+2025-Wk16-27,Gambella,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,100
+2025-Wk16-27,Gambella,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,100
+2025-Wk16-27,Gambella,LINEGRAPH,Current line graph available for priority diseases,0,100
+2025-Wk16-27,Gambella,OBR_ANALYZED,Outbreak reports with analyzed case-based data,0,100
+2025-Wk16-27,Gambella,LAB_7D,Outbreaks with laboratory results within 7 days,NA,100
+2025-Wk16-27,Gambella,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,100
+2025-Wk16-27,Gambella,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,64.28571428571429,100
+2025-Wk16-27,Gambella,RISK_MAP,Districts conducting risk & resource mapping,64.28571428571429,100
+2025-Wk16-27,Gambella,EPR_FUNDS,Districts with EPR funds / budget line,0,100
+2025-Wk16-27,Gambella,CONTINGENCY,Districts with contingency stocks (3-6 months),0,100
+2025-Wk16-27,Gambella,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk16-27,Gambella,DHIS2_RPT,Districts reporting weekly via DHIS2,5.921052631578948,100
+2025-Wk16-27,Gambella,COORD_PLATFORM,Districts with functional coordination platform / RRT,5.921052631578948,100
+2025-Wk28-52,Gambella,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),0,100
+2025-Wk28-52,Gambella,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,100
+2025-Wk28-52,Gambella,DETECT_7D,Outbreaks detected within 7 days,NA,100
+2025-Wk28-52,Gambella,RPT_TIMELY,Surveillance reports submitted on time (timeliness),83.71428571428571,100
+2025-Wk28-52,Gambella,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,100
+2025-Wk28-52,Gambella,CB_ELIM,Case-based reporting: elimination/eradication diseases,NA,100
+2025-Wk28-52,Gambella,CB_EVENTS,Case-based reporting: selected events/conditions,NA,100
+2025-Wk28-52,Gambella,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,100
+2025-Wk28-52,Gambella,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,100
+2025-Wk28-52,Gambella,LINEGRAPH,Current line graph available for priority diseases,0,100
+2025-Wk28-52,Gambella,OBR_ANALYZED,Outbreak reports with analyzed case-based data,0,100
+2025-Wk28-52,Gambella,LAB_7D,Outbreaks with laboratory results within 7 days,NA,100
+2025-Wk28-52,Gambella,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,100
+2025-Wk28-52,Gambella,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,64.28571428571429,100
+2025-Wk28-52,Gambella,RISK_MAP,Districts conducting risk & resource mapping,64.28571428571429,100
+2025-Wk28-52,Gambella,EPR_FUNDS,Districts with EPR funds / budget line,0,100
+2025-Wk28-52,Gambella,CONTINGENCY,Districts with contingency stocks (3-6 months),0,100
+2025-Wk28-52,Gambella,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk28-52,Gambella,DHIS2_RPT,Districts reporting weekly via DHIS2,5.921052631578948,100
+2025-Wk28-52,Gambella,COORD_PLATFORM,Districts with functional coordination platform / RRT,5.921052631578948,100
+2025-Wk03-15,Harari,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),33.333333333333336,100
+2025-Wk03-15,Harari,EBS_DETECT,Outbreaks detected through event-based surveillance,75,100
+2025-Wk03-15,Harari,DETECT_7D,Outbreaks detected within 7 days,75,100
+2025-Wk03-15,Harari,RPT_TIMELY,Surveillance reports submitted on time (timeliness),100,100
+2025-Wk03-15,Harari,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,100
+2025-Wk03-15,Harari,CB_ELIM,Case-based reporting: elimination/eradication diseases,100,100
+2025-Wk03-15,Harari,CB_EVENTS,Case-based reporting: selected events/conditions,NA,100
+2025-Wk03-15,Harari,NOTIFY_24H,Suspected outbreaks notified within 24 hours,0,100
+2025-Wk03-15,Harari,NOTIFY_30M,Immediately reportable events notified within 30 minutes,0,100
+2025-Wk03-15,Harari,LINEGRAPH,Current line graph available for priority diseases,44.44444444444444,100
+2025-Wk03-15,Harari,OBR_ANALYZED,Outbreak reports with analyzed case-based data,0,100
+2025-Wk03-15,Harari,LAB_7D,Outbreaks with laboratory results within 7 days,0,100
+2025-Wk03-15,Harari,RESP_2448,Confirmed outbreaks with response within 24-48 hours,100,100
+2025-Wk03-15,Harari,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,11.11111111111111,100
+2025-Wk03-15,Harari,RISK_MAP,Districts conducting risk & resource mapping,11.11111111111111,100
+2025-Wk03-15,Harari,EPR_FUNDS,Districts with EPR funds / budget line,0,100
+2025-Wk03-15,Harari,CONTINGENCY,Districts with contingency stocks (3-6 months),0,100
+2025-Wk03-15,Harari,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk03-15,Harari,DHIS2_RPT,Districts reporting weekly via DHIS2,69.23076923076923,100
+2025-Wk03-15,Harari,COORD_PLATFORM,Districts with functional coordination platform / RRT,0,100
+2025-Wk16-27,Harari,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),0,100
+2025-Wk16-27,Harari,EBS_DETECT,Outbreaks detected through event-based surveillance,0,100
+2025-Wk16-27,Harari,DETECT_7D,Outbreaks detected within 7 days,100,100
+2025-Wk16-27,Harari,RPT_TIMELY,Surveillance reports submitted on time (timeliness),100,100
+2025-Wk16-27,Harari,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,100
+2025-Wk16-27,Harari,CB_ELIM,Case-based reporting: elimination/eradication diseases,90.70034443168772,100
+2025-Wk16-27,Harari,CB_EVENTS,Case-based reporting: selected events/conditions,95.76271186440678,100
+2025-Wk16-27,Harari,NOTIFY_24H,Suspected outbreaks notified within 24 hours,75,100
+2025-Wk16-27,Harari,NOTIFY_30M,Immediately reportable events notified within 30 minutes,56.25,100
+2025-Wk16-27,Harari,LINEGRAPH,Current line graph available for priority diseases,44.44444444444444,100
+2025-Wk16-27,Harari,OBR_ANALYZED,Outbreak reports with analyzed case-based data,3.703703703703704,100
+2025-Wk16-27,Harari,LAB_7D,Outbreaks with laboratory results within 7 days,100,100
+2025-Wk16-27,Harari,RESP_2448,Confirmed outbreaks with response within 24-48 hours,100,100
+2025-Wk16-27,Harari,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,11.11111111111111,100
+2025-Wk16-27,Harari,RISK_MAP,Districts conducting risk & resource mapping,11.11111111111111,100
+2025-Wk16-27,Harari,EPR_FUNDS,Districts with EPR funds / budget line,0,100
+2025-Wk16-27,Harari,CONTINGENCY,Districts with contingency stocks (3-6 months),0,100
+2025-Wk16-27,Harari,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk16-27,Harari,DHIS2_RPT,Districts reporting weekly via DHIS2,15.254237288135592,100
+2025-Wk16-27,Harari,COORD_PLATFORM,Districts with functional coordination platform / RRT,0,100
+2025-Wk28-52,Harari,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,100
+2025-Wk28-52,Harari,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,100
+2025-Wk28-52,Harari,DETECT_7D,Outbreaks detected within 7 days,NA,100
+2025-Wk28-52,Harari,RPT_TIMELY,Surveillance reports submitted on time (timeliness),100,100
+2025-Wk28-52,Harari,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,100
+2025-Wk28-52,Harari,CB_ELIM,Case-based reporting: elimination/eradication diseases,88.46153846153847,100
+2025-Wk28-52,Harari,CB_EVENTS,Case-based reporting: selected events/conditions,6.341463414634147,100
+2025-Wk28-52,Harari,NOTIFY_24H,Suspected outbreaks notified within 24 hours,0,100
+2025-Wk28-52,Harari,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,100
+2025-Wk28-52,Harari,LINEGRAPH,Current line graph available for priority diseases,100,100
+2025-Wk28-52,Harari,OBR_ANALYZED,Outbreak reports with analyzed case-based data,0,100
+2025-Wk28-52,Harari,LAB_7D,Outbreaks with laboratory results within 7 days,NA,100
+2025-Wk28-52,Harari,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,100
+2025-Wk28-52,Harari,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,100,100
+2025-Wk28-52,Harari,RISK_MAP,Districts conducting risk & resource mapping,100,100
+2025-Wk28-52,Harari,EPR_FUNDS,Districts with EPR funds / budget line,0,100
+2025-Wk28-52,Harari,CONTINGENCY,Districts with contingency stocks (3-6 months),0,100
+2025-Wk28-52,Harari,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk28-52,Harari,DHIS2_RPT,Districts reporting weekly via DHIS2,60,100
+2025-Wk28-52,Harari,COORD_PLATFORM,Districts with functional coordination platform / RRT,60,100
+2025-Wk03-15,Oromia,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,100
+2025-Wk03-15,Oromia,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,100
+2025-Wk03-15,Oromia,DETECT_7D,Outbreaks detected within 7 days,81.3953488372093,10.8
+2025-Wk03-15,Oromia,RPT_TIMELY,Surveillance reports submitted on time (timeliness),88.48133848133848,98.9
+2025-Wk03-15,Oromia,CB_ELIM,Case-based reporting: elimination/eradication diseases,44.144578313253014,10.6
+2025-Wk03-15,Oromia,CB_EVENTS,Case-based reporting: selected events/conditions,13.833528722157093,100
+2025-Wk03-15,Oromia,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,0
+2025-Wk03-15,Oromia,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,0
+2025-Wk03-15,Oromia,LINEGRAPH,Current line graph available for priority diseases,NA,98.9
+2025-Wk03-15,Oromia,OBR_ANALYZED,Outbreak reports with analyzed case-based data,20.833333333333332,100
+2025-Wk03-15,Oromia,LAB_7D,Outbreaks with laboratory results within 7 days,NA,0
+2025-Wk03-15,Oromia,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,0
+2025-Wk03-15,Oromia,EPI_DETECT_REG,Epidemics detected at regional level from district data,NA,100
+2025-Wk03-15,Oromia,RISK_MAP,Districts conducting risk & resource mapping,NA,81.5
+2025-Wk03-15,Oromia,EPR_FUNDS,Districts with EPR funds / budget line,NA,81.5
+2025-Wk03-15,Oromia,CONTINGENCY,Districts with contingency stocks (3-6 months),NA,81.5
+2025-Wk03-15,Oromia,PHEM_OFFICER,Health facilities with PHEM officer,0,99.1
+2025-Wk03-15,Oromia,DHIS2_RPT,Districts reporting weekly via DHIS2,NA,99.1
+2025-Wk03-15,Oromia,COORD_PLATFORM,Districts with functional coordination platform / RRT,NA,99.1
+2025-Wk16-27,Oromia,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,100
+2025-Wk16-27,Oromia,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,100
+2025-Wk16-27,Oromia,DETECT_7D,Outbreaks detected within 7 days,89.65517241379311,7
+2025-Wk16-27,Oromia,RPT_TIMELY,Surveillance reports submitted on time (timeliness),88.37820091923834,99.1
+2025-Wk16-27,Oromia,CB_ELIM,Case-based reporting: elimination/eradication diseases,78.76447876447877,2.8
+2025-Wk16-27,Oromia,CB_EVENTS,Case-based reporting: selected events/conditions,46.87116564417178,98.4
+2025-Wk16-27,Oromia,NOTIFY_24H,Suspected outbreaks notified within 24 hours,73.07692307692308,6
+2025-Wk16-27,Oromia,NOTIFY_30M,Immediately reportable events notified within 30 minutes,73.07692307692308,6
+2025-Wk16-27,Oromia,LINEGRAPH,Current line graph available for priority diseases,100,98.8
+2025-Wk16-27,Oromia,OBR_ANALYZED,Outbreak reports with analyzed case-based data,22.89156626506024,99.3
+2025-Wk16-27,Oromia,LAB_7D,Outbreaks with laboratory results within 7 days,100,5.1
+2025-Wk16-27,Oromia,RESP_2448,Confirmed outbreaks with response within 24-48 hours,100,6
+2025-Wk16-27,Oromia,EPI_DETECT_REG,Epidemics detected at regional level from district data,NA,99.8
+2025-Wk16-27,Oromia,RISK_MAP,Districts conducting risk & resource mapping,100,80.9
+2025-Wk16-27,Oromia,EPR_FUNDS,Districts with EPR funds / budget line,0,80.9
+2025-Wk16-27,Oromia,CONTINGENCY,Districts with contingency stocks (3-6 months),NA,80.9
+2025-Wk16-27,Oromia,PHEM_OFFICER,Health facilities with PHEM officer,0,99.3
+2025-Wk16-27,Oromia,DHIS2_RPT,Districts reporting weekly via DHIS2,27.635887360838243,100
+2025-Wk16-27,Oromia,COORD_PLATFORM,Districts with functional coordination platform / RRT,NA,99.3
+2025-Wk28-52,Oromia,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,100
+2025-Wk28-52,Oromia,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,100
+2025-Wk28-52,Oromia,DETECT_7D,Outbreaks detected within 7 days,87.5,100
+2025-Wk28-52,Oromia,RPT_TIMELY,Surveillance reports submitted on time (timeliness),97.77777777777776,100
+2025-Wk28-52,Oromia,CB_ELIM,Case-based reporting: elimination/eradication diseases,44.35146443514645,100
+2025-Wk28-52,Oromia,CB_EVENTS,Case-based reporting: selected events/conditions,8.474576271186441,100
+2025-Wk28-52,Oromia,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,0
+2025-Wk28-52,Oromia,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,0
+2025-Wk28-52,Oromia,LINEGRAPH,Current line graph available for priority diseases,NA,100
+2025-Wk28-52,Oromia,OBR_ANALYZED,Outbreak reports with analyzed case-based data,NA,100
+2025-Wk28-52,Oromia,LAB_7D,Outbreaks with laboratory results within 7 days,NA,0
+2025-Wk28-52,Oromia,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,0
+2025-Wk28-52,Oromia,EPI_DETECT_REG,Epidemics detected at regional level from district data,NA,100
+2025-Wk28-52,Oromia,RISK_MAP,Districts conducting risk & resource mapping,NA,100
+2025-Wk28-52,Oromia,EPR_FUNDS,Districts with EPR funds / budget line,NA,100
+2025-Wk28-52,Oromia,CONTINGENCY,Districts with contingency stocks (3-6 months),NA,100
+2025-Wk28-52,Oromia,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk28-52,Oromia,DHIS2_RPT,Districts reporting weekly via DHIS2,NA,100
+2025-Wk28-52,Oromia,COORD_PLATFORM,Districts with functional coordination platform / RRT,NA,100
+2025-Wk03-15,Sidama,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,100
+2025-Wk03-15,Sidama,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,100
+2025-Wk03-15,Sidama,DETECT_7D,Outbreaks detected within 7 days,100,100
+2025-Wk03-15,Sidama,RPT_TIMELY,Surveillance reports submitted on time (timeliness),98.78542510121456,100
+2025-Wk03-15,Sidama,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,100
+2025-Wk03-15,Sidama,CB_ELIM,Case-based reporting: elimination/eradication diseases,59.84251968503937,100
+2025-Wk03-15,Sidama,CB_EVENTS,Case-based reporting: selected events/conditions,42.97520661157025,100
+2025-Wk03-15,Sidama,NOTIFY_24H,Suspected outbreaks notified within 24 hours,100,100
+2025-Wk03-15,Sidama,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,100
+2025-Wk03-15,Sidama,LINEGRAPH,Current line graph available for priority diseases,36.8421052631579,100
+2025-Wk03-15,Sidama,OBR_ANALYZED,Outbreak reports with analyzed case-based data,0,100
+2025-Wk03-15,Sidama,LAB_7D,Outbreaks with laboratory results within 7 days,0,100
+2025-Wk03-15,Sidama,RESP_2448,Confirmed outbreaks with response within 24-48 hours,100,100
+2025-Wk03-15,Sidama,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,57.89473684210526,100
+2025-Wk03-15,Sidama,RISK_MAP,Districts conducting risk & resource mapping,57.89473684210526,100
+2025-Wk03-15,Sidama,EPR_FUNDS,Districts with EPR funds / budget line,15.789473684210526,100
+2025-Wk03-15,Sidama,CONTINGENCY,Districts with contingency stocks (3-6 months),15.789473684210526,100
+2025-Wk03-15,Sidama,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk03-15,Sidama,DHIS2_RPT,Districts reporting weekly via DHIS2,25.899280575539567,100
+2025-Wk03-15,Sidama,COORD_PLATFORM,Districts with functional coordination platform / RRT,12.23021582733813,100
+2025-Wk16-27,Sidama,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,100
+2025-Wk16-27,Sidama,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,100
+2025-Wk16-27,Sidama,DETECT_7D,Outbreaks detected within 7 days,100,100
+2025-Wk16-27,Sidama,RPT_TIMELY,Surveillance reports submitted on time (timeliness),97.36842105263158,100
+2025-Wk16-27,Sidama,RPT_COMPLETE,Surveillance reports submitted completely (completeness),99.34210526315788,100
+2025-Wk16-27,Sidama,CB_ELIM,Case-based reporting: elimination/eradication diseases,100,100
+2025-Wk16-27,Sidama,CB_EVENTS,Case-based reporting: selected events/conditions,17.225950782997764,100
+2025-Wk16-27,Sidama,NOTIFY_24H,Suspected outbreaks notified within 24 hours,0,100
+2025-Wk16-27,Sidama,NOTIFY_30M,Immediately reportable events notified within 30 minutes,0,100
+2025-Wk16-27,Sidama,LINEGRAPH,Current line graph available for priority diseases,36.8421052631579,100
+2025-Wk16-27,Sidama,OBR_ANALYZED,Outbreak reports with analyzed case-based data,2.6315789473684212,100
+2025-Wk16-27,Sidama,LAB_7D,Outbreaks with laboratory results within 7 days,100,100
+2025-Wk16-27,Sidama,RESP_2448,Confirmed outbreaks with response within 24-48 hours,0,100
+2025-Wk16-27,Sidama,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,60.526315789473685,100
+2025-Wk16-27,Sidama,RISK_MAP,Districts conducting risk & resource mapping,60.526315789473685,100
+2025-Wk16-27,Sidama,EPR_FUNDS,Districts with EPR funds / budget line,15.789473684210526,100
+2025-Wk16-27,Sidama,CONTINGENCY,Districts with contingency stocks (3-6 months),26.31578947368421,100
+2025-Wk16-27,Sidama,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk16-27,Sidama,DHIS2_RPT,Districts reporting weekly via DHIS2,23.75,100
+2025-Wk16-27,Sidama,COORD_PLATFORM,Districts with functional coordination platform / RRT,12.5,100
+2025-Wk28-52,Sidama,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,100
+2025-Wk28-52,Sidama,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,100
+2025-Wk28-52,Sidama,DETECT_7D,Outbreaks detected within 7 days,100,100
+2025-Wk28-52,Sidama,RPT_TIMELY,Surveillance reports submitted on time (timeliness),98.07692307692308,100
+2025-Wk28-52,Sidama,RPT_COMPLETE,Surveillance reports submitted completely (completeness),99.2914979757085,100
+2025-Wk28-52,Sidama,CB_ELIM,Case-based reporting: elimination/eradication diseases,100,100
+2025-Wk28-52,Sidama,CB_EVENTS,Case-based reporting: selected events/conditions,62.295081967213115,100
+2025-Wk28-52,Sidama,NOTIFY_24H,Suspected outbreaks notified within 24 hours,100,100
+2025-Wk28-52,Sidama,NOTIFY_30M,Immediately reportable events notified within 30 minutes,75,100
+2025-Wk28-52,Sidama,LINEGRAPH,Current line graph available for priority diseases,39.473684210526315,100
+2025-Wk28-52,Sidama,OBR_ANALYZED,Outbreak reports with analyzed case-based data,10.526315789473683,100
+2025-Wk28-52,Sidama,LAB_7D,Outbreaks with laboratory results within 7 days,100,100
+2025-Wk28-52,Sidama,RESP_2448,Confirmed outbreaks with response within 24-48 hours,50,100
+2025-Wk28-52,Sidama,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,100,100
+2025-Wk28-52,Sidama,RISK_MAP,Districts conducting risk & resource mapping,100,100
+2025-Wk28-52,Sidama,EPR_FUNDS,Districts with EPR funds / budget line,23.68421052631579,100
+2025-Wk28-52,Sidama,CONTINGENCY,Districts with contingency stocks (3-6 months),34.21052631578947,100
+2025-Wk28-52,Sidama,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk28-52,Sidama,DHIS2_RPT,Districts reporting weekly via DHIS2,23.75,100
+2025-Wk28-52,Sidama,COORD_PLATFORM,Districts with functional coordination platform / RRT,12.5,100
+2025-Wk03-15,Somali,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,100
+2025-Wk03-15,Somali,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,100
+2025-Wk03-15,Somali,DETECT_7D,Outbreaks detected within 7 days,NA,100
+2025-Wk03-15,Somali,RPT_TIMELY,Surveillance reports submitted on time (timeliness),70.25641025641026,100
+2025-Wk03-15,Somali,RPT_COMPLETE,Surveillance reports submitted completely (completeness),59.583333333333336,100
+2025-Wk03-15,Somali,CB_ELIM,Case-based reporting: elimination/eradication diseases,NA,100
+2025-Wk03-15,Somali,CB_EVENTS,Case-based reporting: selected events/conditions,100,100
+2025-Wk03-15,Somali,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,100
+2025-Wk03-15,Somali,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,100
+2025-Wk03-15,Somali,LINEGRAPH,Current line graph available for priority diseases,50.84745762711864,100
+2025-Wk03-15,Somali,OBR_ANALYZED,Outbreak reports with analyzed case-based data,0,100
+2025-Wk03-15,Somali,LAB_7D,Outbreaks with laboratory results within 7 days,NA,100
+2025-Wk03-15,Somali,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,100
+2025-Wk03-15,Somali,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,NA,100
+2025-Wk03-15,Somali,RISK_MAP,Districts conducting risk & resource mapping,NA,100
+2025-Wk03-15,Somali,EPR_FUNDS,Districts with EPR funds / budget line,NA,100
+2025-Wk03-15,Somali,CONTINGENCY,Districts with contingency stocks (3-6 months),NA,100
+2025-Wk03-15,Somali,PHEM_OFFICER,Health facilities with PHEM officer,50,100
+2025-Wk03-15,Somali,DHIS2_RPT,Districts reporting weekly via DHIS2,31.35593220338983,100
+2025-Wk03-15,Somali,COORD_PLATFORM,Districts with functional coordination platform / RRT,0,100
+2025-Wk16-27,Somali,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,100
+2025-Wk16-27,Somali,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,100
+2025-Wk16-27,Somali,DETECT_7D,Outbreaks detected within 7 days,NA,100
+2025-Wk16-27,Somali,RPT_TIMELY,Surveillance reports submitted on time (timeliness),70.25641025641026,100
+2025-Wk16-27,Somali,RPT_COMPLETE,Surveillance reports submitted completely (completeness),59.583333333333336,100
+2025-Wk16-27,Somali,CB_ELIM,Case-based reporting: elimination/eradication diseases,NA,100
+2025-Wk16-27,Somali,CB_EVENTS,Case-based reporting: selected events/conditions,100,100
+2025-Wk16-27,Somali,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,100
+2025-Wk16-27,Somali,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,100
+2025-Wk16-27,Somali,LINEGRAPH,Current line graph available for priority diseases,50.84745762711864,100
+2025-Wk16-27,Somali,OBR_ANALYZED,Outbreak reports with analyzed case-based data,0,100
+2025-Wk16-27,Somali,LAB_7D,Outbreaks with laboratory results within 7 days,NA,100
+2025-Wk16-27,Somali,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,100
+2025-Wk16-27,Somali,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,NA,100
+2025-Wk16-27,Somali,RISK_MAP,Districts conducting risk & resource mapping,NA,100
+2025-Wk16-27,Somali,EPR_FUNDS,Districts with EPR funds / budget line,NA,100
+2025-Wk16-27,Somali,CONTINGENCY,Districts with contingency stocks (3-6 months),NA,100
+2025-Wk16-27,Somali,PHEM_OFFICER,Health facilities with PHEM officer,50,100
+2025-Wk16-27,Somali,DHIS2_RPT,Districts reporting weekly via DHIS2,31.35593220338983,100
+2025-Wk16-27,Somali,COORD_PLATFORM,Districts with functional coordination platform / RRT,0,100
+2025-Wk28-52,Somali,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),NA,100
+2025-Wk28-52,Somali,EBS_DETECT,Outbreaks detected through event-based surveillance,NA,100
+2025-Wk28-52,Somali,DETECT_7D,Outbreaks detected within 7 days,NA,100
+2025-Wk28-52,Somali,RPT_TIMELY,Surveillance reports submitted on time (timeliness),69.8019801980198,100
+2025-Wk28-52,Somali,RPT_COMPLETE,Surveillance reports submitted completely (completeness),59.583333333333336,100
+2025-Wk28-52,Somali,CB_ELIM,Case-based reporting: elimination/eradication diseases,NA,100
+2025-Wk28-52,Somali,CB_EVENTS,Case-based reporting: selected events/conditions,100,100
+2025-Wk28-52,Somali,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,100
+2025-Wk28-52,Somali,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,100
+2025-Wk28-52,Somali,LINEGRAPH,Current line graph available for priority diseases,50.84745762711864,100
+2025-Wk28-52,Somali,OBR_ANALYZED,Outbreak reports with analyzed case-based data,0,100
+2025-Wk28-52,Somali,LAB_7D,Outbreaks with laboratory results within 7 days,NA,100
+2025-Wk28-52,Somali,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,100
+2025-Wk28-52,Somali,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,NA,100
+2025-Wk28-52,Somali,RISK_MAP,Districts conducting risk & resource mapping,NA,100
+2025-Wk28-52,Somali,EPR_FUNDS,Districts with EPR funds / budget line,NA,100
+2025-Wk28-52,Somali,CONTINGENCY,Districts with contingency stocks (3-6 months),NA,100
+2025-Wk28-52,Somali,PHEM_OFFICER,Health facilities with PHEM officer,50,100
+2025-Wk28-52,Somali,DHIS2_RPT,Districts reporting weekly via DHIS2,31.35593220338983,100
+2025-Wk28-52,Somali,COORD_PLATFORM,Districts with functional coordination platform / RRT,0,100
+2025-Wk03-15,South Ethiopia,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),50,100
+2025-Wk03-15,South Ethiopia,EBS_DETECT,Outbreaks detected through event-based surveillance,3.125,100
+2025-Wk03-15,South Ethiopia,DETECT_7D,Outbreaks detected within 7 days,83.33333333333333,100
+2025-Wk03-15,South Ethiopia,RPT_TIMELY,Surveillance reports submitted on time (timeliness),98.07692307692308,100
+2025-Wk03-15,South Ethiopia,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,100
+2025-Wk03-15,South Ethiopia,CB_ELIM,Case-based reporting: elimination/eradication diseases,100,100
+2025-Wk03-15,South Ethiopia,CB_EVENTS,Case-based reporting: selected events/conditions,26.020408163265305,100
+2025-Wk03-15,South Ethiopia,NOTIFY_24H,Suspected outbreaks notified within 24 hours,4.166666666666667,100
+2025-Wk03-15,South Ethiopia,NOTIFY_30M,Immediately reportable events notified within 30 minutes,22.22222222222222,100
+2025-Wk03-15,South Ethiopia,LINEGRAPH,Current line graph available for priority diseases,36.458333333333336,100
+2025-Wk03-15,South Ethiopia,OBR_ANALYZED,Outbreak reports with analyzed case-based data,6.25,100
+2025-Wk03-15,South Ethiopia,LAB_7D,Outbreaks with laboratory results within 7 days,0,100
+2025-Wk03-15,South Ethiopia,RESP_2448,Confirmed outbreaks with response within 24-48 hours,100,100
+2025-Wk03-15,South Ethiopia,EPI_DETECT_REG,Epidemics detected at regional level from district data,100,100
+2025-Wk03-15,South Ethiopia,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,68.75,100
+2025-Wk03-15,South Ethiopia,RISK_MAP,Districts conducting risk & resource mapping,21.875,100
+2025-Wk03-15,South Ethiopia,EPR_FUNDS,Districts with EPR funds / budget line,0,100
+2025-Wk03-15,South Ethiopia,CONTINGENCY,Districts with contingency stocks (3-6 months),15.625,100
+2025-Wk03-15,South Ethiopia,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk03-15,South Ethiopia,DHIS2_RPT,Districts reporting weekly via DHIS2,43.75,100
+2025-Wk03-15,South Ethiopia,COORD_PLATFORM,Districts with functional coordination platform / RRT,75,100
+2025-Wk16-27,South Ethiopia,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),0,100
+2025-Wk16-27,South Ethiopia,EBS_DETECT,Outbreaks detected through event-based surveillance,0,100
+2025-Wk16-27,South Ethiopia,DETECT_7D,Outbreaks detected within 7 days,71.42857142857143,100
+2025-Wk16-27,South Ethiopia,RPT_TIMELY,Surveillance reports submitted on time (timeliness),98.07692307692308,100
+2025-Wk16-27,South Ethiopia,RPT_COMPLETE,Surveillance reports submitted completely (completeness),100,100
+2025-Wk16-27,South Ethiopia,CB_ELIM,Case-based reporting: elimination/eradication diseases,100,100
+2025-Wk16-27,South Ethiopia,CB_EVENTS,Case-based reporting: selected events/conditions,20.40816326530612,100
+2025-Wk16-27,South Ethiopia,NOTIFY_24H,Suspected outbreaks notified within 24 hours,5.208333333333333,100
+2025-Wk16-27,South Ethiopia,NOTIFY_30M,Immediately reportable events notified within 30 minutes,20,100
+2025-Wk16-27,South Ethiopia,LINEGRAPH,Current line graph available for priority diseases,37.5,100
+2025-Wk16-27,South Ethiopia,OBR_ANALYZED,Outbreak reports with analyzed case-based data,8.333333333333334,100
+2025-Wk16-27,South Ethiopia,LAB_7D,Outbreaks with laboratory results within 7 days,0,100
+2025-Wk16-27,South Ethiopia,RESP_2448,Confirmed outbreaks with response within 24-48 hours,100,100
+2025-Wk16-27,South Ethiopia,EPI_DETECT_REG,Epidemics detected at regional level from district data,85.71428571428571,100
+2025-Wk16-27,South Ethiopia,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,21.875,100
+2025-Wk16-27,South Ethiopia,RISK_MAP,Districts conducting risk & resource mapping,21.875,100
+2025-Wk16-27,South Ethiopia,EPR_FUNDS,Districts with EPR funds / budget line,0,100
+2025-Wk16-27,South Ethiopia,CONTINGENCY,Districts with contingency stocks (3-6 months),15.625,100
+2025-Wk16-27,South Ethiopia,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk16-27,South Ethiopia,DHIS2_RPT,Districts reporting weekly via DHIS2,100,100
+2025-Wk16-27,South Ethiopia,COORD_PLATFORM,Districts with functional coordination platform / RRT,32.291666666666664,100
+2025-Wk28-52,South Ethiopia,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),5.882352941176471,100
+2025-Wk28-52,South Ethiopia,EBS_DETECT,Outbreaks detected through event-based surveillance,20,100
+2025-Wk28-52,South Ethiopia,DETECT_7D,Outbreaks detected within 7 days,80,100
+2025-Wk28-52,South Ethiopia,RPT_TIMELY,Surveillance reports submitted on time (timeliness),99.67948717948718,100
+2025-Wk28-52,South Ethiopia,RPT_COMPLETE,Surveillance reports submitted completely (completeness),99.9198717948718,100
+2025-Wk28-52,South Ethiopia,CB_ELIM,Case-based reporting: elimination/eradication diseases,100,100
+2025-Wk28-52,South Ethiopia,CB_EVENTS,Case-based reporting: selected events/conditions,56.507936507936506,100
+2025-Wk28-52,South Ethiopia,NOTIFY_24H,Suspected outbreaks notified within 24 hours,3.0303030303030303,100
+2025-Wk28-52,South Ethiopia,NOTIFY_30M,Immediately reportable events notified within 30 minutes,27.272727272727273,100
+2025-Wk28-52,South Ethiopia,LINEGRAPH,Current line graph available for priority diseases,37.5,100
+2025-Wk28-52,South Ethiopia,OBR_ANALYZED,Outbreak reports with analyzed case-based data,10.416666666666666,100
+2025-Wk28-52,South Ethiopia,LAB_7D,Outbreaks with laboratory results within 7 days,0,100
+2025-Wk28-52,South Ethiopia,RESP_2448,Confirmed outbreaks with response within 24-48 hours,100,100
+2025-Wk28-52,South Ethiopia,EPI_DETECT_REG,Epidemics detected at regional level from district data,66.66666666666667,100
+2025-Wk28-52,South Ethiopia,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,100,100
+2025-Wk28-52,South Ethiopia,RISK_MAP,Districts conducting risk & resource mapping,21.875,100
+2025-Wk28-52,South Ethiopia,EPR_FUNDS,Districts with EPR funds / budget line,0,100
+2025-Wk28-52,South Ethiopia,CONTINGENCY,Districts with contingency stocks (3-6 months),15.625,100
+2025-Wk28-52,South Ethiopia,PHEM_OFFICER,Health facilities with PHEM officer,0,100
+2025-Wk28-52,South Ethiopia,DHIS2_RPT,Districts reporting weekly via DHIS2,100,100
+2025-Wk28-52,South Ethiopia,COORD_PLATFORM,Districts with functional coordination platform / RRT,33.333333333333336,100
+2025-Wk03-15,Tigray,EBS_PPV,Confirmed outbreaks among suspected events (EBS sensitivity),0,96.4
+2025-Wk03-15,Tigray,EBS_DETECT,Outbreaks detected through event-based surveillance,0,96.4
+2025-Wk03-15,Tigray,DETECT_7D,Outbreaks detected within 7 days,50,4.8
+2025-Wk03-15,Tigray,RPT_TIMELY,Surveillance reports submitted on time (timeliness),86.11111111111111,14.3
+2025-Wk03-15,Tigray,RPT_COMPLETE,Surveillance reports submitted completely (completeness),94.28571428571428,14.3
+2025-Wk03-15,Tigray,CB_ELIM,Case-based reporting: elimination/eradication diseases,62.95133437990581,14.3
+2025-Wk03-15,Tigray,CB_EVENTS,Case-based reporting: selected events/conditions,NA,0
+2025-Wk03-15,Tigray,NOTIFY_24H,Suspected outbreaks notified within 24 hours,NA,0
+2025-Wk03-15,Tigray,NOTIFY_30M,Immediately reportable events notified within 30 minutes,NA,0
+2025-Wk03-15,Tigray,LINEGRAPH,Current line graph available for priority diseases,65.78947368421052,14.3
+2025-Wk03-15,Tigray,OBR_ANALYZED,Outbreak reports with analyzed case-based data,31.25,14.3
+2025-Wk03-15,Tigray,LAB_7D,Outbreaks with laboratory results within 7 days,NA,0
+2025-Wk03-15,Tigray,RESP_2448,Confirmed outbreaks with response within 24-48 hours,NA,0
+2025-Wk03-15,Tigray,EPI_DETECT_REG,Epidemics detected at regional level from district data,NA,0
+2025-Wk03-15,Tigray,EPRP_PLAN,Districts with EPRP (preparedness & response) plans,NA,96.4
+2025-Wk03-15,Tigray,RISK_MAP,Districts conducting risk & resource mapping,NA,96.4
+2025-Wk03-15,Tigray,EPR_FUNDS,Districts with EPR funds / budget line,NA,96.4
+2025-Wk03-15,Tigray,CONTINGENCY,Districts with contingency stocks (3-6 months),NA,96.4
+2025-Wk03-15,Tigray,PHEM_OFFICER,Health facilities with PHEM officer,2.904564315352697,100
+2025-Wk03-15,Tigray,DHIS2_RPT,Districts reporting weekly via DHIS2,70.53941908713693,100
+2025-Wk03-15,Tigray,COORD_PLATFORM,Districts with functional coordination platform / RRT,0,100

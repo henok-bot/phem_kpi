@@ -1,0 +1,22 @@
+Indicator,Addis Ababa,Afar,Amhara,Benishangul Gumuz,Dire Dawa,Gambella,Harari,Oromia,Sidama,Somali,South Ethiopia,NATIONAL
+Confirmed outbreaks among suspected events (EBS sensitivity),100,100,0,100,100,100,100,100,100,100,100,68.2
+Outbreaks detected through event-based surveillance,100,100,0,100,100,100,100,100,100,100,100,68.2
+Outbreaks detected within 7 days,100,100,0,100,100,100,100,100,100,100,100,68.2
+Surveillance reports submitted on time (timeliness),100,100,100,100,100,100,100,100,100,100,100,100
+Surveillance reports submitted completely (completeness),100,100,100,100,100,100,100,NA,100,100,100,100
+Case-based reporting: elimination/eradication diseases,100,100,0,100,100,100,100,100,100,100,100,68.2
+Case-based reporting: selected events/conditions,100,100,0,100,100,100,100,100,100,100,100,68.2
+Suspected outbreaks notified within 24 hours,100,100,0,100,100,100,100,0,100,100,100,67.1
+Immediately reportable events notified within 30 minutes,100,100,0,100,100,100,100,0,100,100,100,67.1
+Current line graph available for priority diseases,100,100,0,100,0,100,100,100,100,100,100,65.7
+Outbreak reports with analyzed case-based data,100,100,0,100,100,100,100,100,100,100,100,68.2
+Outbreaks with laboratory results within 7 days,100,100,0,100,0,100,100,0,100,100,100,64.5
+Confirmed outbreaks with response within 24-48 hours,100,100,0,100,100,100,100,0,100,100,100,67.1
+Epidemics detected at regional level from district data,NA,NA,NA,100,100,NA,NA,100,NA,NA,100,100
+Districts with EPRP (preparedness & response) plans,100,100,100,100,100,100,100,NA,100,100,100,100
+Districts conducting risk & resource mapping,100,100,0,100,100,100,100,100,100,100,100,68.2
+Districts with EPR funds / budget line,100,100,0,100,100,100,100,100,100,100,100,68.2
+Districts with contingency stocks (3-6 months),100,100,0,100,100,100,100,100,100,100,100,68.2
+Health facilities with PHEM officer,100,100,0,100,100,100,100,100,100,100,100,68.2
+Districts reporting weekly via DHIS2,100,100,0,100,100,100,100,100,100,100,100,68.2
+Districts with functional coordination platform / RRT,100,100,0,100,100,100,100,100,100,100,100,68.2
